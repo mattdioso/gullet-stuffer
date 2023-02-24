@@ -13,6 +13,21 @@
   }
 }
 
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+  font-family: 'Phosphate', sans-serif; 
+  position: absolute;
+  box-sizing: border-box;
+}
+body #root {
+  height: 100%;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

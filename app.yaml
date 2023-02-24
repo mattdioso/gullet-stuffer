@@ -1,0 +1,4 @@
+runtime: nodejs18
+instance_class: F4
+resources:
+  memory_gb: 4
