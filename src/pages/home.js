@@ -5,6 +5,7 @@ import amateurs from '../imgs/GS2Stills/jaybee_spicy.jpg';
 import handsin from '../imgs/GSIVeventPICS/propics/handsin.jpg';
 import smile from '../imgs/GulletStufferONEstills/smile.png';
 import video from '../imgs/TestVideo.mp4';
+import home from '..//imgs/Gulletmaindesigns/homepage3.jpg';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -28,7 +29,16 @@ class HomePage extends React.Component {
 
                 </video>
             </div> */}
-          <div className={this.state.ended ? "visible md:flex h-5/6 pt-24 bg-gray-900 text-gray-200 transition-opacity ease-in opacity-100 duration-[2000ms]" : "invisible max-h-0 opacity-0 overflow-hidden"}>
+            <div className={this.state.ended ? "visible block h-full w-full" : "invisible max-h-0 opacity-0"}>
+                <img src={home} className="h-full w-full" alt="home"></img>
+                <div className="absolute top-24 text-6xl mx-36">
+                  <p className="text-white text-center">Seattle's Finest</p>
+                  
+                  <p className="text-orange-400 text-center">Competitive Eating Competition</p>
+                </div>
+            </div>
+
+          {/* <div className={this.state.ended ? "visible md:flex h-5/6 pt-24 bg-gray-900 text-gray-200 transition-opacity ease-in opacity-100 duration-[2000ms]" : "invisible max-h-0 opacity-0 overflow-hidden"}>
             <div className={ this.state.ended ? "w-max-content md:w-1/3" : "invisible max-h-0 opacity-0"}>
               <p className={ this.state.ended ? "text-5xl tracking-wider md:text-6xl text-center text-yellow-300 p-6 pt-20" : "invisible max-h-0 opacity-0"}>
                 Seattle's Finest Amateur Competitive Eating Competition
@@ -48,7 +58,7 @@ class HomePage extends React.Component {
                     />
                   </div>
                 </div>
-                {/* <Carousel className={ this.state.ended ? "" :"invisible max-h-0 opacity-0"}/> */}
+                <Carousel className={ this.state.ended ? "" :"invisible max-h-0 opacity-0"}/> 
                 <div className={ this.state.ended ? "m-2 carousel slide relative w-screen md:w-2/3 float-right": "invisible max-h-0 opacity-0" }>
                 <img src={handsin} className={ this.state.ended ? "block w-full" : "invisible max-h-0 opacity-0"} alt="merch" />
                 </div>
@@ -64,7 +74,7 @@ class HomePage extends React.Component {
                 
               </div>
             </div>
-          </div>
+          </div> */}
           </div>
         );
     }

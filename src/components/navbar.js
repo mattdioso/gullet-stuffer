@@ -10,8 +10,8 @@ const Navbar = () => {
     let [open, setOpen] = useState(false);
     return (
         <div className="fixed w-full h-24 items-center justify-between
-            py-4 bg-gray-800 shadow-lg z-40  left-0">
-            <div className="md:flex items-center justify between bg-gray-800">
+             bg-black opacity-100 shadow-lg z-40  left-0">
+            <div className="md:flex items-center justify between bg-black">
 
 
 
