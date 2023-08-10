@@ -1,7 +1,7 @@
 import React from 'react';
 import haiming from '../imgs/GulletStufferONEstills/jaybee_hype1.png';
 import jaybee from '../imgs/AthleteSquares/athletesquare3.png';
-import his from '../imgs/AthleteSquares/squaretry3.png';
+
 
 class GSYear extends React.Component {
     constructor(props) {

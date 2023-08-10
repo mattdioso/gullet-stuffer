@@ -39,7 +39,7 @@ export const years_data = [
                 "lastName": "Mafi",
                 "rank": "Amateur",
                 "result": 3,
-                "img": ""
+                "img": "https://storage.cloud.google.com/gulllet-stuffer.appspot.com/AthleteSquares/2018Amatuer200/mafi200.png"
             },
             {
                 "firstName": "Mackenzie",
