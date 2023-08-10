@@ -15,8 +15,16 @@ class GSYear extends React.Component {
             '2021': 'https://www.youtube.com/embed/kot5BXUPZJg',
             '2022': 'https://www.youtube.com/embed/fR5OlKENIUM'
         }
-        let year = this.props.year;
+        let year = this.props.year.year;
         let link = info[year];
+        let amateurs = this.props.year['competitors'].filter(athlete => athlete.rank=="Amateur");
+        let pros = this.props.year['competitors'].filter(ath => ath.rank=="Professional");
+
+        amateurs.sort((a, b) => b.result - a.result);
+        pros.sort((a, b) => b.result - a.result);
+
+        console.log(amateurs);
+        console.log(pros);
         return (
         <div className="block md:flex bg-gray-900 text-gray-200">
             <div className="block">
@@ -38,20 +46,33 @@ class GSYear extends React.Component {
                 <div className="block my-8 mx-4 h-2/3 bg-orange-100 rounded-3xl shadow-2xl">
                     <p className="text-center text-3xl text-black">Results</p>
                     <div className="flex px-4 w-full h-4/5">
-                        <div className="w-1/2 bg-red-500 border-r border-black">
-                            <p className="text-center">Pros</p>
+                        <div className="w-1/2 border-r border-black">
+                            <p className="text-black text-center">Amateurs</p>
                             <div className="line"/>
-                            <div className="grid-cols-3 grid-rows-6">
-                                <div>Matt Kelly</div>
-                                <div>Matt Dioso</div>
-                                <div>Johnny Esteban</div>
-                                <div>Jaybee Ragudo</div>
-                                <div>Jeff Harrell</div>
+                            <div className="grid-rows-6">
+                                {
+                                    amateurs.map((comp) => (
+                                        <div className="grid grid-cols-8 text-black">
+                                            <div className="col-span-6 ">{comp.firstName} {comp.lastName} </div>
+                                            <div className="col-span-2">{comp.result}</div>
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </div>
-                        <div className="w-1/2 bg-green-500 border-l border-black">
-                            <p className="text-center">Amateurs</p>
+                        <div className="w-1/2 border-l border-black">
+                            <p className="text-center text-black">Pros</p>
                             <div className="line"/>
+                            <div className="grid-cols-3 grid-rows-6">
+                                {
+                                    pros.map((comp) => (
+                                        <div className="grid grid-cols-8 text-black">
+                                            <div className="col-span-6">{comp.firstName} {comp.lastName}</div>
+                                            <div className="col-span-2">{comp.result}</div>
+                                        </div>
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>

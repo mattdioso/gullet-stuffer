@@ -7,6 +7,7 @@ import HomePage from './pages/home';
 import AboutPage from './pages/about';
 import EventsPage from './pages/events';
 import HallOfFame from './pages/hof';
+import SponsorPage from './pages/sponsors';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/hof" element={<HallOfFame />} />
+        <Route path="/sponsors" element={<SponsorPage />} />
       </Routes>
     </Router>
     

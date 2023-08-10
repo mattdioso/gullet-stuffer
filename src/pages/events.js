@@ -3,6 +3,7 @@ import React from 'react';
 import GSYear from '../years/GSYear';
 import { FaBootstrap } from 'react-icons/fa';
 import { TimelineScroller } from '../components/timeline_scroller';
+import { years_data } from '../data/years';
 
 class EventsPage extends React.Component {
     constructor(props) {
@@ -11,7 +12,7 @@ class EventsPage extends React.Component {
             currentPage: null
         };
     }
-
+    
     handlePageChange = number => {
         this.setState({ currentPage: number });
     }
@@ -28,10 +29,15 @@ class EventsPage extends React.Component {
                 pageOnChange={this.handlePageChange}
                 onBeforePageScroll={this.handleBeforePageChange}
                 customPageNumber={this.state.currentPage}>
-                <GSYear year='2018'/>
+                {/* <GSYear year='2018'/>
                 <GSYear year='2019'/>
                 <GSYear year='2021'/>
-                <GSYear year='2022'/>
+                <GSYear year='2022'/> */}
+                {
+                    years_data.map((year) => (
+                        <GSYear year={year} />
+                    ))
+                }
             </TimelineScroller>
             
         );
