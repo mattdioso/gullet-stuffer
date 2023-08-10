@@ -78,80 +78,33 @@ class GSYear extends React.Component {
                 </div>
                 <div className="block my-8 mx-4 h-2/3 bg-orange-100 rounded-3xl shadow-2xl">
                     <p className="text-center text-3xl text-black">Contestants</p>
-                    <div className="block w-full">
+                    <div className="block w-full h-full">
                         <div className="block w-full h-2/5 bg-pink-50">
                             <p className="text-black"><u>Professionals</u></p>
-                            <div className="flex w-full">
-                            <div className="group">
-                                    <img src={jaybee} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={jaybee} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={jaybee} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={jaybee} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={jaybee} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={jaybee} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={jaybee} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={jaybee} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
+                            <div className="flex w-full place-content-center">
+                                {
+                                    pros.map((comp) => (
+                                        <div className="group">
+                                            <img src={comp.img} className="mx-2 w-16 rounded-full" alt={comp.firstName}></img>
+                                            <span className="player-stats group-hover:scale-100">what's up</span>
+                                        </div>
+                                    ))
+                                }
+                                
                             </div>
                             
                         </div>
                         <div className="w-full h-2/5 bg-stone-300">
                             <p className="text-black"><u>Amateurs</u></p>
-                            <div className="flex w-full">
-                                <div className="group">
-                                    <img src={his} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={his} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={his} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={his} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={his} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={his} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={his} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
-                                <div className="group">
-                                    <img src={his} className="mx-2 w-12 rounded-full" alt="jaybee"></img>
-                                    <span className="player-stats group-hover:scale-100">what's up</span>
-                                </div>
+                            <div className="flex w-full place-content-center">
+                            {
+                                    amateurs.map((comp) => (
+                                        <div className="group">
+                                            <img src={comp.img} className="mx-2 w-14 rounded-full" alt={comp.firstName}></img>
+                                            <span className="player-stats group-hover:scale-100">what's up</span>
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>
