@@ -25,8 +25,9 @@ class GSYear extends React.Component {
 
         console.log(amateurs);
         console.log(pros);
+        
         return (
-        <div className="block md:flex bg-gray-900 text-gray-200">
+        <div className="block md:flex text-gray-200">
             <div className="block">
             <p className="text-2xl text-yellow-300 pt-8 pl-8">{year} Recap</p>
             <div className="w-1/2 pt-20 content-center">
@@ -43,18 +44,19 @@ class GSYear extends React.Component {
             </div>
             </div>
             <div className="block w-1/2">
-                <div className="block my-8 mx-4 h-2/3 bg-orange-100 rounded-3xl shadow-2xl">
+                <div className="block my-8 mx-4 h-3/5 bg-orange-100 rounded-3xl shadow-2xl">
                     <p className="text-center text-3xl text-black">Results</p>
                     <div className="flex px-4 w-full h-4/5">
                         <div className="w-1/2 border-r border-black">
                             <p className="text-black text-center">Amateurs</p>
                             <div className="line"/>
-                            <div className="grid-rows-6">
+                            <div className={`grid h-full grid-rows-${amateurs.length}`}>
                                 {
                                     amateurs.map((comp) => (
                                         <div className="grid grid-cols-8 text-black">
-                                            <div className="col-span-6 ">{comp.firstName} {comp.lastName} </div>
+                                            <div className="col-span-5">{comp.firstName} {comp.lastName} </div>
                                             <div className="col-span-2">{comp.result}</div>
+                                            <img src={this.props.year.food_img} className="col-span-1" alt={comp.firstName}></img>
                                         </div>
                                     ))
                                 }
@@ -63,12 +65,13 @@ class GSYear extends React.Component {
                         <div className="w-1/2 border-l border-black">
                             <p className="text-center text-black">Pros</p>
                             <div className="line"/>
-                            <div className="grid-cols-3 grid-rows-6">
+                            <div className={`grid h-full  grid-rows-${pros.length}`}>
                                 {
                                     pros.map((comp) => (
                                         <div className="grid grid-cols-8 text-black">
-                                            <div className="col-span-6">{comp.firstName} {comp.lastName}</div>
+                                            <div className="col-span-5">{comp.firstName} {comp.lastName}</div>
                                             <div className="col-span-2">{comp.result}</div>
+                                            <img src={this.props.year.food_img} className="col-span-1" alt={comp.firstName}></img>
                                         </div>
                                     ))
                                 }
@@ -76,7 +79,7 @@ class GSYear extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="block my-8 mx-4 h-2/3 bg-orange-100 rounded-3xl shadow-2xl">
+                <div className="block my-8 mx-4 h-3/5 bg-orange-100 rounded-3xl shadow-2xl">
                     <p className="text-center text-3xl text-black">Contestants</p>
                     <div className="block w-full h-full">
                         <div className="block w-full h-2/5 bg-pink-50">
@@ -85,7 +88,7 @@ class GSYear extends React.Component {
                                 {
                                     pros.map((comp) => (
                                         <div className="group">
-                                            <img src={comp.img} className="mx-2 w-16 rounded-full" alt={comp.firstName}></img>
+                                            <img src={comp.img} className="mx-2 w-16 rounded-lg" alt={comp.firstName}></img>
                                             <span className="player-stats group-hover:scale-100">what's up</span>
                                         </div>
                                     ))
@@ -100,7 +103,7 @@ class GSYear extends React.Component {
                             {
                                     amateurs.map((comp) => (
                                         <div className="group">
-                                            <img src={comp.img} className="mx-2 w-14 rounded-full" alt={comp.firstName}></img>
+                                            <img src={comp.img} className="mx-2 w-14 rounded-lg" alt={comp.firstName}></img>
                                             <span className="player-stats group-hover:scale-100">what's up</span>
                                         </div>
                                     ))
