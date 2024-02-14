@@ -363,7 +363,7 @@ import React, {
       <div
         ref={scrollContainer}
 
-        className="w-full h-full bg-black overflow-hidden pt-24"
+        className="w-full h-full bg-black overflow-hidden pt-28"
       >
         <div
           ref={pageContainer}

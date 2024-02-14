@@ -35,7 +35,8 @@ module.exports = {
       animation: {
         fadeLeft: 'fadeLeft 5s ease-in-out',
         frontFlipped: 'frontFlipped 2s',
-        backFlipped: 'backFlipped 2s'
+        backFlipped: 'backFlipped 2s',
+        'open-menu': 'open-menu 0.5s ease-in-out forwards'
       },
       keyframes: {
         fadeLeft: {
@@ -61,6 +62,11 @@ module.exports = {
           '100%': {
             transform: 'rotateY(180deg)'
           }
+        },
+        'open-menu': {
+          '0%': { transform: 'scaleY(0)' },
+          '80%': { transform: 'scaleY(1.2)' },
+          '100%': { transform: 'scaleY(1)' }
         }
       }
     },
