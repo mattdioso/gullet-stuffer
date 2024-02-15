@@ -28,8 +28,8 @@ class GSYear extends React.Component {
 
         console.log("lenght: "+ Math.floor(pros.length/2));
         return (
-            <section>
-                <div class="grid grid-cols-12 mt-96 px-36 w-full">
+            <section >
+                <div class="grid grid-cols-12 mt-48 px-36 w-full">
                     <div class="col-span-2 w-fit m-0">
                         <h2 className={this.props.i % 2 === 1 ? "text-orange-400 text-6xl" : "text-white text-6xl"}>{year}</h2>
                     </div>
@@ -48,7 +48,7 @@ class GSYear extends React.Component {
                         allowFullScreen
                     ></iframe>
                 </div>
-                <div class="w-11/12 mx-auto bg-white">
+                <div class="w-8/12 mx-auto mb-12">
                     <Accordion year={this.props.year}></Accordion>
                 </div>
                 {/* <div className={`grid grid-cols-${pros.length} w-11/12 h-48 mx-auto`}>

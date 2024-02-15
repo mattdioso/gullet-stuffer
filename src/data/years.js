@@ -598,7 +598,7 @@ export const years_data = [
                 "lastName": "Goulds",
                 "rank": "Professional",
                 "result": 19,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/GSVthumbnails/pros/bruce.png"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/GSVthumbnails/pros/cameron.jpg"
             },
             {
                 "firstName": "Julian",

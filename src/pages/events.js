@@ -81,7 +81,7 @@ class EventsPage extends React.Component {
                         // </section>
                     ))
                 }
-                
+                <footer className='h-24 bg-black'></footer>
             </section>
             // <TimelineScroller
             //     pageOnChange={this.handlePageChange}
