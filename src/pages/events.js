@@ -5,6 +5,7 @@ import { FaBootstrap } from 'react-icons/fa';
 import { TimelineScroller } from '../components/timeline_scroller';
 import { years_data } from '../data/years';
 import ContestantProfile from '../components/contestant_profile';
+import Reveal from '../components/utils/reveal';
 
 class EventsPage extends React.Component {
     constructor(props) {
@@ -26,6 +27,7 @@ class EventsPage extends React.Component {
         // const pageNumbers = this.getPagesNumbers();
         return (
             <section>
+                <Reveal>
                 <div className="block pt-72 w-full" >
                 
                     <div className="top-24 text-6xl md:text-7xl px-auto w-full">
@@ -38,6 +40,7 @@ class EventsPage extends React.Component {
                         <p className="text-white text-center">Scroll through and see for yourself!</p>
                     </div>
                 </div>
+                </Reveal>
                 {
                     years_data.map((year, i) => (
                         <GSYear year={year} i={i}/>

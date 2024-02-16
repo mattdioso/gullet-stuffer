@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import RevealTable from './utils/reveal_table';
 const Accordion = ({ year, title, content}) => {
     const [isActive, setIsActive] = useState(false);
 
@@ -30,6 +30,7 @@ const Accordion = ({ year, title, content}) => {
             </div>
             {
                 isActive && 
+                <RevealTable>
                 <div className="flex flex-row justify-between cursor-pointer bg-gray-800 p-2">
                     <table class='w-1/2 table-auto'>
                         <tbody>
@@ -60,6 +61,7 @@ const Accordion = ({ year, title, content}) => {
                         </tbody>
                     </table>
                 </div>
+                </RevealTable>
             }
         </div>
     );

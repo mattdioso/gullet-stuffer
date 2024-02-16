@@ -3,7 +3,7 @@ import haiming from '../imgs/GulletStufferONEstills/jaybee_hype1.png';
 import jaybee from '../imgs/AthleteSquares/athletesquare3.png';
 import ContestantProfile from '../components/contestant_profile';
 import Accordion from '../components/accordion';
-
+import Reveal from '../components/utils/reveal';
 
 class GSYear extends React.Component {
     constructor(props) {
@@ -29,12 +29,15 @@ class GSYear extends React.Component {
         console.log("lenght: "+ Math.floor(pros.length/2));
         return (
             <section >
+                <Reveal useBar="false">
                 <div class="grid grid-cols-12 mt-48 px-36 w-full">
                     <div class="col-span-2 w-fit m-0">
                         <h2 className={this.props.i % 2 === 1 ? "text-orange-400 text-6xl" : "text-white text-6xl"}>{year}</h2>
                     </div>
                     <div class="col-span-10 h-[1px] w-full bg-white my-auto"></div>
                 </div>
+                </Reveal>
+                <Reveal useBar="false">
                 <div class="block h-full">
                     <iframe
                         className="mt-12 mx-auto sm:w-[640px] sm:h-[350px] rounded-md"
@@ -48,9 +51,12 @@ class GSYear extends React.Component {
                         allowFullScreen
                     ></iframe>
                 </div>
+                </Reveal>
+                <Reveal useBar="false">
                 <div class="w-8/12 mx-auto mb-12">
                     <Accordion year={this.props.year}></Accordion>
                 </div>
+                </Reveal>
                 {/* <div className={`grid grid-cols-${pros.length} w-11/12 h-48 mx-auto`}>
                     {pros.map((pro) => (
                         <div className="col-span-1">
