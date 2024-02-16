@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { motion, useInView, useAnimation, useIsPresent } from 'framer-motion';
+import { motion, useInView, useAnimation, useIsPresent, AnimatePresence } from 'framer-motion';
 
 const RevealTable = ({ children }) => {
     const ref = useRef(null);
@@ -8,27 +8,30 @@ const RevealTable = ({ children }) => {
     const mainControls = useAnimation();
     
 
-    useEffect(() => {
-        if (isInView) {
-            mainControls.start("visible");
+    // useEffect(() => {
+    //     if (isInView) {
+    //         mainControls.start("visible");
             
-        }
-    }, [isInView]);
+    //     }
+    // }, [isInView]);
 
     return (
-        <div ref={ref} className='relative w-full px-auto overflow-hidden'>
+        <AnimatePresence intial={false}>
+        
             <motion.div variants = {{
-                hidden: { opacity: 0, y: -75 },
-                visible: { opacity: 1, y: 0 }
+                hidden: { opacity: 0, height: 0 },
+                visible: { opacity: 1, height: "auto" }
             }}
             initial="hidden"
-            animate={mainControls}
-            transition= {{ duration: 0.5, delay: 0.25 }}>
+            animate="visible"
+            exit="hidden"
+            transition= {{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98]}}>
                 {children}
             </motion.div>
             
             
-        </div>
+        
+        </AnimatePresence>
     )
 }
 

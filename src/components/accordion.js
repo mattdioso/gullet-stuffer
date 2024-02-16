@@ -29,7 +29,7 @@ const Accordion = ({ year, title, content}) => {
                 <div className='text-white'>{isActive ? '-' : '+'}</div>
             </div>
             {
-                isActive && 
+                isActive && (
                 <RevealTable>
                 <div className="flex flex-row justify-between cursor-pointer bg-gray-800 p-2">
                     <table class='w-1/2 table-auto'>
@@ -62,7 +62,7 @@ const Accordion = ({ year, title, content}) => {
                     </table>
                 </div>
                 </RevealTable>
-            }
+            )}
         </div>
     );
 };
