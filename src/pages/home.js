@@ -30,7 +30,7 @@ class HomePage extends React.Component {
                 </video>
             </div> */}
             <div className={this.state.ended ? "visible block h-screen w-full" : "invisible max-h-0 opacity-0"}>
-                <img src={home} className="h-full m-auto object-scale-down md:w-full" alt="home"></img>
+                <img src={home} className="h-full m-auto md:w-full" alt="home"></img>
                 <div className="absolute top-24 text-6xl px-auto w-full">
                   <p className="text-white text-center">Seattle's Finest</p>
                   
