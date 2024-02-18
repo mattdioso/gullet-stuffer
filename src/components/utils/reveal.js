@@ -23,7 +23,7 @@ const Reveal = ({ children, width, useBar = "true"}) => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition= {{ duration: 0.5, delay: 0.25 }}>
+            transition= {{ duration: 2.0, delay: 0.25 }}>
                 {children}
             </motion.div>
             { useBar === "true" ? 
