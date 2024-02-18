@@ -58,8 +58,8 @@ class Back extends React.Component {
                         <span className="font-semibold text-sm text-neutral-500">{this.props.division}</span>
                     </h2>
                     <div className="mt-20 justify-between">
-                        <h3 className="font-semibold text-xl">"{this.props.title}"<br/></h3>
-                        <h3 className="font-semibold text-xl">{this.props.desc}</h3>
+                        <h3 className="text-xl">{this.props.title}<br/></h3>
+                        <h3 className="text-xl">{this.props.desc}</h3>
                     </div>
                 </div>
             </div>
