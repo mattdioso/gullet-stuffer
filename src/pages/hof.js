@@ -21,17 +21,17 @@ class HallOfFame extends React.Component {
         return (
             
             <div className="block absolute no-scroll justify-center items-center w-full h-full pt-36 bg-black overflow-y-scroll">
-                <section className='relative'>
+                <section className='relative my-16 2xl:w-4/5 mx-auto'>
                     <div className='grid grid-cols-12 w-4/5 mx-auto'>
                         <div className='col-span-3 w-fit m-0'>
-                            <h3 className='text-orange-400 text-2xl'>Past Pro Champs</h3>
+                            <h3 className='text-orange-400 text-xl'>Past Pro Champs</h3>
                         </div>
                         <div className='col-span-9 h-[1px] w-full bg-white my-auto'></div>
                     </div>
                     <div className="w-10/12 mt-52 absolute left-[8%] h-20 bg-gradient-to-br from-yellow-400 to-yellow-100">
                         
                     </div>
-                    <div className='w-10/12 flex gap-4 place-content-center mx-auto'>
+                    <div className='w-10/12 flex space-x-4 justify-center mx-auto'>
                         {
                             pros.map((pro) => (
                                 
@@ -45,10 +45,10 @@ class HallOfFame extends React.Component {
                         <ContestantCard pic={legge} name="STEPHEN LEGGE" title="The People's Champ" desc="" division="Amateur"/> */}
                     </div>
                 </section>
-                <section className='relative'>
+                <section className='relative my-16 2xl:w-4/5 mx-auto'>
                     <div className='grid grid-cols-12 w-4/5 mx-auto'>
                         <div className='col-span-3 w-fit m-0'>
-                            <h3 className='text-orange-400 text-2xl'>Past Amateur Champs</h3>
+                            <h3 className='text-orange-400 text-xl'>Past Amateur Champs</h3>
                         </div>
                         <div className='col-span-9 h-[1px] w-full bg-white my-auto'></div>
                     </div>
@@ -68,10 +68,10 @@ class HallOfFame extends React.Component {
                         <ContestantCard pic={legge} name="STEPHEN LEGGE" title="The People's Champ" desc="" division="Amateur"/> */}
                     </div>
                 </section>
-                <section className='relative'>
+                <section className='relative my-16 2xl:w-4/5 mx-auto'>
                     <div className='grid grid-cols-12 w-4/5 mx-auto'>
                         <div className='col-span-3 w-fit m-0'>
-                            <h3 className='text-orange-400 text-2xl'>Notable Competitors</h3>
+                            <h3 className='text-orange-400 text-xl'>Notable Competitors</h3>
                         </div>
                         <div className='col-span-9 h-[1px] w-full bg-white my-auto'></div>
                     </div>
@@ -91,10 +91,10 @@ class HallOfFame extends React.Component {
                         <ContestantCard pic={legge} name="STEPHEN LEGGE" title="The People's Champ" desc="" division="Amateur"/> */}
                     </div>
                 </section>
-                <section className='relative'>
+                <section className='relative my-16 2xl:w-4/5 mx-auto'>
                     <div className='grid grid-cols-12 w-4/5 mx-auto'>
                         <div className='col-span-3 w-fit m-0'>
-                            <h3 className='text-orange-400 text-2xl'>Iconic Moments</h3>
+                            <h3 className='text-orange-400 text-xl'>Iconic Moments</h3>
                         </div>
                         <div className='col-span-9 h-[1px] w-full bg-white my-auto'></div>
                     </div>

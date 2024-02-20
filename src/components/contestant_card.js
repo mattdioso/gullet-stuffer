@@ -18,7 +18,7 @@ class ContestantCard extends React.Component {
     render() {
         console.log(this.props.division);
         return (
-            <div class="group h-[250px] w-[200px] m-8 rounded-3xl shadow-2xl bg-transparent cursor-pointer group perspective">
+            <div class="group h-[250px] w-[200px] rounded-3xl shadow-2xl bg-transparent cursor-pointer group perspective">
                 <div class="relative preserve-3d group-hover:rotate-y-180 w-full h-full duration-1000">
                     <Front pic={this.props.pic}/>
                     <Back name={this.props.name} division={this.props.division} title={this.props.title} desc={this.props.desc}/>
