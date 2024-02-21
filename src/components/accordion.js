@@ -40,7 +40,7 @@ const Accordion = ({ year, title, content}) => {
                                         {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
                                         <td><img className="h-10 w-10 md:h-16 md:w-16 rounded-lg" src={pro.img} alt=""></img></td>
                                         <td className='text-[10px] md:text-base text-white'>{pro.firstName} {pro.lastName}</td>
-                                        <td className='text-[10px] md:text-base text-orange-400'>{pro.result}</td>
+                                        <td className='text-[10px] md:text-base text-white'>{pro.result}</td>
                                     </tr>
                                 ))
                             }
@@ -54,7 +54,7 @@ const Accordion = ({ year, title, content}) => {
                                         {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
                                         <td><img className="h-10 w-10 md:h-16 md:w-16 rounded-lg" src={amateur.img} alt=""></img></td>
                                         <td className='text-[10px] md:text-base text-white'>{amateur.firstName} {amateur.lastName}</td>
-                                        <td className='text-[10px] md:text-base text-orange-400'>{amateur.result}</td>
+                                        <td className='text-[10px] md:text-base text-white'>{amateur.result}</td>
                                     </tr>
                                 ))
                             }
