@@ -35,9 +35,9 @@ const Reveal = ({ children, width, useBar = "true"}) => {
                 initial="hidden"
                 animate={slideControls}
                 transition={{duration: 2.0, ease: "easeIn"}}
-                className="absolute top-2 bottom-2 left-0 mt-72 right-0 z-20"
+                className="absolute top-2 bottom-2 left-0 mt-32 md:mt-72 right-0 z-20"
             >
-                <div className='h-48 w-3/5 mx-auto bg-orange-400'>
+                <div className='h-28 md:h-48 w-3/5 mx-auto bg-orange-400'>
 
                 </div>
             </motion.div> : <></>

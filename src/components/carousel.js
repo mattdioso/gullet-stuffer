@@ -76,7 +76,7 @@ const Carousel = () => {
     
 
     return (
-        <div className='overflow-hidden bg-black'>
+        <div className='md:mt-28 overflow-hidden bg-black'>
             <motion.div 
                 drag="x"
                 dragConstraints={{

@@ -5,7 +5,7 @@ import amateurs from '../imgs/GS2Stills/jaybee_spicy.jpg';
 import handsin from '../imgs/GSIVeventPICS/propics/handsin.jpg';
 import smile from '../imgs/GulletStufferONEstills/smile.png';
 import video from '../imgs/TestVideo.mp4';
-import home from '..//imgs/Gulletmaindesigns/homepage3.jpg';
+import home from '../imgs/Gulletmaindesigns/homepage3.jpg';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -30,8 +30,9 @@ class HomePage extends React.Component {
                 </video>
             </div> */}
             <div className={this.state.ended ? "visible block h-screen w-full" : "invisible max-h-0 opacity-0"}>
-                <img src={home} className="h-full m-auto md:w-full" alt="home"></img>
-                <div className="absolute top-24 text-6xl px-auto w-full">
+                <img src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/homepage3.jpg" className="h-0 md:w-full md:visible invisible md:h-full opacity-0 md:opacity-100 md:z-50" alt="home"></img>
+                <img src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/home_alt.jpeg" className="visible h-full grayscale m-auto md:invisible md:h-full md:opacity-0" alt="home"></img>
+                <div className="absolute top-80 md:top-32 text-6xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] px-auto w-full">
                   <p className="text-white text-center">Seattle's Finest</p>
                   
                   <p className="text-orange-400 text-center">Competitive Eating Contest</p>
