@@ -40,7 +40,7 @@ const Navbar = () => {
                         <Link to="/sponsors" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">Sponsors</Link>
                     </ul>
                 </nav>
-                <div className="flex flex-row-reverse gap-2">
+                <div className="hidden md:flex md:flex-row-reverse md:gap-2">
                     <SocialIcon network="facebook" url="https://www.facebook.com/gulletstuffer"/>
                     <SocialIcon network="instagram" url="https://www.instagram.com/gulletstuffer/"/>
                     <SocialIcon network="youtube" url="http://www.youtube.com/@gulletstufferz"/>
