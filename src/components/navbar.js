@@ -2,8 +2,7 @@ import React, { useRef, useState } from "react";
 import { FaBars } from 'react-icons/fa';
 import logo from '../imgs/Gulletmaindesigns/Gullet-Stuffer-II.png';
 import { NavLink as Link } from "react-router-dom";
-import { MenuOutline } from 'react-ionicons';
-import { IonIcon } from 'react-ion-icon';
+import { SocialIcon } from "react-social-icons";
 
 const Navbar = () => {
 
@@ -41,6 +40,11 @@ const Navbar = () => {
                         <Link to="/sponsors" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">Sponsors</Link>
                     </ul>
                 </nav>
+                <div className="flex flex-row-reverse gap-2">
+                    <SocialIcon network="facebook" url="https://www.facebook.com/gulletstuffer"/>
+                    <SocialIcon network="instagram" url="https://www.instagram.com/gulletstuffer/"/>
+                    <SocialIcon network="youtube" url="http://www.youtube.com/@gulletstufferz"/>
+                </div>
             </section>
             <section id="mobile-menu" className={`absolute top-24 bg-black w-full text-4xl flex-col justify-content-center origin-top animate-open-menu z-50 ${open ? "block": "hidden"}`}>
                 
