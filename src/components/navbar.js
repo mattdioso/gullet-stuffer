@@ -31,11 +31,12 @@ const Navbar = () => {
                         &times;
                     </div>
                 </button>
-                <nav className="hidden md:block space-x-8 text-xl">
+                <nav className="hidden w-full md:block space-x-8 text-xl">
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-0 gap-8 w-full">
                         <Link to="/" className="md:ml-8 md:my-0 my-7 text-gray-500 hover:text-gray-700 focus:text-gray-700">Home</Link>
                         <Link to="/about" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">About</Link>
-                        <Link to="events" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">History</Link>
+                        <Link to="/events" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">History</Link>
+                        <Link to="/gs6" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">GS6</Link>
                         <Link to="/hof" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700 ">Hall of Fame</Link>
                         <Link to="/sponsors" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">Sponsors</Link>
                     </ul>
@@ -49,7 +50,8 @@ const Navbar = () => {
                 </button> */}
                         <Link to="/" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Home</Link>
                         <Link to="/about" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">About</Link>
-                        <Link to="events" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">History</Link>
+                        <Link to="/events" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">History</Link>
+                        <Link to="/gs6" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">GS6</Link>
                         <Link to="/hof" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Hall of Fame</Link>
                         <Link to="/sponsors" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Sponsors</Link>
                     

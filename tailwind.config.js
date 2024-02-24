@@ -26,7 +26,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'Phosphate': ['"Phosphate"', 'sans-serif']
+      'Phosphate': ['"Phosphate"', 'sans-serif'],
+      'PhosphateRR': ['"Phosphate RR Solid"', 'sans-serif']
     },
     extend: {
       gridTemplateColumns: {

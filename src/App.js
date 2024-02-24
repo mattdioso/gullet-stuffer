@@ -9,7 +9,7 @@ import EventsPage from './pages/events';
 import HallOfFame from './pages/hof';
 import SponsorPage from './pages/sponsors';
 import HomePage from './pages/home';
-
+import GS6 from './pages/GS6';
 function App() {
   return (
     
@@ -19,6 +19,7 @@ function App() {
         <Route path="/" element={<HomePage />}/>
         <Route path="/about" element={<AboutPage />} />
         <Route path="/events" element={<EventsPage />} />
+        <Route path="/gs6" element={<GS6 />} />
         <Route path="/hof" element={<HallOfFame />} />
         <Route path="/sponsors" element={<SponsorPage />} />
       </Routes>
