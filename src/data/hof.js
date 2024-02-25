@@ -140,6 +140,63 @@ export const hof_data = [
                 "division": "Amateur",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/TheProdigy.png"
             }
+        ],
+        "iconic_moments": [
+            {
+                "firstName": "Sign",
+                "lastName": "Reveal",
+                "year": 2021,
+                "result": 0,
+                "food": "",
+                "title": "",
+                "desc": "",
+                "division": "",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/signreveal.png"
+            },
+            {
+                "firstName": "Tie",
+                "lastName": "Breaker",
+                "year": 2019,
+                "result": 0,
+                "food": "",
+                "title": "",
+                "desc": "",
+                "division": "",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/eatoff_crop.png"
+            },
+            {
+                "firstName": "GS",
+                "lastName": "Billboard",
+                "year": 2020,
+                "result": 0,
+                "food": "",
+                "title": "",
+                "desc": "",
+                "division": "",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/Billboard.jpg"
+            },
+            {
+                "firstName": "Shot",
+                "lastName": "Gun",
+                "year": 2019,
+                "result": 0,
+                "food": "",
+                "title": "",
+                "desc": "",
+                "division": "",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/gametime1.jpg"
+            },
+            {
+                "firstName": "Grocery",
+                "lastName": "Outlet",
+                "year": 2022,
+                "result": 0,
+                "food": "",
+                "title": "",
+                "desc": "",
+                "division": "",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/dateannouncement.jpg"
+            }
         ]
     }
 ];

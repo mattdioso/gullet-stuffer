@@ -27,7 +27,9 @@ module.exports = {
   theme: {
     fontFamily: {
       'Phosphate': ['"Phosphate"', 'sans-serif'],
-      'PhosphateRR': ['"Phosphate RR Solid"', 'sans-serif']
+      'PhosphateRR': ['"Phosphate RR Solid"', 'sans-serif'],
+      'KCBold': ['"KC Leisure Park Bold"'],
+      'KCThin': ['"KC Leisure Park Thin"']
     },
     extend: {
       gridTemplateColumns: {
@@ -74,6 +76,22 @@ module.exports = {
   },
   plugins: [
     require('tw-elements/dist/plugin'),
-    cardClass
+    cardClass,
+    plugin(function({ addBase }) {
+      addBase({
+        '@font-face': {
+          fontFamily: 'KC Leisure Park Bold',
+          src: '/src/fonts/KCLeisurePark-Bold.otf'
+        }
+      })
+    }),
+    plugin(function({ addBase }) {
+      addBase({
+        '@font-face': {
+          fontFamily: 'KC Leisure Park Thin',
+          src: '/src/fonts/KCLeisurePark-Thin.otf'
+        }
+      })
+    })
   ],
 }

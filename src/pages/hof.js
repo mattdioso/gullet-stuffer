@@ -18,6 +18,7 @@ class HallOfFame extends React.Component {
         let pros = hof_data[0]['pro_champs'];
         let amateurs = hof_data[0]['amateur_champs'];
         let notable_competitors = hof_data[0]['notable_competitors'];
+        let iconic_moments =  hof_data[0]['iconic_moments'];
         return (
             
             <div className="block absolute no-scroll justify-center items-center w-full h-full pt-36 bg-black overflow-y-scroll">
@@ -90,11 +91,11 @@ class HallOfFame extends React.Component {
                         
                     </div>
                     <div className='w-11/12 flex gap-4 md:justify-center mx-auto overflow-x-auto md:overflow-hidden'>
-                        <ContestantCard pic={jaybee} name="JAYBEE RAGUDO" title="Iron Man" desc="5-Time Competitor" division="Professional"/>
-                        <ContestantCard pic={max} name="MAX MENDOLA" title="So Close He Can Taste It" desc="3-Time Runner Up" division="Professional"/>
-                        <ContestantCard pic={legge} name="STEPHEN LEGGE" title="The People's Champ" desc="" division="Amateur"/>
-                        <ContestantCard pic={legge} name="STEPHEN LEGGE" title="The People's Champ" desc="" division="Amateur"/>
-                        <ContestantCard pic={legge} name="STEPHEN LEGGE" title="The People's Champ" desc="" division="Amateur"/>
+                    {
+                            iconic_moments.map((comp) => (
+                                <ContestantCard name={`${comp.firstName} ${comp.lastName}`} division={`${comp.division}`} title={`${comp.title}`} desc={`${comp.desc}`} pic={`${comp.img}`}/>
+                            ))
+                        }
                     </div>
                 </section>
                 <footer className='h-24 bg-black'></footer>

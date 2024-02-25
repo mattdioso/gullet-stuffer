@@ -245,7 +245,7 @@ export const years_data = [
                 "firstName": "Will",
                 "lastName": "Cadra",
                 "rank": "Professional",
-                "result": 46,
+                "result": "(DQ) 46",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2019pros200/will200.png"
             }
         ]
@@ -354,7 +354,7 @@ export const years_data = [
         "competitors": [
             {
                 "firstName": "Julian",
-                "lastName": "Saquic-Ray",
+                "lastName": "Saquic Ray",
                 "rank": "Amateur",
                 "result": 42,
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2022ams200/julian200.jpg"
@@ -417,7 +417,7 @@ export const years_data = [
             },
             {
                 "firstName": "Cameron",
-                "lastName": "Goulds",
+                "lastName": "Gould",
                 "rank": "Professional",
                 "result": 56,
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2022pros200/cameron200.jpg"
@@ -525,7 +525,7 @@ export const years_data = [
             },
             {
                 "firstName": "Addison",
-                "lastName": "Halpin-Higman",
+                "lastName": "Halpin Higman",
                 "rank": "Amateur",
                 "result": 14,
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/GSVthumbnails/amateurs/addisonHH.jpg"
@@ -595,14 +595,14 @@ export const years_data = [
             },
             {
                 "firstName": "Cameron",
-                "lastName": "Goulds",
+                "lastName": "Gould",
                 "rank": "Professional",
                 "result": 19,
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/GSVthumbnails/pros/cameron.jpg"
             },
             {
                 "firstName": "Julian",
-                "lastName": "Saquic-Ray",
+                "lastName": "Saquic Ray",
                 "rank": "Professional",
                 "result": 18,
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/GSVthumbnails/pros/julian.jpg"
