@@ -31,7 +31,8 @@ class EventsPage extends React.Component {
                 <div className="block pt-28 md:pt-72 w-full" >
                 
                     <div className="top-24 text-4xl md:text-7xl px-auto w-full">
-                      <p className="text-white text-center">Gullet Stuffer</p>
+                      <p className="text-orange-400 text-center">Seattle's Finest</p>
+                      <p className="text-white text-center">Competitive Eating Contest</p>
 
                       <p className="text-orange-400 text-center">Through the Years</p>
                     </div>

@@ -7,6 +7,7 @@ export const hof_data = [
                 "year": 2018,
                 "result": 10,
                 "food": "Hot Dogs",
+                "desc": "In a sea of ketchup, Kelly made Gullet Stuffer history with a stunning ten frankfurters",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/mattkell.png"
             },
             {
@@ -15,6 +16,7 @@ export const hof_data = [
                 "year": 2019,
                 "result": "68 (+5)",
                 "food": "Pizza Rolls",
+                "desc": "Five bonus pizza rolls were no match for Jimmy in an unprecedented 'Eat Off' at the conclusion of Gullet Stuffer II",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/Jamesteban.jpg"
             },
             {
@@ -23,6 +25,7 @@ export const hof_data = [
                 "year": 2021,
                 "result": 74,
                 "food": "oz of soup",
+                "desc": "The soaring soup temperatures of GSIII had no effect on Burns, who traveled up from San Francisco to compete.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/Carter.jpg"
             },
             {
@@ -31,6 +34,7 @@ export const hof_data = [
                 "year": 2022,
                 "result": 56,
                 "food": "Dino Chicken Nuggets",
+                "desc": "After hearing about the competition through TikTok, 'Mr. Impossible' shocked fans with his nonstop nugget annihilation.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/CamPossible.jpg"
             },
             {
@@ -39,6 +43,7 @@ export const hof_data = [
                 "year": 2023,
                 "result": 36,
                 "food": "Eggo Waffles",
+                "desc": "Completely unknown going into GSV, Dee Street left no crumbs, and is now the early favorite for GSVI.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/deewinsreal.png"
             }
         ],
@@ -49,6 +54,7 @@ export const hof_data = [
                 "year": 2018,
                 "result": 6,
                 "food": "Hot Dogs",
+                "desc": "It was a photo finish, but 'The Akinator' had just enough room to become the first Amateur champion",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/JohnAkers.jpg"
             },
             {
@@ -57,6 +63,7 @@ export const hof_data = [
                 "year": 2019,
                 "result": 57,
                 "food": "Pizza Rolls",
+                "desc": "Slow and steady was the recipe for Yuryk, as she blazed her way to the lower division title in front of a frenzied crowd.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/ValYuryk.jpg"
             },
             {
@@ -65,6 +72,7 @@ export const hof_data = [
                 "year": 2021,
                 "result": 70.5,
                 "food": "oz of soup",
+                "desc": "A last second entrant, 'Big Soup' Bechtel was able to stomach the majority of mysterious orange broth to earn his first title.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/MarkB.png"
             },
             {
@@ -73,6 +81,7 @@ export const hof_data = [
                 "year": 2022,
                 "result": 42,
                 "food": "Dino Chicken Nuggets",
+                "desc": "After pulling out of GSIII due to illness, Julian came back and reigned as King of the Amateurs.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/julian.png"
             },
             {
@@ -81,6 +90,7 @@ export const hof_data = [
                 "year": 2023,
                 "result": 16,
                 "food": "Eggo Waffles",
+                "desc": "After a year layoff, this time facing a solid food, Bechtel dug deep on his way to a one waffle win.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/markwins2.png"
             }
         ],
@@ -92,7 +102,7 @@ export const hof_data = [
                 "result": 0,
                 "food": "",
                 "title": "Iron Man",
-                "desc": "5-Time Competitor",
+                "desc": "Five Time Competitor",
                 "division": "Professional",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/jaybee_spicy.jpg"
             },
@@ -103,7 +113,7 @@ export const hof_data = [
                 "result": 0,
                 "food": "",
                 "title": "So Close He can Taste It",
-                "desc": "3-Time Runner Up",
+                "desc": "Three Time Runner Up",
                 "division": "Professional",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/maxgo.jpg"
             },

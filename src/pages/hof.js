@@ -36,7 +36,7 @@ class HallOfFame extends React.Component {
                         {
                             pros.map((pro) => (
                                 
-                                <ContestantCard name={`${pro.firstName} ${pro.lastName}`} division="Profesional" title="" desc={`${pro.result} ${pro.food}`} pic={`${pro.img}`}></ContestantCard>
+                                <ContestantCard name={`${pro.firstName} ${pro.lastName}`} division="" title={`${pro.result} ${pro.food}`} pic={`${pro.img}`} desc={`${pro.desc}`}></ContestantCard>
                             ))
                         }
 
@@ -55,7 +55,7 @@ class HallOfFame extends React.Component {
                     <div className='w-11/12 flex gap-4 md:justify-center mx-auto overflow-x-auto md:overflow-hidden'>
                         {
                             amateurs.map((amateur) => (
-                                <ContestantCard name={`${amateur.firstName} ${amateur.lastName}`} division="Amateur" title="" desc={`${amateur.result} ${amateur.food}`} pic={`${amateur.img}`}></ContestantCard>
+                                <ContestantCard name={`${amateur.firstName} ${amateur.lastName}`} division="" title={`${amateur.result} ${amateur.food}`} pic={`${amateur.img}`} desc={`${amateur.desc}`}></ContestantCard>
                             ))
                         }
 

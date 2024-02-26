@@ -17,10 +17,10 @@ class AboutPage extends React.Component {
                 <div className='md:w-1/2'>
                     <div className='md:pl-28 text-center md:text-left'>
                         <p className='text-7xl md:text-9xl text-white'>Gullet</p>
-                        <p className='text-7xl md:text-9xl text-orange-400'>Stuffer</p>
+                        <p className='text-[4.5rem] md:text-[8rem] text-orange-400 leading-[35px] md:leading-[60px]'>Stuffer</p>
                     </div>
 
-                    <div className='md:pl-28 pt-8 w-full text-center md:text-left'>
+                    <div className='mt-8 md:pl-28 pt-8 w-full text-center md:text-left'>
                         <div className='w-full 2xl:w-4/5'>
                             <p className='text-xs md:text-md text-white'>Born in a backyard, carried by the athletes that light its stage each summer… Light the sign, it's Gullet Stuffer time!
                             We are an annual competitive eating contest based in Seattle. All profits from events go to food-based aid organizations in the area.</p>

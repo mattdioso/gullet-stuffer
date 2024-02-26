@@ -26,7 +26,7 @@ class GS6 extends React.Component {
                                 <p className="text-white text-sm 2xl:text-xl ml-6">Seattle, WA 98122</p>
                             </div>
                             <div className="w-1/2">
-                                <p className="text-orange-400 text-xl 2xl:text-3xl ml-6">This Year's Food</p>
+                                <p className="text-orange-400 text-xl 2xl:text-3xl ml-6">Featured Food</p>
                                 <p className="text-white text-sm 2xl:text-xl ml-6">Mini Donuts</p>
                             </div>
                         </div>
