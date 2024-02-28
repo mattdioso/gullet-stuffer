@@ -33,7 +33,7 @@ export const hof_data = [
                 "lastName": "Goulds",
                 "year": 2022,
                 "result": 56,
-                "food": "Dino Chicken Nuggets",
+                "food": "Dino Nuggets",
                 "desc": "After hearing about the competition through TikTok, 'Mr. Impossible' shocked fans with his nonstop nugget annihilation.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/CamPossible.jpg"
             },
@@ -80,7 +80,7 @@ export const hof_data = [
                 "lastName": "Saquic-Ray",
                 "year": 2022,
                 "result": 42,
-                "food": "Dino Chicken Nuggets",
+                "food": "Dino Nuggets",
                 "desc": "After pulling out of GSIII due to illness, Julian came back and reigned as King of the Amateurs.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/julian.png"
             },
@@ -194,7 +194,7 @@ export const hof_data = [
                 "title": "",
                 "desc": "",
                 "division": "",
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/gametime1.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/gametime1_crop.jpg"
             },
             {
                 "firstName": "Grocery",

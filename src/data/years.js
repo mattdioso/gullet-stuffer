@@ -346,7 +346,7 @@ export const years_data = [
     },
     {
         "year": 2022,
-        "food": "Dino Chicken Nuggets",
+        "food": "Dino Nuggets",
         "video": "https://www.youtube.com/embed/fR5OlKENIUM",
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/dino_resized.jpg",
         "professional_winner": "Cameron Goulds",
@@ -566,8 +566,8 @@ export const years_data = [
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/GSVthumbnails/amateurs/mafi.jpg"
             },
             {
-                "firstName": "Domenica",
-                "lastName": "Dee Street",
+                "firstName": "Dee",
+                "lastName": "Street",
                 "rank": "Professional",
                 "result": 36,
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/GSVthumbnails/pros/Dee.jpg"

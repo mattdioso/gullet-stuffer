@@ -11,20 +11,24 @@ const Accordion = ({ year, title, content}) => {
     return (
         <div className='mt-8'>
             <div className={`flex flex-row justify-between cursor-pointer border-y border-white hover:bg-gray-400 p-2 ${isActive ? "bg-gray-800" : "bg-black"}`} onClick={() => setIsActive(!isActive)}>
-                <div className='grid grid-cols-8 grid-rows-2 w-1/2'>
-                    <p className='text-center text-white text-sm md:text-2xl font-KCBold col-start-1 md:col-start-2 col-span-4 mt-8 md:mt-4 md:my-auto'>{pros[0].firstName} {pros[0].lastName}</p>
-                    <p className='text-center text-white text-xs md:text-xl col-span-4 col-start-1 md:col-start-2 row-start-2 mb-8 md:mb-4 md:my-auto'>{pros[0].result} {year.food}</p>
-                    <div className="flex flex-row-reverse row-span-2 col-start-5 col-span-4 mt-4 md:mt-0 md:col-start-6 md:col-span-2">
-                        <img className="h-20 w-20 md:h-24 md:w-24 object-cover rounded-2xl" src={pros[0].img} alt=""></img>
+                <div className='flex flex-col-reverse md:grid md:grid-cols-8 w-1/2'>
+                    <div className="md:col-start-1 md:col-span-5 my-auto">
+                        <p className='text-center text-white text-xl md:text-2xl font-KCBold mt-2 md:mt-4 md:my-auto'>{pros[0].firstName} {pros[0].lastName}</p>
+                        <p className='text-center text-white text-base md:text-xl mb-2 md:mb-4 md:my-auto'>{pros[0].result} {year.food}</p>
+                    </div>
+                    <div className="md:flex md:flex-row-reverse md:row-span-2 5 mt-4 md:mt-0 md:col-start-6 md:col-span-2">
+                        <img className="h-20 w-20 md:h-24 md:w-24 md:mx-0 mx-auto my-auto object-cover rounded-2xl" src={pros[0].img} alt=""></img>
                     </div>
                     
                 </div>
-                <div className='grid grid-cols-8 grid-rows-2 w-1/2'>
-                    <div className="flex row-span-2 col-start-1 col-span-4 mt-4 md:mt-0 md:col-start-2 md:col-span-2">
-                        <img className="h-20 w-20 md:h-24 md:w-24 object-cover rounded-2xl" src={amateurs[0].img} alt=""></img>
+                <div className='md:grid md:grid-cols-8 w-1/2'>
+                    <div className="mx-auto mt-4 md:flex md:mt-0 md:col-start-2 md:col-span-2">
+                        <img className="h-20 w-20 md:h-24 md:w-24 mx-auto my-auto md:mx-0 object-cover rounded-2xl" src={amateurs[0].img} alt=""></img>
                     </div>
-                    <p className='text-center text-white text-sm md:text-2xl font-KCBold col-span-4 col-start-5 md:col-start-4 mt-8 md:mt-4 md:my-auto'>{amateurs[0].firstName} {amateurs[0].lastName}</p>
-                    <p className='text-center text-white text-xs md:text-xl col-span-4 col-start-5 md:col-start-4 row-start-2 mb-8 md:mb-4 md:my-auto'>{amateurs[0].result} {year.food}</p>
+                    <div className="md:col-start-4 md:col-span-5 my-auto">
+                        <p className='text-center text-white text-xl md:text-2xl font-KCBold mt-2 md:mt-4 md:my-auto'>{amateurs[0].firstName} {amateurs[0].lastName}</p>
+                        <p className='text-center text-white text-base md:text-xl mb-2 md:mb-4 md:my-auto'>{amateurs[0].result} {year.food}</p>
+                    </div>
                 </div>
                 <div className='text-white'>{isActive ? '-' : '+'}</div>
             </div>
@@ -39,8 +43,8 @@ const Accordion = ({ year, title, content}) => {
                                     <tr>
                                         {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
                                         <td><img className="h-10 w-10 md:h-16 md:w-16 rounded-lg" src={pro.img} alt=""></img></td>
-                                        <td className='text-[10px] font-KCBold md:text-xl text-white'>{pro.firstName} {pro.lastName}</td>
-                                        <td className='text-[10px] md:text-lg text-white'>{pro.result}</td>
+                                        <td className='text-[12px] text-center font-KCBold md:text-2xl text-white'>{pro.firstName} {pro.lastName}</td>
+                                        <td className='text-[11px] text-center text-sm md:text-2xl text-white drop-shadow-2xl'>{pro.result}</td>
                                     </tr>
                                 ))
                             }
@@ -53,8 +57,8 @@ const Accordion = ({ year, title, content}) => {
                                     <tr>
                                         {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
                                         <td><img className="h-10 w-10 md:h-16 md:w-16 rounded-lg" src={amateur.img} alt=""></img></td>
-                                        <td className='text-[10px] font-KCBold md:text-xl text-white'>{amateur.firstName} {amateur.lastName}</td>
-                                        <td className='text-[10px] md:text-lg text-white'>{amateur.result}</td>
+                                        <td className='text-[12px] text-center font-KCBold md:text-2xl text-white'>{amateur.firstName} {amateur.lastName}</td>
+                                        <td className='text-[11px] text-center md:text-2xl text-white drop-shadow-2xl'>{amateur.result}</td>
                                     </tr>
                                 ))
                             }
