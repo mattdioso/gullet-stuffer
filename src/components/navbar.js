@@ -12,7 +12,7 @@ const Navbar = () => {
             <section className="fixed w-full mx-auto bg-black p-4 flex items-center z-50">
                 <div className="md:flex items-center justify-between bg-black">
                     <div className="items-center p-2">
-                        <img className="w-20 h-16 md:w-16" src={logo} />
+                        <img className="w-20 h-16 md:w-20" src={logo} />
                     </div>
                 </div>
                 <div className="w-full md:hidden">

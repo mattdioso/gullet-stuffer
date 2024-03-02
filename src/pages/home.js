@@ -43,43 +43,6 @@ class HomePage extends React.Component {
                 </div>
             </div>
 
-          {/* <div className={this.state.ended ? "visible md:flex h-5/6 pt-24 bg-gray-900 text-gray-200 transition-opacity ease-in opacity-100 duration-[2000ms]" : "invisible max-h-0 opacity-0 overflow-hidden"}>
-            <div className={ this.state.ended ? "w-max-content md:w-1/3" : "invisible max-h-0 opacity-0"}>
-              <p className={ this.state.ended ? "text-5xl tracking-wider md:text-6xl text-center text-yellow-300 p-6 pt-20" : "invisible max-h-0 opacity-0"}>
-                Seattle's Finest Amateur Competitive Eating Competition
-              </p>
-            </div>
-            <div className={ this.state.ended ? "w-2/3" : "invisible max-h-0 opacity-0"}>
-              <div className={ this.state.ended ? "flex mr-2" : "invisible max-h-0 opacity-0"}>
-                <div className={ this.state.ended ? "block w-1/3" : "invisible max-h-0 opacity-0"}>
-                  <div className={ this.state.ended ? "m-2 h-fit animate-fadeLeft" : "invisible max-h-0 opacity-0"}>
-                    <img src={handsin} className={ this.state.ended ? "block w-full" : "invisible max-h-0 opacity-0"} alt="merch" />
-                  </div>
-                  <div className={ this.state.ended ? "w-3/5 h-fit float-right mr-2 animate-fadeLeft" : "invisible max-h-0 opacity-0"}>
-                    <img
-                      src={merch3}
-                      className={ this.state.ended ? "block w-full" : "invisible max-h-0 opacity-0"}
-                      alt="asher"
-                    />
-                  </div>
-                </div>
-                <Carousel className={ this.state.ended ? "" :"invisible max-h-0 opacity-0"}/> 
-                <div className={ this.state.ended ? "m-2 carousel slide relative w-screen md:w-2/3 float-right": "invisible max-h-0 opacity-0" }>
-                <img src={handsin} className={ this.state.ended ? "block w-full" : "invisible max-h-0 opacity-0"} alt="merch" />
-                </div>
-              </div>
-              <div className={ this.state.ended ? "w-2/3 flex float-right h-1/3 mr-4" : "invisible max-h-0 opacity-0"}>
-                
-                <div className={ this.state.ended ? "w-1/3 px-4 h-fit animate-fadeLeft" : "invisible max-h-0 opacity-0"}>
-                    <img src={smile} className={ this.state.ended ? "block w-full" : "invisible max-h-0 opacity-0"} alt="smile"/>
-                </div>
-                <div className={ this.state.ended ? "w-2/3 h-fit animate-fadeLeft" : "invisible max-h-0 opacity-0"}>
-                  <img src={amateurs} className={ this.state.ended ? "block w-full" : "invisible max-h-0 opacity-0"} alt="amateurs" />
-                </div>
-                
-              </div>
-            </div>
-          </div> */}
           </div>
         );
     }
