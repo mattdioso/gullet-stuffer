@@ -30,12 +30,13 @@ class HomePage extends React.Component {
                 </video>
             </div> */}
             <div className={this.state.ended ? "visible block h-screen w-full" : "invisible max-h-0 opacity-0"}>
-                <img src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/homepage3.jpg" className="h-0 md:w-full md:visible invisible md:h-full opacity-0 md:opacity-100 md:z-50" alt="home"></img>
-                <img src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/home_alt.jpeg" className="visible h-full grayscale m-auto md:invisible md:h-0 md:opacity-0" alt="home"></img> 
-                {/* <video autoPlay loop muted playsInline id='intro_video' className="invisible md:visible md:h-full md:w-full -z-10 pt-48">
+                {/* <img src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/homepage3.jpg" className="h-0 md:w-full md:visible invisible md:h-full opacity-0 md:opacity-100 md:z-50" alt="home"></img> */}
+                {/* <img src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/home_alt.jpeg" className="visible h-full grayscale m-auto md:invisible md:h-0 md:opacity-0" alt="home"></img>  */}
+                <video autoPlay loop muted playsInline id='intro_video' className="md:h-screen md:w-screen -z-10 pt-96">
                     <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/homepagevideo.mp4" type="video/mp4"/>
-                </video> */}
-                <div className="absolute top-80 md:top-32 text-6xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] px-auto w-full">
+                </video>
+                {/* <div className="absolute top-80 md:top-32 text-6xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] px-auto w-full"> */}
+                <div className="absolute top-36 md:top-24 text-6xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] px-auto w-full">
                   <p className="text-white text-center">Seattle's Finest</p>
                   
                   <p className="text-orange-400 text-center">Competitive Eating Contest</p>
