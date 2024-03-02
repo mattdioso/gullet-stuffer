@@ -74,7 +74,7 @@ class HallOfFame extends React.Component {
                     <div className='w-11/12 flex gap-4 md:justify-center mx-auto overflow-x-auto md:overflow-hidden'>
                         {
                             notable_competitors.map((comp) => (
-                                <ContestantCard name={`${comp.firstName} ${comp.lastName}`} division={`${comp.division}`} title={`${comp.title}`} desc={`${comp.desc}`} pic={`${comp.img}`}/>
+                                <ContestantCard name={`${comp.firstName} ${comp.lastName}`} division={`${comp.division}`} title={`${comp.title}`} subtitle={`${comp.subtitle}`} desc={`${comp.desc}`} pic={`${comp.img}`}/>
                             ))
                         }
 
@@ -93,7 +93,7 @@ class HallOfFame extends React.Component {
                     <div className='w-11/12 flex gap-4 md:justify-center mx-auto overflow-x-auto md:overflow-hidden'>
                     {
                             iconic_moments.map((comp) => (
-                                <ContestantCard name={`${comp.firstName} ${comp.lastName}`} division={`${comp.division}`} title={`${comp.title}`} desc={`${comp.desc}`} pic={`${comp.img}`}/>
+                                <ContestantCard name={`${comp.firstName} ${comp.lastName}`} division={`${comp.division}`} title={`${comp.title}`} subtitle={`${comp.subtitle}`} desc={`${comp.desc}`} pic={`${comp.img}`}/>
                             ))
                         }
                     </div>

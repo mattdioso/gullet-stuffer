@@ -22,6 +22,11 @@ class GSYear extends React.Component {
         let link = info[year];
         let amateurs = this.props.year['competitors'].filter(athlete => athlete.rank=="Amateur");
         let pros = this.props.year['competitors'].filter(ath => ath.rank=="Professional");
+        console.log(typeof(this.props.year['desc']));
+        let desc = this.props.year['desc']
+        if (typeof(desc) !== 'undefined')
+            desc = desc.replaceAll("\\n", "<br/>");
+        console.log(desc);
 
         amateurs.sort((a, b) => b.result - a.result);
         pros.sort((a, b) => b.result - a.result);
@@ -36,6 +41,14 @@ class GSYear extends React.Component {
                     </div>
                     <div class="col-span-7 md:col-span-10 h-[1px] w-full bg-white my-auto"></div>
                 </div>
+                </Reveal>
+                <Reveal useBar="false">
+                    <div className="w-10/12 md:w-7/12 mx-auto mt-4">
+                        <p className='text-sm md:text-base text-white' dangerouslySetInnerHTML={{__html: desc}}>
+                            
+                        </p>
+                    </div>
+
                 </Reveal>
                 <Reveal useBar="false">
                 <div class="block h-full">
@@ -53,7 +66,7 @@ class GSYear extends React.Component {
                 </div>
                 </Reveal>
                 <Reveal useBar="false">
-                <div class="w-10/12 md:w-8/12 mx-auto mb-12">
+                <div class="w-10/12 md:w-8/12 mx-auto mb-2">
                     <Accordion year={this.props.year}></Accordion>
                 </div>
                 </Reveal>

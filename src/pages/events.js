@@ -48,7 +48,7 @@ class EventsPage extends React.Component {
                         
                     ))
                 }
-                <footer className='h-24 bg-black'></footer>
+                <footer className='h-36 bg-black'></footer>
             </section>
 
             

@@ -6,6 +6,7 @@ export const years_data = [
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/hotdog_resized.png",
         "professional_winner": "Matt Kelly",
         "amateur_winner": "John Akers",
+        "desc": "In the early afternoon the clouds parted and attendees trickled into a grassy Madison Valley backyard, ready to witness a hot dog contest called... 'The Gullet Stuffer'. \\n\\n Adorned in sky blue T-Shirts that arrived minutes before start time; a tightly contested (5-minute long) Amateur Bracket saw John 'Akinator' Akers narrowly defeat a hard charging Mackenzie 'Gaddyball' Gaddy.\\n\\n There were surely some butterflies for the Professional group before they were introduced in front of an estimated crowd of 50, but once the dogs hit their gullet, it was go time. After a fiery start, the pace dragged to a crawl for all but one athlete... Matt 'Bad Belly' Kelly began working the crowd; staying at 1 dog-per minute and ascending the throne as the first ever Gullet Stuffer Grand Champion.",
         "competitors": [
             {
                 "firstName": "Carey",
@@ -128,6 +129,7 @@ export const years_data = [
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/pizza_roll_resized.jpg",
         "professional_winner": "Jimmy Esteban",
         "amateur_winner": "Valerie Yuryk",
+        "desc": "Back by popular demand, Gullet Stuffer returned to teh backyard. This time with a new item on the menu: Pizza Rolls. The Amateur field (featuring five newcomers) pushed themselves to the limit. A back-and-forth battle between Brant Criswell and Valerie Yuryk ended with Val on top of the podium.\\n\\nThe sun went down and the lights got bright as the Professionals took center-stage in front of an estimated crowd of 100. A three-way battle between Asher Rudyan, Max Mendola and Jimmy Esteban ended in a tie at 68, triggering a five roll eat-off. After some deep breathing and encouragement from the fans, Jimmy emerged victorious.",
         "competitors": [
             {
                 "firstName": "Valerie",
