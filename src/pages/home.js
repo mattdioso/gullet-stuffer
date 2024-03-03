@@ -39,7 +39,7 @@ class HomePage extends React.Component {
                   </video>
                 </div>
                 <div className="h-0 md:w-full flex md:visible invisible md:h-full opacity-0 md:opacity-100 md:z-50">
-                  <video autoPlay loop muted playsInline id='intro_video' className="object-bottom">
+                  <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto">
                       <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/homepagevideo.mp4" type="video/mp4"/>
                   </video>
                 </div>
