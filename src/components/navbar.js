@@ -8,7 +8,7 @@ const Navbar = () => {
 
     let [open, setOpen] = useState(false);
     return (
-        <div>
+        <div className="w-full">
             <section className="fixed w-full mx-auto bg-black p-4 flex items-center z-50">
                 <div className="md:flex items-center justify-between bg-black">
                     <div className="items-center p-2">
