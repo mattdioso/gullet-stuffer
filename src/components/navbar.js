@@ -37,7 +37,7 @@ const Navbar = () => {
                         <Link to="/events" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">History</Link>
                         <Link to="/gs6" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">GS6</Link>
                         <Link to="/hof" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700 ">Hall of Fame</Link>
-                        <Link to="/sponsors" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">Sponsors</Link>
+                        <Link to="/sponsors" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">Community</Link>
                     </ul>
                 </nav>
                 <div className="hidden md:flex md:flex-row-reverse md:gap-2">
@@ -57,7 +57,7 @@ const Navbar = () => {
                         <Link to="/events" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">History</Link>
                         <Link to="/gs6" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">GS6</Link>
                         <Link to="/hof" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Hall of Fame</Link>
-                        <Link to="/sponsors" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Sponsors</Link>
+                        <Link to="/sponsors" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Community</Link>
                         <div className="md:flex md:flex-row-reverse md:gap-2 mt-8 flex flex-row-reverse gap-4">
                             <SocialIcon network="facebook" url="https://www.facebook.com/gulletstuffer"/>
                             <SocialIcon network="instagram" url="https://www.instagram.com/gulletstuffer/"/>

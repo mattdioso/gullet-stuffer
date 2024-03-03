@@ -41,7 +41,7 @@ class AboutPage extends React.Component {
                         </div>
                     </div>
                 </div>
-                
+                <footer className='h-36 bg-black'></footer>
             </section>
         )
     }
