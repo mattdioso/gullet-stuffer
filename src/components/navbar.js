@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import { FaBars } from 'react-icons/fa';
+import React, { useState } from "react";
 import logo from '../imgs/Gulletmaindesigns/Gullet-Stuffer-II.png';
 import { NavLink as Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
@@ -12,7 +11,7 @@ const Navbar = () => {
             <section className="fixed w-full mx-auto bg-black p-4 flex items-center z-50">
                 <div className="md:flex items-center justify-between bg-black">
                     <div className="items-center p-2">
-                        <img className="w-20 h-16 md:w-20" src={logo} />
+                        <img className="w-20 h-16 md:w-20" src={logo} alt="logo"/>
                     </div>
                 </div>
                 <div className="w-full md:hidden">

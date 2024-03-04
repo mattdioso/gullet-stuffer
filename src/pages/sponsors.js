@@ -30,22 +30,22 @@ class SponsorPage extends React.Component {
                 </div> */}
                 <div className="block w-full pt-20 px-4 \">
                     <div className='flex mx-auto place-content-center space-x-4'>
-                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.groceryoutlet.com/"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/Grocery_Outlet-Logo.wine.png" width="150px" alt="groc-out"/></a>
+                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.groceryoutlet.com/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/Grocery_Outlet-Logo.wine.png" width="150px" alt="groc-out"/></a>
                         &nbsp;&nbsp;
-                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/24thavegotsauce"><img className="mx-auto object-center rounded-full aspect-square object-scale" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/24thave.png" width="150px" alt="24thave"/></a>
+                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/24thavegotsauce" target="_blank"><img className="mx-auto object-center rounded-full aspect-square object-scale" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/24thave.png" width="150px" alt="24thave"/></a>
                         &nbsp;&nbsp;
-                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.cappysgym.com/"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/cappys.png" width="150px" alt="cappys"/></a>
+                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.cappysgym.com/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/cappys.png" width="150px" alt="cappys"/></a>
                         &nbsp;&nbsp;
-                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/joycesmarketandcafe"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/joyces.jpeg" width="150px" alt="joyces"/></a>
+                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/joycesmarketandcafe" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/joyces.jpeg" width="150px" alt="joyces"/></a>
                         &nbsp;&nbsp;
                     </div>
                     <div className='flex w-full mt-4 place-content-center'>
                         
-                        <a className='h-44 w-44 flex rounded-full border-2 border-yellow-400' href="https://elgrantacoseattle.com/menu.php"><img className="mx-auto object-center rounded-full object-scale-down" src="https://elgrantacoseattle.com/images/logo/logo.png" width="150px" alt="elgrantaco"/></a>
+                        <a className='w-24 h-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://elgrantacoseattle.com/menu.php" target="_blank"><img className="mx-auto object-center rounded-full object-scale-down" src="https://elgrantacoseattle.com/images/logo/logo.png" width="150px" alt="elgrantaco"/></a>
                         &nbsp;&nbsp;
-                        <a className='h-44 w-44 flex rounded-full border-2 border-yellow-400' href="https://www.dodgeballseattle.com/"><img className=" mx-auto object-center rounded-full" src="https://dodgeballseattle.com/wp-content/uploads/2021/07/ay27v-bbwgy.svg" width="150px" alt="dodgeball"/></a>
+                        <a className='h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://www.dodgeballseattle.com/" target="_blank"><img className=" mx-auto object-center rounded-full" src="https://dodgeballseattle.com/wp-content/uploads/2021/07/ay27v-bbwgy.svg" width="150px" alt="dodgeball"/></a>
                         &nbsp;&nbsp;
-                        <a className='h-44 w-44 flex rounded-full border-2 border-yellow-400' href="https://www.verasballard.com/"><img className="object-center mx-auto object-scale-down " src="https://www.verasballard.com/wp-content/uploads/2019/12/veras_logo.png" width="150px" alt="veras"/></a>
+                        <a className='h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://www.verasballard.com/" target="_blank"><img className="object-center mx-auto object-scale-down " src="https://www.verasballard.com/wp-content/uploads/2019/12/veras_logo.png" width="150px" alt="veras"/></a>
                         &nbsp;&nbsp;
                     </div>
                 </div>
