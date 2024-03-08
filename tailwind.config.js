@@ -29,7 +29,16 @@ module.exports = {
       'Phosphate': ['"Phosphate"', 'sans-serif'],
       'PhosphateRR': ['"Phosphate RR Solid"', 'sans-serif'],
       'KCBold': ['"KC Leisure Park Bold"'],
-      'KCThin': ['"KC Leisure Park Thin"']
+      'KCThin': ['"KC Leisure Park Thin"'],
+      'OpenSansReg': ['"OpenSans Reg"'],
+      'OpenSansBold': ['"OpenSans Bold"'],
+      'OpenSansMed': ['"OpenSans Medium"'],
+      'OpenSansCondensed': ['"OpenSans Condensed Reg"'],
+      'OpenSansCondensedBold': ['"OpenSans Condensed Bold"'],
+      'OpenSansCondensedMed': ['"OpenSans Condensed Medium"'],
+      'OpenSansSemiReg': ['"OpenSans SemiCondensed Reg"'],
+      'OpenSansSemiBold': ['"OpenSans SemiCondensed Bold"'],
+      'OpenSansSemiMed': ['"OpenSans SemiCondensed Medium"']
     },
     extend: {
       gridTemplateColumns: {

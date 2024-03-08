@@ -59,6 +59,51 @@
   src: url(./fonts/KCLeisurePark-Thin.otf) format('truetype');
 }
 
+@font-face {
+  font-family: 'OpenSans Condensed Reg';
+  src: url(./fonts/OpenSans_Condensed-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed Bold';
+  src: url(./fonts/OpenSans_Condensed-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed Medium';
+  src: url(./fonts/OpenSans_Condensed-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans Reg';
+  src: url(./fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: url(./fonts/OpenSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans Medium';
+  src: url(./fonts/OpenSans-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans SemiCondensed Reg';
+  src: url(./fonts/OpenSans_SemiCondensed-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans SemiCondensed Bold';
+  src: url(./fonts/OpenSans_SemiCondensed-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans SemiCondensed Medium';
+  src: url(./fonts/OpenSans_SemiCondensed-Medium.ttf) format('truetype');
+}
+
 @layer utilities {
   .toggle-btn {
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent

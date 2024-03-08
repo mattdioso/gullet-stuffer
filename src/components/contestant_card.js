@@ -54,21 +54,21 @@ class Back extends React.Component {
         return (
             <div class="absolute rotate-y-180 backface-hidden w-full h-full bg-gray-100 overflow-hidden shadow-2xl rounded-3xl">
                 <div class="translate-y-[15px] h-full w-full">
-                    <h2 className="font-semibold text-center text-xl text-neutral-800">{this.props.name}<br/>
+                    <h2 className="font-OpenSansBold text-center text-xl text-neutral-800">{this.props.name}<br/>
                         {/* <span className="font-semibold text-center text-sm text-neutral-500">{this.props.division}</span> */}
                     </h2>
                     <div className="px-2 justify-between">
                         
                         {   this.props.title ? 
-                            <h3 className="text-base text-center">{this.props.title}<br/></h3> : <></>
+                            <h3 className="text-base text-center font-OpenSansBold">{this.props.title}<br/></h3> : <></>
                         }
                         {
                             this.props.subtitle ? 
-                            <h3 className="text-sm font-KCBold text-center">{this.props.subtitle ? this.props.subtitle : ""}<br/></h3> : <></>
+                            <h3 className="text-sm font-OpenSansReg text-center">{this.props.subtitle ? this.props.subtitle : ""}<br/></h3> : <></>
                         }
                         {
                             this.props.desc ? 
-                            <h3 className="mt-2 text-base font-KCBold">{this.props.desc ? this.props.desc : ""}</h3> : <></>
+                            <h3 className="mt-2 text-base font-OpenSansReg">{this.props.desc ? this.props.desc : ""}</h3> : <></>
                         }
                         
                     </div>
