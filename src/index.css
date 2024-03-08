@@ -104,6 +104,21 @@
   src: url(./fonts/OpenSans_SemiCondensed-Medium.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Utendo Regular';
+  src: url(./fonts/Utendo-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Utendo Bold';
+  src: url(./fonts/Utendo-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Utendo Semibold';
+  src: url(./fonts/Utendo-Semibold.ttf) format('truetype');
+}
+
 @layer utilities {
   .toggle-btn {
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent
