@@ -119,6 +119,12 @@
   src: url(./fonts/Utendo-Semibold.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'abcgintonord-med';
+  src: url(./fonts/ABCGintoNord-Medium-Trial-BF651b7b7839fc0.otf) format('truetype');
+}
+
+
 @layer utilities {
   .toggle-btn {
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent

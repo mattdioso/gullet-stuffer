@@ -68,7 +68,7 @@ class Back extends React.Component {
                         }
                         {
                             this.props.desc ? 
-                            <h3 className="mt-2 text-base font-Utendo">{this.props.desc ? this.props.desc : ""}</h3> : <></>
+                            <h3 className="mt-2 text-sm font-abcgintonord-med">{this.props.desc ? this.props.desc : ""}</h3> : <></>
                         }
                         
                     </div>

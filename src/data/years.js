@@ -6,7 +6,8 @@ export const years_data = [
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/hotdog_resized.png",
         "professional_winner": "Matt Kelly",
         "amateur_winner": "John Akers",
-        "desc": "In the early afternoon the clouds parted and attendees trickled into a grassy Madison Valley backyard, ready to witness a hot dog contest called... 'The Gullet Stuffer'. \\n\\n Adorned in sky blue T-Shirts that arrived minutes before start time; a tightly contested (5-minute long) Amateur Bracket saw John 'Akinator' Akers narrowly defeat a hard charging Mackenzie 'Gaddyball' Gaddy.\\n\\n There were surely some butterflies for the Professional group before they were introduced in front of an estimated crowd of 50, but once the dogs hit their gullet, it was go time. After a fiery start, the pace dragged to a crawl for all but one athlete... Matt 'Bad Belly' Kelly began working the crowd; staying at 1 dog-per minute and ascending the throne as the first ever Gullet Stuffer Grand Champion.",
+        "event_poster": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/event_posters/Year1Poster.jpg",
+        "desc": "June 9th - In the early afternoon the clouds parted and attendees trickled into a grassy Madison Valley backyard, ready to witness a hot dog contest called... 'The Gullet Stuffer'. \\n\\n Adorned in sky blue T-Shirts that arrived minutes before start time; a tightly contested (5-minute long) Amateur Bracket saw John 'Akinator' Akers narrowly defeat a hard charging Mackenzie 'Gaddyball' Gaddy.\\n\\n There were surely some butterflies for the Professional group before they were introduced in front of an estimated crowd of 50, but once the dogs hit their gullet, it was go time. After a fiery start, the pace dragged to a crawl for all but one athlete... Matt 'Bad Belly' Kelly began working the crowd; staying at 1 dog-per minute and ascending the throne as the first ever Gullet Stuffer Grand Champion.",
         "competitors": [
             {
                 "firstName": "Carey",
@@ -129,7 +130,8 @@ export const years_data = [
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/pizza_roll_resized.jpg",
         "professional_winner": "Jimmy Esteban",
         "amateur_winner": "Valerie Yuryk",
-        "desc": "Back by popular demand, Gullet Stuffer returned to teh backyard. This time with a new item on the menu: Pizza Rolls. The Amateur field (featuring five newcomers) pushed themselves to the limit. A back-and-forth battle between Brant Criswell and Valerie Yuryk ended with Val on top of the podium.\\n\\nThe sun went down and the lights got bright as the Professionals took center-stage in front of an estimated crowd of 100. A three-way battle between Asher Rudyan, Max Mendola and Jimmy Esteban ended in a tie at 68, triggering a five roll eat-off. After some deep breathing and encouragement from the fans, Jimmy emerged victorious.",
+        "event_poster": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/event_posters/GS2BigBOIPromo.jpg",
+        "desc": "June 8th - Back by popular demand, Gullet Stuffer returned to the backyard. This time with a new item on the menu: Pizza Rolls. The Amateur field (featuring five newcomers) pushed themselves to the limit. A back-and-forth battle between Brant Criswell and Valerie Yuryk ended with Val on top of the podium.\\n\\nThe sun went down and the lights got bright as the Professionals took center-stage in front of an estimated crowd of 100. A three-way battle between Asher Rudyan, Max Mendola and Jimmy Esteban ended in a tie at 68, triggering a five roll eat-off. After some deep breathing and encouragement from the fans, Esteban stood alone as the Gullet Stuffer II grand champion.",
         "competitors": [
             {
                 "firstName": "Valerie",
@@ -259,6 +261,8 @@ export const years_data = [
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/soup_resized.jpg",
         "professional_winner": "Carter Burns",
         "amateur_winner": "Mark Bechtel",
+        "event_poster": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/event_posters/GSIII.png",
+        "desc": "September 11th - A long pandemic layoff and a MegaBites web series later... The in-person event returned, this time in a backyard off of 23rd Ave in Seattle's Central District. A mysterious orange Atlantic brand 'Vegetable' soup was on the Amateur menu; and a small crowd Mark Bechtel edged out Ben Smith and Stephen Legge in a tight contest.\\n\\nNight fell and the space was lit by an orange glow of the newly revealed Gullet Stuffer neon sign. After a thunderous ovation for MegaBites champion Daniel Herzog, the six Professionals stared down someof the hottest soup the Central Disctract has ever seen. Sweat, steam and screams rained down on rookie Carter Burns as he scooped deep into the bottom of his bowl with no regard for his fingers. 74oz of piping hot Campbell's chicken noodle soup later, Carter burned his name into the history books.",
         "competitors": [
             {
                 "firstName": "Mark",
@@ -353,6 +357,8 @@ export const years_data = [
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/dino_resized.jpg",
         "professional_winner": "Cameron Goulds",
         "amateur_winner": "Julian Saquic-Ray",
+        "event_poster": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/event_posters/GS4.jpg",
+        "desc": "July 9th - A landmark agreement with Grocery Outlet Bargain Market turned backyard to blacktop, as the event entered a new era. Parking lot dreams became reality as Gullet Stuffer IV took center stage at the intersection of MLK and Union. In the first edition of Gullet Stuffer Resolution fan voting, Dino Chicken Nuggets was selected as the featured menu item.\\n\\nClad in turquoise, the Amateur group was highlighted by veterans Ariana Mafi and Quinn 'Mad Dog' Madsen, as well as the milestone debut of 8-year-old Dallas. Grocery shoppers looked on in utter confusion and fans roared as Julian Saquic-Ray lifted the Amateur trophy to the summer evening sky...\\n\\nThe Professionals featured some firepower, led by veteran Jaybee 'Bone Bold Cheap Costin' Ragudo and defending champ Carter Burns, as well as GSII runner up Max Mendola. Hot from the deep fryer, 351 Dino Chicken Nuggets found a home deep in the stomach of our fearless athletes, but only one could stand alone... Added to the field just minutes before, Cameron Gould-Saltman earned the nickname 'Mr. Impossible' and the title of Gullet Stuffer Grand Champion.",
         "competitors": [
             {
                 "firstName": "Julian",
@@ -496,6 +502,8 @@ export const years_data = [
         "video": "https://www.youtube.com/embed/Up799qwivC8?si=6f8_bBZ3mDlMIrHl",
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/waffle_resized.png",
         "amateur_winner": "Mark Bechtel",
+        "event_poster": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/event_posters/GS5.jpg",
+        "desc": "July 8th - Cries of 'Leggo my Eggo!' rang throughout the neighborhood, as a waffle wave overtook the Central District. Pirates vs. Children, sludge rock boxing, and extreme Eggo sprinters got the party started early.\\n\\nDonning bright pink T-shirts, a new crop of wild Amateurs set out to challenge four seasoned returnees. An aggressive start by Parisa 'The Guzzler' Shahbaz wow'd the crowd; but down the stretch it was Mark 'Big Soup' Bechtel who powered his way to victory by a single waffle.\\n\\nThe most decorated Professional bracket in modern history featured two former champions and some beefy resumes. Halfway through the ten minute timer, one butter baron took flight; Domenica, aka 'Dee Street' left the field behind, finishing with a stunning 36 Eggo Waffles, 14 more than her closest competitor. A new star has risen.",
         "competitors": [
             {
                 "firstName": "Mark",

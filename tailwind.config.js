@@ -41,7 +41,8 @@ module.exports = {
       'OpenSansSemiMed': ['"OpenSans SemiCondensed Medium"'],
       'Utendo': ['"Utendo Regular"'],
       'UtendoBold': ['"Utendo Bold"'],
-      'UtendoSemiBold': ['"Utendo Semibold"']
+      'UtendoSemiBold': ['"Utendo Semibold"'],
+      'abcgintonord-med': ['"abcgintonord-med"']
     },
     extend: {
       gridTemplateColumns: {
