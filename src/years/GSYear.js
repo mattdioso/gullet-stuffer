@@ -23,7 +23,8 @@ class GSYear extends React.Component {
         let amateurs = this.props.year['competitors'].filter(athlete => athlete.rank=="Amateur");
         let pros = this.props.year['competitors'].filter(ath => ath.rank=="Professional");
         
-        let desc = this.props.year['desc']
+        let desc = this.props.year['desc'];
+        let title = this.props.year['title'];
         let event_poster = this.props.year['event_poster'];
         if (typeof(desc) !== 'undefined')
             desc = desc.replaceAll("\\n", "<br/>");
@@ -36,11 +37,13 @@ class GSYear extends React.Component {
         return (
             <section >
                 <Reveal useBar="false">
-                <div class="grid grid-cols-12 mt-16 md:mt-36 px-4 md:px-36 w-full">
-                    <div class="col-span-4 md:col-span-2 w-fit m-0">
-                        <h2 className={this.props.i % 2 === 1 ? "text-orange-400 text-5xl md:text-6xl" : "text-white text-5xl md:text-6xl"}>{year}</h2>
+                <div class="flex mt-16 md:mt-36 px-4 md:px-24 w-full">
+                    <div class="w-fit m-0">
+                        {/* <h2 className={this.props.i % 2 === 1 ? "text-orange-400 text-5xl md:text-6xl" : "text-white text-5xl md:text-6xl"}>{year} - {title}</h2> */}
+                        <h2 className={this.props.i % 2 === 1 ? "text-orange-400 text-3xl md:text-6xl" : "text-orange-400 text-3xl md:text-6xl"}>{year} - {title}</h2>
                     </div>
-                    <div class="col-span-7 md:col-span-10 h-[1px] w-full bg-white my-auto"></div>
+                    
+                    <div class="h-[1px] bg-white my-auto"></div>
                 </div>
                 </Reveal>
                 <Reveal useBar="false">
@@ -48,7 +51,7 @@ class GSYear extends React.Component {
                         {
                             event_poster ? <img className="mb-4 md:mb-0 md:w-1/4 md:pr-4" src={event_poster} alt="poster"></img> : <></>
                         }
-                        <p className='text-sm md:text-base text-white' dangerouslySetInnerHTML={{__html: desc}}>
+                        <p className='text-sm md:text-base font-heavitas text-white' dangerouslySetInnerHTML={{__html: desc}}>
                             
                         </p>
                     </div>

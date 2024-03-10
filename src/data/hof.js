@@ -30,7 +30,7 @@ export const hof_data = [
             },
             {
                 "firstName": "Cameron",
-                "lastName": "Goulds",
+                "lastName": "Gould",
                 "year": 2022,
                 "result": 56,
                 "food": "Dino Nuggets",

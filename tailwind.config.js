@@ -42,7 +42,11 @@ module.exports = {
       'Utendo': ['"Utendo Regular"'],
       'UtendoBold': ['"Utendo Bold"'],
       'UtendoSemiBold': ['"Utendo Semibold"'],
-      'abcgintonord-med': ['"abcgintonord-med"']
+      'abcgintonord-med': ['"abcgintonord-med"'],
+      'heavitas': ['"heavitas"'],
+      'LemonMilkReg': ['"Lemon Milk Regular"'],
+      'LemonMilkBold': ['"Lemon Milk Bold"'],
+      'LemonMilkMed': ['"Lemon Milk Medium"'],
     },
     extend: {
       gridTemplateColumns: {

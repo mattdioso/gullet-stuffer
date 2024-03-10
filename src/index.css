@@ -124,6 +124,26 @@
   src: url(./fonts/ABCGintoNord-Medium-Trial-BF651b7b7839fc0.otf) format('truetype');
 }
 
+@font-face {
+  font-family: 'heavitas';
+  src: url(./fonts/Heavitas.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lemon Milk Regular';
+  src: url(./fonts/LEMONMILK-Regular.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lemon Milk Bold';
+  src: url(./fonts/LEMONMILK-Bold.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lemon Milk Medium';
+  src: url(./fonts/LEMONMILK-Medium.otf) format('truetype');
+}
+
 
 @layer utilities {
   .toggle-btn {

@@ -2,6 +2,7 @@ export const years_data = [
     {
         "year": 2018,
         "food": "Hot Dogs",
+        "title": "Humble Beginnings",
         "video": "https://www.youtube.com/embed/0-7L21ZieD8",
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/hotdog_resized.png",
         "professional_winner": "Matt Kelly",
@@ -126,6 +127,7 @@ export const years_data = [
     {
         "year": 2019,
         "food": "Pizza Rolls",
+        "title": "Totino's Throwdown",
         "video": "https://www.youtube.com/embed/W9rzDrwubG0",
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/pizza_roll_resized.jpg",
         "professional_winner": "Jimmy Esteban",
@@ -257,6 +259,7 @@ export const years_data = [
     {
         "year": 2021,
         "food": "Soup",
+        "title": "The Return of the Can",
         "video": "https://www.youtube.com/embed/kot5BXUPZJg",
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/soup_resized.jpg",
         "professional_winner": "Carter Burns",
@@ -353,6 +356,7 @@ export const years_data = [
     {
         "year": 2022,
         "food": "Dino Nuggets",
+        "title": "Prehistoric Pandemonium",
         "video": "https://www.youtube.com/embed/fR5OlKENIUM",
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/dino_resized.jpg",
         "professional_winner": "Cameron Goulds",
@@ -498,6 +502,7 @@ export const years_data = [
     {
         "year": 2023,
         "food": "Eggo Waffles",
+        "title": "Eggomania",
         "professional_winner": "Dee Street Domenica",
         "video": "https://www.youtube.com/embed/Up799qwivC8?si=6f8_bBZ3mDlMIrHl",
         "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/waffle_resized.png",
