@@ -1,4 +1,6 @@
 import React from 'react';
+import GulletStufferForm from '../components/gulletstuffer_form';
+import GulletStufferSubscribe from '../components/mailchimp_subscribe';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -7,6 +9,7 @@ class HomePage extends React.Component {
           ended: true
       }
       this.videoEnded = this.videoEnded.bind(this);
+      
     }
 
     videoEnded() {
@@ -51,7 +54,7 @@ class HomePage extends React.Component {
                       <p className='text-xs md:text-lg text-white'>Next Event: Gullet Stuffer VI - July 13th, 2024</p>
                   </div>
                 </div>
-                
+                <GulletStufferSubscribe/>
             <footer className='h-24 bg-black'></footer>
           </div>
         );
