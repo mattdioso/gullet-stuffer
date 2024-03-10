@@ -38,28 +38,30 @@ const GulletStufferForm = ( { status, message, onValidated }) => {
     }
 
     return (
-        <section className="w-full pl-20 mt-4">
-            <div className="w-1/2">
-                <p className="text-white text-4xl">Join our mailing list!</p>
+        <section className="w-full md:pl-20 mt-4">
+            <div className="md:w-1/2 text-center md:text-left">
+                <p className="text-white text-3xl md:text-4xl">Join our mailing list!</p>
             </div>
-            <div className="flex w-full mt-2">
-                <div className="w-1/3">
-                    <input
-                        onChange={(event) => setEmail(event?.target?.value ?? '')}
-                        type="email"
-                        placeholder="Your email"
-                        className="w-10/12 rounded-md pl-4 h-8"
-                        onKeyUp={(event) => handleInputKeyEvent(event)}>
-                    </input>
+            <div className="w-full mt-2">
+                <div className="flex w-10/12 md:w-full mx-auto md:mx-0">
+                    <div className="w-full md:w-1/3">
+                        <input
+                            onChange={(event) => setEmail(event?.target?.value ?? '')}
+                            type="email"
+                            placeholder="Your email"
+                            className="w-full rounded-md pl-4 h-8"
+                            onKeyUp={(event) => handleInputKeyEvent(event)}>
+                        </input>
+                    </div>
+                    <div className="w-3/12 md:w-1/12 ml-2">
+                        <button
+                            className="text-white bg-orange-400 h-8 w-full rounded-md"
+                            onClick={handleFormSubmit}>
+                                Submit
+                        </button>
+                    </div>
                 </div>
-                <div className="w-1/12">
-                    <button
-                        className="text-white bg-orange-400 h-8 w-full rounded-md"
-                        onClick={handleFormSubmit}>
-                            Submit
-                    </button>
-                </div>
-                <div className="text-white w-1/3 mx-auto">
+                <div className="text-white w-3/4 md:w-1/3 text-center md:text-left mt-2 mx-auto md:mx-0">
                     {status === "sending" && <div>Sending...</div>}
                     {status === "error" || error ? (
                         <div className=""
