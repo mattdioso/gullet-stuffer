@@ -26,18 +26,18 @@ class AboutPage extends React.Component {
                 </div>
                 <div className='md:w-1/2 my-auto'>
                     {/* <Carousel/> */}
-                    <div className='mt-4 md:mt-0 md:pl-20 px-8 md:px-0 md:pr-12 pt-0 w-full text-center md:text-left'>
+                    <div className='mt-4 md:mt-0 md:pl-8 px-4 md:px-0 md:pr-8 pt-0 w-full text-center md:text-left'>
                         <div className='w-full 2xl:w-4/5'>
-                            <p className='text-xs md:text-lg text-white'>Born in a backyard, carried by the athletes that light its stage each summer… Light the sign, it's Gullet Stuffer time!
-                            We are an annual competitive eating contest based in Seattle. All profits from events go to food-based aid organizations in the area.</p>
+                            <p className='text-xs md:text-base font-heavitas text-white'>A neon orange glow fills the Grocery Outlet parking lot... It's time for Gullet Stuffer! This annual eating contest
+                            supports local food aid, bringing the community together with every bite.</p>
                             <br/>
-                            <p className='text-xs md:text-lg text-orange-400'>Current Home Field: Central District Grocery Outlet Bargain Market</p>
+                            <p className='text-xs md:text-base font-heavitas text-orange-400'>Current Home Field: Central District Grocery Outlet Bargain Market</p>
                             <br/>
-                            <p className='text-xs md:text-lg text-white'>Total Competitors (All Time): 84</p>
+                            <p className='text-xs md:text-base font-heavitas text-white'>Total Competitors (All Time): 84</p>
                             <br/>
-                            <p className='text-xs md:text-lg text-orange-400'>Eggos Eliminated in 10 mins @ Gullet Stuffer V: 327</p>
+                            <p className='text-xs md:text-base font-heavitas text-orange-400'>Eggos Eliminated in 10 mins @ Gullet Stuffer V: 327</p>
                             <br/>
-                            <p className='text-xs md:text-lg text-white'>Next Event: Gullet Stuffer VI - July 13th, 2024</p>
+                            <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VI - July 13th, 2024</p>
                         </div>
                     </div>
                 </div>

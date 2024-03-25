@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 class GS6 extends React.Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class GS6 extends React.Component {
             <main class="w-full pt-28 md:pt-40 bg-black">
                 <section class="md:flex w-11/12 bg-neutral-800 mx-auto rounded-xl perspective">
                     <div class="md:w-1/2 ">
-                        <img class="w-full h-full rounded-l-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS6/event_announcement.jpg" alt="event_announcement"></img>
+                        <img class="w-full h-full rounded-l-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS6/minidonutannouncem.png" alt="event_announcement"></img>
                     </div>
                     <div class="md:w-1/2 md:pt-10">
                         <p className="text-orange-400 text-center text-4xl md:text-6xl 2xl:text-8xl">Gullet Stuffer 6</p>
@@ -29,10 +30,28 @@ class GS6 extends React.Component {
                                 <p className="text-orange-400 text-xl 2xl:text-3xl ml-6">Featured Food</p>
                                 <p className="text-white text-sm 2xl:text-xl ml-6">Mini Donuts</p>
                             </div>
+                            
+                        </div>
+                        <div className="md:w-1/2 md:mt-12">
+                            <p className="text-orange-400 ml-6 text-xl 2xl:text-3xl">Want to Participate?</p>
+                        </div>
+                        <div className="w-full flex mt-4 place-content-center space-x-12 pb-6">
+                            <a className="w-1/3 h-[54px]" href="https://docs.google.com/forms/d/e/1FAIpQLSdxoIUFxZy8FQ_oga8EFz-seF2dF67oov13g18pbKgNJPOJ3g/closedform" target="_blank">
+                                <div className="w-full h-full bg-orange-400 flex place-content-center rounded-2xl">
+                                    <p className="text-white my-auto text-sm md:text-base text-center">Contestant Application</p>
+                                    <FaExternalLinkAlt className="my-auto w-10" color="white"/>
+                                </div>
+                            </a>
+                            <a className="w-1/3 h-[54px]" href="https://docs.google.com/forms/d/e/1FAIpQLSclZjSLQM0sYTGmc7vvsLzPWODRre0UAvr7W902W62x0sWqjA/viewform" target="_blank">
+                                <div className="w-full h-full bg-orange-400 flex place-content-center rounded-2xl">
+                                    <p className="text-white my-auto text-sm md:text-base text-center">Volunteer Application</p>
+                                    <FaExternalLinkAlt className="my-auto w-10" color="white"/>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </section>
-                <section className="mt-16 md:mt-28">
+                {/* <section className="mt-16 md:mt-28">
                     <div class="w-full">
                         <div className="top-24 text-4xl md:text-6xl px-auto w-full">
                           <p className="text-orange-400 text-center">Gullet Stuffer Resolution</p>
@@ -83,7 +102,7 @@ class GS6 extends React.Component {
                             <img className='w-1/2 h-1/2 mx-auto border-2 border-amber-200' src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS6/minidonutannouncem.png" alt="bracket"></img>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <footer className='h-24 bg-black'></footer>
             </main>
         )

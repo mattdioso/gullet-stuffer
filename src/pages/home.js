@@ -42,16 +42,16 @@ class HomePage extends React.Component {
                     <p className='text-[4.5rem] md:text-[8rem] text-orange-400 leading-[35px] md:leading-[60px]'>Stuffer</p>
                   </div>
                   <div className="w-full md:w-1/2 px-8 pt-4">
-                      <p className='text-xs md:text-lg text-white'>Born in a backyard, carried by the athletes that light its stage each summer… Light the sign, it's Gullet Stuffer time!
-                      We are an annual competitive eating contest based in Seattle. All profits from events go to food-based aid organizations in the area.</p>
+                      <p className='text-xs md:text-base font-heavitas text-white'>A neon orange glow fills the Grocery Outlet parking lot... It's time for Gullet Stuffer! This annual eating contest
+                            supports local food aid, bringing the community together with every bite.</p>
                       <br/>
-                      <p className='text-xs md:text-lg text-orange-400'>Current Home Field: Central District Grocery Outlet Bargain Market</p>
+                      <p className='text-xs md:text-base font-heavitas text-orange-400'>Current Home Field: Central District Grocery Outlet Bargain Market</p>
                       <br/>
-                      <p className='text-xs md:text-lg text-white'>Total Competitors (All Time): 84</p>
+                      <p className='text-xs md:text-base font-heavitas text-white'>Total Competitors (All Time): 84</p>
                       <br/>
-                      <p className='text-xs md:text-lg text-orange-400'>Eggos Eliminated in 10 mins @ Gullet Stuffer V: 327</p>
+                      <p className='text-xs md:text-base font-heavitas text-orange-400'>Eggos Eliminated in 10 mins @ Gullet Stuffer V: 327</p>
                       <br/>
-                      <p className='text-xs md:text-lg text-white'>Next Event: Gullet Stuffer VI - July 13th, 2024</p>
+                      <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VI - July 13th, 2024</p>
                   </div>
                 </div>
                 <GulletStufferSubscribe/>
