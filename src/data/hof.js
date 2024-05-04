@@ -167,7 +167,7 @@ export const hof_data = [
                 "subtitle": "",
                 "desc": "After a two year layoff, a return to competition featured the reveal of the iconic Neon Lettering",
                 "division": "",
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/signreveal.png"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/signreveal3.png"
             },
             {
                 "firstName": "The",
@@ -179,7 +179,7 @@ export const hof_data = [
                 "subtitle": "",
                 "desc": "Tied at 68 pizza rolls, a rabid crowd demanded an 'Eat Off' between Jimmy Esteban and Max Mendola at the conclusion of GSII, the only instance of a tie in contest history!",
                 "division": "",
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/eatoff_crop.png"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/eatoff3.png"
             },
             {
                 "firstName": "The",
@@ -191,7 +191,7 @@ export const hof_data = [
                 "subtitle": "",
                 "desc": "A friendly discount and some generous donations led to the erection of the 'Zog Her Round the World' sign in SE Portland",
                 "division": "",
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/Billboard.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/billboard3.png"
             },
             {
                 "firstName": "The",

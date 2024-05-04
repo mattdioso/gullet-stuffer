@@ -30,13 +30,13 @@ class SponsorPage extends React.Component {
                 </div> */}
                 <div className="block w-full pt-20 px-4 \">
                     <div className='flex mx-auto place-content-center space-x-4'>
-                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.groceryoutlet.com/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/Grocery_Outlet-Logo.wine.png" width="150px" alt="groc-out"/></a>
+                        <a className='md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.groceryoutlet.com/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/Grocery_Outlet-Logo.wine.png" width="150px" alt="groc-out"/></a>
                         &nbsp;&nbsp;
-                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/24thavegotsauce" target="_blank"><img className="mx-auto object-center rounded-full aspect-square object-scale" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/24thave.png" width="150px" alt="24thave"/></a>
+                        <a className='md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/24thavegotsauce" target="_blank"><img className="md:w-44 md:h-44 mx-auto object-center rounded-full aspect-square object-scale" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/24thavelogo2.png" width="150px" alt="24thave"/></a>
                         &nbsp;&nbsp;
-                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.cappysgym.com/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/cappys.png" width="150px" alt="cappys"/></a>
+                        <a className='md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.cappysgym.com/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/cappys.png" width="150px" alt="cappys"/></a>
                         &nbsp;&nbsp;
-                        <a className='flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/joycesmarketandcafe" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/joyces.jpeg" width="150px" alt="joyces"/></a>
+                        <a className='md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/joycesmarketandcafe" target="_blank"><img className="md:w-44 md:h-42 object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/joyces.jpeg" width="150px" alt="joyces"/></a>
                         &nbsp;&nbsp;
                     </div>
                     <div className='flex w-full mt-4 place-content-center'>

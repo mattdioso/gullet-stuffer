@@ -5,6 +5,7 @@ const Accordion = ({ year, title, content}) => {
 
     let amateurs = year['competitors'].filter(athlete => athlete.rank=="Amateur");
     let pros = year['competitors'].filter(ath => ath.rank=="Professional");
+    let logo = year['logo'];
     amateurs.sort((a, b) => b.result - a.result);
     pros.sort((a, b) => b.result - a.result);
 
@@ -20,6 +21,9 @@ const Accordion = ({ year, title, content}) => {
                         <img className="h-20 w-20 md:h-24 md:w-24 md:mx-0 mx-auto my-auto object-cover rounded-2xl" src={pros[0].img} alt=""></img>
                     </div>
                     
+                </div>
+                <div>
+                    <img className="h-10 w-10 md:h-32 md:w-32 rounded-lg" src={logo} alt=""></img>
                 </div>
                 <div className='md:grid md:grid-cols-8 w-1/2'>
                     <div className="mx-auto mt-4 md:flex md:mt-0 md:col-start-2 md:col-span-2">
