@@ -21,7 +21,7 @@ function App() {
         <Route path="/events" element={<EventsPage />} />
         <Route path="/gs6" element={<GS6 />} />
         <Route path="/hof" element={<HallOfFame />} />
-        <Route path="/sponsors" element={<SponsorPage />} />
+        <Route path="/partners" element={<SponsorPage />} />
       </Routes>
     </Router>
     

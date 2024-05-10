@@ -36,10 +36,10 @@ class SponsorPage extends React.Component {
                         &nbsp;&nbsp;
                         <a className='md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.cappysgym.com/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/cappys.png" width="150px" alt="cappys"/></a>
                         &nbsp;&nbsp;
-                        <a className='md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/joycesmarketandcafe" target="_blank"><img className="md:w-44 md:h-42 object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/joyces.jpeg" width="150px" alt="joyces"/></a>
+                        <a className='md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.msjoycescatering.com/" target="_blank"><img className="md:w-44 md:h-42 object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/joyces.jpeg" width="150px" alt="joyces"/></a>
                         &nbsp;&nbsp;
                     </div>
-                    <div className='flex w-full mt-4 place-content-center'>
+                    <div className='flex w-full mt-4 place-content-center space-x-4'>
                         
                         <a className='w-24 h-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://elgrantacoseattle.com/menu.php" target="_blank"><img className="mx-auto object-center rounded-full object-scale-down" src="https://elgrantacoseattle.com/images/logo/logo.png" width="150px" alt="elgrantaco"/></a>
                         &nbsp;&nbsp;
@@ -47,6 +47,7 @@ class SponsorPage extends React.Component {
                         &nbsp;&nbsp;
                         <a className='h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://www.verasballard.com/" target="_blank"><img className="object-center mx-auto object-scale-down " src="https://www.verasballard.com/wp-content/uploads/2019/12/veras_logo.png" width="150px" alt="veras"/></a>
                         &nbsp;&nbsp;
+                        <a className='h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://getminidonuts.com/" target="_blank"><img className="object-center mx-auto object-scale-down " src="https://getminidonuts.com/static/0360fd1856ed9bb28982bf79d546b44f/c3733/favicon.webp" width="150px" alt="portlandminidonut"/></a>
                     </div>
                 </div>
                 <div className="w-full pt-16 md:pt-24 pl-4">

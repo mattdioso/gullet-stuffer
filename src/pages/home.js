@@ -1,6 +1,7 @@
 import React from 'react';
 import GulletStufferForm from '../components/gulletstuffer_form';
 import GulletStufferSubscribe from '../components/mailchimp_subscribe';
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -37,21 +38,33 @@ class HomePage extends React.Component {
                   </video>
                 </div>
                 <div className="md:flex w-full mt-6">
-                  <div className="w-10/12 md:w-1/2 border-b md:border-b-0 md:border-r border-gray-200 text-center md:text-left md:pl-20 py-auto mx-auto pb-12">
-                    <p className='text-7xl md:text-9xl text-white'>Gullet</p>
+                  <div className="w-10/12 md:w-1/3 border-b md:border-b-0 md:border-r border-gray-200 text-center md:text-left md:pl-20 py-auto mx-auto pb-12">
+                    <p className='text-7xl md:text-9xl text-white mx-auto'>Gullet</p>
                     <p className='text-[4.5rem] md:text-[8rem] text-orange-400 leading-[35px] md:leading-[60px]'>Stuffer</p>
                   </div>
-                  <div className="w-full md:w-1/2 px-8 pt-4">
+                  <div className="w-full md:w-2/3 px-8 pt-4">
                       <p className='text-xs md:text-base font-heavitas text-white'>A neon orange glow fills the Grocery Outlet parking lot... It's time for Gullet Stuffer! This annual eating contest
                             supports local food aid, bringing the community together with every bite.</p>
                       <br/>
                       <p className='text-xs md:text-base font-heavitas text-orange-400'>Current Home Field: Central District Grocery Outlet Bargain Market</p>
                       <br/>
-                      <p className='text-xs md:text-base font-heavitas text-white'>Total Competitors (All Time): 84</p>
-                      <br/>
-                      <p className='text-xs md:text-base font-heavitas text-orange-400'>Eggos Eliminated in 10 mins @ Gullet Stuffer V: 327</p>
-                      <br/>
-                      <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VI - July 13th, 2024</p>
+                      <div className='md:flex w-full'>
+                        <div className="w-full md:w-2/3">
+                          <p className='text-xs md:text-base font-heavitas text-white'>Total Competitors (All Time): 84</p>
+                          <br/>
+                          <p className='text-xs md:text-base font-heavitas text-orange-400'>Eggos Eliminated in 10 mins @ Gullet Stuffer V: 327</p>
+                          <br/>
+                          <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VI - July 13th, 2024</p>
+                        </div>
+                        <div className="w-full h-16 md:h-20 md:w-2/3 mt-6 md:mt-0">
+                          <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdxoIUFxZy8FQ_oga8EFz-seF2dF67oov13g18pbKgNJPOJ3g/closedform" target="_blank">
+                                <div className="w-1/2 md:w-1/2 h-full md:h-full bg-orange-400 flex mx-auto place-content-center rounded-2xl my-auto">
+                                    <p className="text-white my-auto text-sm md:text-base 2xl:text-2xl text-center">Apply NOW</p>
+                                    <FaExternalLinkAlt className="my-auto w-10" color="white"/>
+                                </div>
+                            </a>
+                        </div>
+                      </div>
                   </div>
                 </div>
                 <GulletStufferSubscribe/>
