@@ -51,7 +51,7 @@ class GSYear extends React.Component {
                         {
                             event_poster ? <img className="mb-4 md:mb-0 md:w-1/4 md:pr-4" src={event_poster} alt="poster"></img> : <></>
                         }
-                        <p className='text-sm md:text-base font-heavitas text-white' dangerouslySetInnerHTML={{__html: desc}}>
+                        <p className='text-sm md:text-base  2xl:text-xl font-heavitas text-white' dangerouslySetInnerHTML={{__html: desc}}>
                             
                         </p>
                     </div>

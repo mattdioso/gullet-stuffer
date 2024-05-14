@@ -29,11 +29,11 @@ class AboutPage extends React.Component {
                         {/* <Carousel/> */}
                         <div className='mt-4 md:mt-0 md:pl-8 px-4 md:px-0 md:pr-8 pt-0 w-full text-center md:text-left'>
                             <div className='w-full 2xl:w-4/5'>
-                                <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-white'>It was set to be a one-off event. A gathering of friends to see who could do the best Matt Stonie impersonation...</p>
+                                <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-white'>It was set to be a one-off event. A gathering of friends to see who could do the best Matt Stonie impersonation... But it wasn't enough!</p>
                                 <br/>
-                                <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-orange-400'>But it wasnt enough, the people wanted more! Brought back by popular demand and here to stay, this infamous annual event serves as a fundraiser, community gathering, and showcase of local eating talent.</p>
+                                <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-orange-400'>Brought back by popular demand and here to stay, this infamous annual event serves as a fundraiser, community gathering, and showcase of local eating talent.</p>
                                 <br/>
-                                <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-white'>Gullet Stuffer fundraising efforts have raised a combined total of $10,000 for local food-based organizations. Our primary beneficiary is Seattle Community Fridge, a mutual-aid gorup that provides permanent fridge locations for those in need.</p>
+                                <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-white'>Gullet Stuffer fundraising efforts have raised a combined total of $10,000 for local food-based organizations. Our primary beneficiary is Seattle Community Fridge, a mutual-aid group that provides permanent fridge locations for those in need.</p>
 
                             </div>
                         </div>

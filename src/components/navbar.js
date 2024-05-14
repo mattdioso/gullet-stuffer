@@ -11,7 +11,7 @@ const Navbar = () => {
             <section className="fixed w-full mx-auto bg-black p-4 flex items-center z-50">
                 <div className="md:flex items-center justify-between bg-black">
                     <div className="items-center p-2">
-                    <a className='w-20 h-16 md:w-20' href="https://www.gulletstuffer.com"><img className="w-20 h-16 md:w-20" src={logo} alt="logo"/></a>
+                    <a className='w-20 h-20 md:w-20' href="https://www.gulletstuffer.com"><img className="w-20 h-20 md:w-20" src={logo} alt="logo"/></a>
                     </div>
                 </div>
                 <div className="w-full md:hidden">
@@ -34,7 +34,7 @@ const Navbar = () => {
                         <Link to="/" className="md:ml-8 md:my-0 my-7 text-gray-500 hover:text-gray-700 focus:text-gray-700">Home</Link>
                         <Link to="/about" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">About</Link>
                         <Link to="/events" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">History</Link>
-                        <Link to="/gs6" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">GS6</Link>
+                        <Link to="/gs6" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">GSVI</Link>
                         <Link to="/hof" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700 ">Hall of Fame</Link>
                         <Link to="/partners" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">Community</Link>
                     </ul>
@@ -54,7 +54,7 @@ const Navbar = () => {
                         <Link to="/" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Home</Link>
                         <Link to="/about" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">About</Link>
                         <Link to="/events" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">History</Link>
-                        <Link to="/gs6" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">GS6</Link>
+                        <Link to="/gs6" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">GSVI</Link>
                         <Link to="/hof" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Hall of Fame</Link>
                         <Link to="/partners" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Community</Link>
                         <div className="md:flex md:flex-row-reverse md:gap-2 mt-8 flex flex-row-reverse gap-4">

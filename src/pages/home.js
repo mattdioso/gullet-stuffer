@@ -59,7 +59,7 @@ class HomePage extends React.Component {
                         <div className="w-full h-16 md:h-20 md:w-2/3 mt-6 md:mt-0">
                           <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdxoIUFxZy8FQ_oga8EFz-seF2dF67oov13g18pbKgNJPOJ3g/closedform" target="_blank">
                                 <div className="w-1/2 md:w-1/2 h-full md:h-full bg-orange-400 flex mx-auto place-content-center rounded-2xl my-auto">
-                                    <p className="text-white my-auto text-sm md:text-base 2xl:text-2xl text-center">Apply NOW</p>
+                                    <p className="text-white my-auto text-sm md:text-3xl 2xl:text-3xl text-center">Apply NOW</p>
                                     <FaExternalLinkAlt className="my-auto w-10" color="white"/>
                                 </div>
                             </a>

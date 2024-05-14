@@ -48,6 +48,8 @@ class SponsorPage extends React.Component {
                         <a className='h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://www.verasballard.com/" target="_blank"><img className="object-center mx-auto object-scale-down " src="https://www.verasballard.com/wp-content/uploads/2019/12/veras_logo.png" width="150px" alt="veras"/></a>
                         &nbsp;&nbsp;
                         <a className='h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://getminidonuts.com/" target="_blank"><img className="object-center mx-auto object-scale-down " src="https://getminidonuts.com/static/0360fd1856ed9bb28982bf79d546b44f/c3733/favicon.webp" width="150px" alt="portlandminidonut"/></a>
+                        &nbsp;&nbsp;
+                        <a className='h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/aftergloneon" target="_blank"><img className="object-center mx-auto object-scale-down " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/purple_chrome_transparent1_a944d3d8-b5e8-466f-b8d0-71b80000be52.png" width="150px" alt="aftergloneon"/></a>
                     </div>
                 </div>
                 <div className="w-full pt-16 md:pt-24 pl-4">

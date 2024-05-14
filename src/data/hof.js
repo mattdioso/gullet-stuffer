@@ -7,7 +7,7 @@ export const hof_data = [
                 "year": 2018,
                 "result": 10,
                 "food": "Hot Dogs",
-                "desc": "In a sea of ketchup, Kelly made Gullet Stuffer history with a stunning ten frankfurters as he breezed to the first ever Professional title",
+                "desc": "In a sea of ketchup, Kelly made Gullet Stuffer history with a stunning ten frankfurters as he breezed to the first ever Professional title.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/mattkell.png"
             },
             {
@@ -25,7 +25,7 @@ export const hof_data = [
                 "year": 2021,
                 "result": 74,
                 "food": "oz of soup",
-                "desc": "The soaring soup temperatures of GSIII had no effect on Burns, who traveled up from San Francisco to compete.",
+                "desc": "The soaring soup temperatures of GSIII had no effect on Burns, who traveled up from San Francisco to compete. His prize included a custom pair of Gullet Stuffer sneakers.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/Carter.jpg"
             },
             {
@@ -54,7 +54,7 @@ export const hof_data = [
                 "year": 2018,
                 "result": 6,
                 "food": "Hot Dogs",
-                "desc": "It was a photo finish, but 'The Akinator' had just enough room to become the first Amateur champion",
+                "desc": "It was a photo finish, but 'The Akinator' had just enough room to become the first Amateur champion. He returned to the field in 2022 as a Professional.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/JohnAkers.jpg"
             },
             {
@@ -63,7 +63,7 @@ export const hof_data = [
                 "year": 2019,
                 "result": 57,
                 "food": "Pizza Rolls",
-                "desc": "Slow and steady was the recipe for Yuryk, as she blazed her way to the lower division title in front of a frenzied crowd.",
+                "desc": "Slow and steady was the recipe for Yuryk, as she blazed her way to the lower division title in front of a frenzied crowd. She made one additional appearance in Gullet Stuffer MegaBites and was immediately DQ'd.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/ValYuryk.jpg"
             },
             {
@@ -72,7 +72,7 @@ export const hof_data = [
                 "year": 2021,
                 "result": 70.5,
                 "food": "oz of soup",
-                "desc": "A last second entrant, 'Big Soup' Bechtel was able to stomach the majority of mysterious orange broth to earn his first title.",
+                "desc": "A last second entrant, 'Big Soup' Bechtel was able to stomach the majority of mysterious orange broth to earn his first title. He would appear once again in 2023.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/MarkB.png"
             },
             {
@@ -81,7 +81,7 @@ export const hof_data = [
                 "year": 2022,
                 "result": 42,
                 "food": "Dino Nuggets",
-                "desc": "After pulling out of GSIII due to illness, Julian came back and reigned as King of the Amateurs.",
+                "desc": "After pulling out of GSIII due to illness, Julian came back and reigned as King of the Amateurs. \"These hoes ain't loyal\", he declared.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/julian.png"
             },
             {
@@ -90,7 +90,7 @@ export const hof_data = [
                 "year": 2023,
                 "result": 16,
                 "food": "Eggo Waffles",
-                "desc": "After a year layoff, this time facing a solid food, Bechtel dug deep on his way to a one waffle win. Note: Amateur Champions are no longer allowed to appear for 2nd time, aka the 'Big Soup Rule'",
+                "desc": "After a year layoff, this time facing a solid food, Bechtel dug deep on his way to a one waffle win. Note: Amateur Champions are no longer allowed to appear for 2nd time, aka the \"Big Soup Rule\".",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/markwins2.png"
             }
         ],
@@ -101,9 +101,9 @@ export const hof_data = [
                 "year": 2019,
                 "result": 0,
                 "food": "",
-                "title": "Iron Man",
-                "subtitle": "Five Time Competitor",
-                "desc": "The 'Iron Stomach' competed in five straight events and was awarded the distinguised '5-time Fork' before announcing his retirement at GSV",
+                "title": "Five Time Competitor",
+                "subtitle": "",
+                "desc": "The 'Iron Stomach' competed in five straight events and was awarded the distinguised '5-time Fork' before announcing his retirement at GSV.",
                 "division": "Professional",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/jaybee_spicy.jpg"
             },
@@ -126,7 +126,7 @@ export const hof_data = [
                 "result": 0,
                 "food": "",
                 "title": "The People's Champ",
-                "subtitle": "Crowd Favorite",
+                "subtitle": "",
                 "desc": "The People's Champ has captivated fans since his first appearance in 2021 - can he finally capture the elusive Amateur title?",
                 "division": "Amateur",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/legge2.jpg"
@@ -150,7 +150,7 @@ export const hof_data = [
                 "result": 0,
                 "food": "",
                 "title": "The Prodigy",
-                "subtitle": "Youngest GS Competitor",
+                "subtitle": "",
                 "desc": "At just 8 years old, GSIV saw Dallas become the youngest athlete to ever take the stage, winning over the hearts of all in attendance.",
                 "division": "Amateur",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/TheProdigy.png"
@@ -165,7 +165,7 @@ export const hof_data = [
                 "food": "",
                 "title": "",
                 "subtitle": "",
-                "desc": "After a two year layoff, a return to competition featured the reveal of the iconic Neon Lettering, a product of @AfterglowNeon, order yours today!",
+                "desc": "After a two year layoff, a return to competition featured the reveal of the iconic Neon Lettering, a product of @aftergloneon, order yours today!",
                 "division": "",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/signreveal3.png"
             },
@@ -189,7 +189,7 @@ export const hof_data = [
                 "food": "",
                 "title": "",
                 "subtitle": "",
-                "desc": "A friendly discount and some generous donations led to the erection of the 'Zog Her Round the World' sign, a celebration of Daniel Herzog's MegaBites title. The billboard was featured above food trucks in SE Portland, in the Spring of 2022.",
+                "desc": "A friendly discount and some generous donations led to the erection of the \"Zog Her Round the World\" sign, a celebration of Daniel Herzog's MegaBites title. The billboard was featured above food trucks in SE Portland, in the Spring of 2022.",
                 "division": "",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/billboard3.png"
             },
@@ -201,7 +201,7 @@ export const hof_data = [
                 "food": "",
                 "title": "",
                 "subtitle": "",
-                "desc": "Jaybee Ragudo shocked fans by shotgunning multiple canse of Code Red Mountain Dew in between bowls of soup during the GSIII Pro Division. While he ranked last on the leaderboard, his performance left a lasting image for those in attendance.",
+                "desc": "Jaybee Ragudo shocked fans by shotgunning multiple cans of Code Red Mountain Dew in between bowls of soup during the GSIII Pro Division. Finishing at the bottom of the leaderboard, his performance left a lasting image for those in attendance.",
                 "division": "",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/gametime1_crop.jpg"
             },
@@ -215,7 +215,7 @@ export const hof_data = [
                 "subtitle": "",
                 "desc": "Lacking a proper backyard venue for GSIV, in 2022 an agreement was struck to hold the event in the Grocery Outlet parking lot, where it has lived ever since.",
                 "division": "",
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/dateannouncement.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/gobmcrop.png"
             }
         ]
     }

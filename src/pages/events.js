@@ -30,14 +30,11 @@ class EventsPage extends React.Component {
                 <Reveal>
                 <div className="block pt-28 md:pt-72 w-full" >
                 
-                    <div className="top-24 text-4xl md:text-7xl px-auto w-full">
-                      <p className="text-orange-400 text-center">Seattle's Finest</p>
-                      <p className="text-white text-center">Competitive Eating Contest</p>
-
+                    <div className="top-24 text-4xl md:text-7xl 2xl:text-8xl px-auto w-full">
                       <p className="text-orange-400 text-center">Through the Years</p>
                     </div>
-                    <div className="top-64 text-md md:text-xl px-auto w-full">
-                        <p className="text-white text-center">We've had a lot of fun throughout the years.</p>
+                    <div className="top-64 text-md md:text-xl 2xl:text-2xl px-auto w-full">
+                        <p className="text-white text-center">We've had a lot of fun since our first event in 2018.</p>
                         <p className="text-white text-center">Scroll through and see for yourself!</p>
                     </div>
                 </div>
