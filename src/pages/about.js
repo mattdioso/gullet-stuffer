@@ -36,6 +36,9 @@ class AboutPage extends React.Component {
                                 <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-white'>Gullet Stuffer fundraising efforts have raised a combined total of $10,000 for local food-based organizations. Our primary beneficiary is Seattle Community Fridge, a mutual-aid group that provides permanent fridge locations for those in need.</p>
 
                             </div>
+                            <div className="w-full 2xl:w-4/5 mt-12">
+                                <img class="mx-auto rounded-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/SCFbanner.png" alt="scf_banner"></img>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -13,12 +13,13 @@ const Accordion = ({ year, title, content}) => {
         <div className='mt-8'>
             <div className={`flex flex-row justify-between cursor-pointer border-y border-white hover:bg-gray-400 p-2 ${isActive ? "bg-gray-800" : "bg-black"}`} onClick={() => setIsActive(!isActive)}>
                 <div className='flex flex-col-reverse md:grid md:grid-cols-8 w-1/2'>
-                    <div className="md:col-start-1 md:col-span-1">
-                        <img className="my-auto w-16" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/1st-place-medal-svgrepo-com.svg" alt="medal"></img>
-                        <p className="text-white text-center">Amateur Champ</p>
-                    </div>
-                    <div className="md:col-start-3 md:col-span-3 my-auto">
+                    {/* <div className="md:col-start-1 md:col-span-1">
+                        <img className="mx-auto md:mx-0 my-auto w-16" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/1st-place-medal-svgrepo-com.svg" alt="medal"></img>
+                        <p className="text-amber-200 text-center">Amateur Champ</p>
+                    </div> */}
+                    <div className="md:col-start-1 md:col-span-5 my-auto">
                         <p className='text-center text-white text-xl md:text-2xl font-heavitas mt-2 md:mt-4 md:my-auto'>{amateurs[0].firstName} {amateurs[0].lastName}</p>
+                        <p className="text-amber-200 text-sm md:text-xl font-heavitas text-center">Amateur Champ</p>
                         <p className='text-center text-white text-base md:text-xl font-heavitas mb-2 md:mb-4 md:my-auto'>{amateurs[0].result} {year.food}</p>
                     </div>
                     <div className="md:flex md:flex-row-reverse md:row-span-2 5 mt-4 md:mt-0 md:col-start-6 md:col-span-2">
@@ -33,14 +34,15 @@ const Accordion = ({ year, title, content}) => {
                     <div className="mx-auto mt-4 md:flex md:mt-0 md:col-start-2 md:col-span-2">
                         <img className="h-20 w-20 md:h-24 md:w-24 mx-auto my-auto md:mx-0 object-cover rounded-2xl" src={pros[0].img} alt=""></img>
                     </div>
-                    <div className="md:col-start-4 md:col-span-4 my-auto">
+                    <div className="md:col-start-4 md:col-span-5 my-auto">
                         <p className='text-center text-white text-xl md:text-2xl font-heavitas mt-2 md:mt-4 md:my-auto'>{pros[0].firstName} {pros[0].lastName}</p>
+                        <p className="text-amber-200 text-sm md:text-xl font-heavitas text-center">Pro Champ</p>
                         <p className='text-center text-white text-base md:text-xl font-heavitas mb-2 md:mb-4 md:my-auto'>{pros[0].result} {year.food}</p>
                     </div>
-                    <div className="md:col-start-8 md:col-span-1">
-                        <img className="my-auto w-16" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/1st-place-medal-svgrepo-com.svg" alt="medal"></img>
-                        <p className="text-white text-center">Pro Champ</p>
-                    </div>
+                    {/* <div className="md:col-start-8 md:col-span-1">
+                        <img className="mx-auto md:mx-0 my-auto w-16" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/1st-place-medal-svgrepo-com.svg" alt="medal"></img>
+                        <p className="text-amber-200 text-center">Pro Champ</p>
+                    </div> */}
                 </div>
                 <div className='text-white text-2xl'>{isActive ? '-' : '+'}</div>
             </div>
