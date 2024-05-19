@@ -28,7 +28,7 @@ class EventsPage extends React.Component {
         return (
             <section>
                 <Reveal>
-                <div className="block pt-28 md:pt-72 w-full" >
+                <div className="block pt-36 md:pt-72 w-full" >
                 
                     <div className="top-24 text-4xl md:text-7xl 2xl:text-8xl px-auto w-full">
                       <p className="text-orange-400 text-center">Through the Years</p>
@@ -45,6 +45,11 @@ class EventsPage extends React.Component {
                         
                     ))
                 }
+                <Reveal>
+                    <div className="w-full mt-20">
+                        <p className="text-3xl md:text-5xl text-yellow-400 text-center">Who will be the next to make history?</p>
+                    </div>
+                </Reveal>
                 <footer className='h-36 bg-black'></footer>
             </section>
 

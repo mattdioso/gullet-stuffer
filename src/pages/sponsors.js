@@ -56,7 +56,7 @@ class SponsorPage extends React.Component {
                         &nbsp;&nbsp;
                         <a className='h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://www.verasballard.com/" target="_blank"><img className="object-center mx-auto object-scale-down " src="https://www.verasballard.com/wp-content/uploads/2019/12/veras_logo.png" width="150px" alt="veras"/></a>
                         &nbsp;&nbsp;
-                        <a className='aspect-square h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/aftergloneon" target="_blank"><img className="w-24 h-20 md:w-44 md:h-44 object-center mx-auto object-scale-down " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/purple_chrome_transparent1_a944d3d8-b5e8-466f-b8d0-71b80000be52.png" alt="aftergloneon"/></a>
+                        <a className='h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://www.instagram.com/aftergloneon" target="_blank"><img className="w-24 h-20 md:w-44 md:h-44 object-center mx-auto object-scale-down " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/iconic_moments/purple_chrome_transparent1_a944d3d8-b5e8-466f-b8d0-71b80000be52.png" alt="aftergloneon"/></a>
                         &nbsp;&nbsp;
                     </div>
                 </div>

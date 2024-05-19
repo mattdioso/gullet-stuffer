@@ -56,9 +56,9 @@ const Accordion = ({ year, title, content}) => {
                                 amateurs.slice(1).map((amateur, i) => (
                                     <tr>
                                         {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
-                                        <td><img className="h-10 w-10 md:h-16 md:w-16 rounded-lg" src={amateur.img} alt=""></img></td>
-                                        <td className='text-[12px] text-center font-heavitas  md:text-2xl text-white'>{amateur.firstName} {amateur.lastName}</td>
-                                        <td className='text-[14px] text-center font-heavitas  md:text-2xl text-white drop-shadow-2xl pr-2'>{amateur.result}</td>
+                                        <td><img className="h-12 w-12 md:h-16 md:w-16 rounded-lg" src={amateur.img} alt=""></img></td>
+                                        <td className='text-[10px] text-center font-heavitas md:text-2xl text-white'>{amateur.firstName}<br className="md:hidden"/> {amateur.lastName}</td>
+                                        <td className='text-[12px] text-center font-heavitas md:text-2xl text-white drop-shadow-2xl pr-2 md:pr-4'>{amateur.result}</td>
                                     </tr>
                                 ))
                             }
@@ -70,9 +70,9 @@ const Accordion = ({ year, title, content}) => {
                                 pros.slice(1).map((pro, i) => (
                                     <tr>
                                         {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
-                                        <td><img className="h-10 w-10 md:h-16 md:w-16 rounded-lg" src={pro.img} alt=""></img></td>
-                                        <td className='text-[12px] text-center font-heavitas  md:text-2xl text-white'>{pro.firstName} {pro.lastName}</td>
-                                        <td className='text-[14px] text-center font-heavitas  md:text-2xl text-white drop-shadow-2xl pr-1'>{pro.result}</td>
+                                        <td><img className="h-12 w-12 md:h-16 md:w-16 rounded-lg" src={pro.img} alt=""></img></td>
+                                        <td className='text-[10px] text-center font-heavitas  md:text-2xl text-white'>{pro.firstName}<br className="md:hidden"/> {pro.lastName}</td>
+                                        <td className='text-[12px] text-center font-heavitas  md:text-2xl text-white drop-shadow-2xl md:pr-2'>{pro.result}</td>
                                     </tr>
                                 ))
                             }
