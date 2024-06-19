@@ -3,6 +3,7 @@ import IntroVideo from '../components/intro_video';
 import video from '../imgs/TestVideo.mp4';
 import Carousel from '../components/carousel';
 import { Car } from 'react-ionicons';
+import IGFeed from '../components/ig_feed';
 class AboutPage extends React.Component {
     constructor(props) {
         super(props);
@@ -37,11 +38,14 @@ class AboutPage extends React.Component {
 
                             </div>
                             <div className="w-full 2xl:w-4/5 mt-12">
-                                <img class="mx-auto rounded-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/SCFbanner.png" alt="scf_banner"></img>
+                                <a href="https://www.instagram.com/seattlecommunityfridge/?hl=en" target="_blank"><img class="mx-auto rounded-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/SCFbanner_new.png" alt="scf_banner"></img></a>
                             </div>
+                            
                         </div>
+                        
                     </div>
                 </div>
+                <IGFeed />
                 <footer className='h-36 w-full bg-black'></footer>
             </section>
         )
