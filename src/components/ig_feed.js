@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { PrevButton, NextButton, usePrevNextButtons } from './ig_feed_buttons';
+import { SelectedSnapDisplay, useSelectedSnapDisplay } from './ig_feed_selected_snap_display';
+import { SocialIcon } from 'react-social-icons';
 
 const IGFeed = () => {
-    const [emblaRef, emblaApi] = useEmblaCarousel([Autoplay()]);
+    const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true });
     const [ig_items, setIGItems] = useState([]);
     const user_id = process.env.REACT_APP_IG_USER_ID;
     const access_token = process.env.REACT_APP_IG_ACCESS_TOKEN;
@@ -16,15 +18,17 @@ const IGFeed = () => {
         onNextButtonClick
     } = usePrevNextButtons(emblaApi);
 
+    const { selectedSnap, snapCount } = useSelectedSnapDisplay(emblaApi);
+
     const media_url = `https://graph.instagram.com/${user_id}/media?access_token=${access_token}`;
     //const post_url = `https://graph.instagram.com/${}`;
 
     useEffect(() => {
         const fetch_post = async(id) => {
-            const post_url = `https://graph.instagram.com/${id}?access_token=${access_token}&fields=media_url,permalink,media_type,caption`;
+            const post_url = `https://graph.instagram.com/${id}?access_token=${access_token}&fields=media_url,permalink,media_type`;
             const res = await fetch(post_url);
             const json = (await res.json());
-            console.log(json);
+
             const ig_item = {
                 'permalink': json.permalink,
                 'mediaUrl': json.media_url,
@@ -41,10 +45,10 @@ const IGFeed = () => {
             }
             const res = await fetch(media_url);
             const json = (await res.json());
-            console.log(json)
+
 
             const all_items = []
-            console.log(all_items.length)
+
             for (let i = 0; i < json.data.length; i++) {
                 
                 const item = json.data[i];
@@ -52,7 +56,6 @@ const IGFeed = () => {
                 const ig_item = await fetch_post(item_id);
                 if (ig_item.mediaType == 'IMAGE') {
                     ig_item.key = i;
-                    console.log(ig_item);
                     all_items.push(ig_item);
                 }
                 if (all_items.length >= 10) {
@@ -65,20 +68,27 @@ const IGFeed = () => {
     }, [user_id, access_token, media_url]);
 
     return (
-        <div className="overflow-hidden w-1/2 mx-auto" ref={emblaRef}>
-            <div id="embla_container" className="flex touch-pan-y touch-pinch-zoom">
+        <div className="overflow-hidden mx-auto" ref={emblaRef}>
+
+            <div id="embla_container" className="flex touch-pan-y touch-pinch-zoom gap-4">
                 {ig_items.map((item) => (
-                    <div className="flex-[0_0_100%] min-w-0">
-                        <img className="h-96" src={item.mediaUrl} alt={item.key}></img>
+                    <div className="flex-none min-w-0">
+                        <a href={item.permalink} target="_blank">
+                            <img className="h-64" src={item.mediaUrl} alt={item.key}></img>
+                        </a>
                     </div>
                 ))}
             </div>
-
-            <div id="embla_controls" className="grid justify-between gap-5 mt-7">
+            <div id="embla_controls" className="flex justify-between gap-5 mt-7">
                 <div id="embla_buttons" className="grid grid-cols-2 gap-2.5 align-center">
                     <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                     <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
                 </div>
+                <a href="https://www.instagram.com/gulletstuffer/" target="_blank" className="flex border border-white rounded-3xl pr-4">
+                    <SocialIcon network="instagram" bgColor="transparent" fgColor="white" url="https://www.instagram.com/gulletstuffer/"/>
+                    <p className="text-white text-base md:text-xl my-auto">gulletstuffer</p>
+                </a>
+                <SelectedSnapDisplay selectedSnap={selectedSnap} snapCount={snapCount} />
             </div>
         </div>
     )

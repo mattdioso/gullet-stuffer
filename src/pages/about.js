@@ -45,7 +45,12 @@ class AboutPage extends React.Component {
                         
                     </div>
                 </div>
-                <IGFeed />
+                <div className="w-11/12 md:w-2/3 mx-4 mt-4 p-4 border border-white rounded-xl md:mx-auto">
+                    <div className="w-full">
+                        <p className="text-white text-xl">Follow us on Instagram</p>
+                    </div>
+                    <IGFeed />
+                </div>
                 <footer className='h-36 w-full bg-black'></footer>
             </section>
         )

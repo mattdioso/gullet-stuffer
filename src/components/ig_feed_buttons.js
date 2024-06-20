@@ -6,6 +6,7 @@ export const usePrevNextButtons = (emblaApi) => {
 
     const onPrevButtonClick = useCallback(() => {
         if (!emblaApi) return
+        
         emblaApi.scrollPrev()
     }, [emblaApi]);
 
