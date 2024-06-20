@@ -68,6 +68,7 @@ const IGFeed = () => {
     }, [user_id, access_token, media_url]);
 
     return (
+        
         <div className="overflow-hidden mx-auto" ref={emblaRef}>
 
             <div id="embla_container" className="flex touch-pan-y touch-pinch-zoom gap-4">
@@ -91,6 +92,7 @@ const IGFeed = () => {
                 <SelectedSnapDisplay selectedSnap={selectedSnap} snapCount={snapCount} />
             </div>
         </div>
+                
     )
 }
 
