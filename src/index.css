@@ -4,6 +4,19 @@
 @tailwind utilities;
 
 @layer components {
+  .winner-left {
+    
+    -webkit-clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+  }
+
+  .winner-right {
+    position: absolute;
+
+    -webkit-clip-path: polygon(60% 0, 100% 0%, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0%, 100% 100%, 40% 100%);
+  }
+
   .sidebar-hr {
     @apply bg-gray-200 dark:bg-gray-800
     border border-gray-200 dark:border-gray-800 rounded-full mx-2;

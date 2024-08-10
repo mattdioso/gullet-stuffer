@@ -16,7 +16,8 @@ class GSYear extends React.Component {
             '2019': 'https://www.youtube.com/embed/W9rzDrwubG0',
             '2021': 'https://www.youtube.com/embed/kot5BXUPZJg',
             '2022': 'https://www.youtube.com/embed/fR5OlKENIUM',
-            '2023': 'https://www.youtube.com/embed/Up799qwivC8?si=6f8_bBZ3mDlMIrHl'
+            '2023': 'https://www.youtube.com/embed/Up799qwivC8?si=6f8_bBZ3mDlMIrHl',
+            '2024': 'https://www.youtube.com/embed/RYolWQluSbQ?si=Gh1ueuOaWP6MSl4Y'
         }
         let year = this.props.year.year;
         let link = info[year];
@@ -69,6 +70,7 @@ class GSYear extends React.Component {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
+                        referrerpolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </div>
                 </Reveal>

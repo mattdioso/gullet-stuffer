@@ -8,8 +8,18 @@ class GS6 extends React.Component {
 
     render() {
         return (
-            <main class="w-full pt-28 md:pt-40 bg-black">
+            <main className="w-full pt-28 md:pt-40 bg-black">
+                {/* <div className="flex">
+                    <div className="flex mx-auto">
+                        <img className="winner-left w-1/2" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/george_win.jpg" alt="event_announcement">
+                        </img>
+                        <img className="winner-right w-1/2" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/dee_win.jpg" alt="event_announcement">
+                        </img>
+                        </div>
+                        
+                    </div> */}
                 <section class="md:flex w-11/12 bg-neutral-800 mx-auto rounded-xl perspective">
+                    
                     <div class="md:w-1/2 ">
                         <img class="w-full h-full rounded-l-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS6/GS6_event_poster.jpeg" alt="event_announcement"></img>
                     </div>

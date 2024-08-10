@@ -10,6 +10,10 @@ import HallOfFame from './pages/hof';
 import SponsorPage from './pages/sponsors';
 import HomePage from './pages/home';
 import GS6 from './pages/GS6';
+import MerchPage from './pages/merch';
+import CustomMerchPage from './pages/merch_custom';
+import Success from './components/merch_success';
+import HomeTwitchPage from './pages/home_twitch';
 function App() {
   return (
     
@@ -22,6 +26,10 @@ function App() {
         <Route path="/gs6" element={<GS6 />} />
         <Route path="/hof" element={<HallOfFame />} />
         <Route path="/partners" element={<SponsorPage />} />
+        <Route path="/merch" element={<CustomMerchPage />} />
+        <Route path="/merch2" element={<MerchPage />} />
+        <Route path="/merch/success" element={<Success />} />
+        {/* <Route path="/twitch" element={<HomeTwitchPage />} /> */}
       </Routes>
     </Router>
     

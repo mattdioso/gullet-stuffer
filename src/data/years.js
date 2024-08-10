@@ -656,5 +656,166 @@ export const years_data = [
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/GSVthumbnails/pros/greggo.jpg"
             }
         ]
+    },
+    {
+        "year": 2024,
+        "food": "Mini Donuts",
+        "title": "Mini Donut Massacre",
+        "professional_winner": "Dee Street Domenica",
+        "video": "https://www.youtube.com/embed/RYolWQluSbQ?si=Gh1ueuOaWP6MSl4Y",
+        "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/waffle_resized.png",
+        "amateur_winner": "George Tecero",
+        "event_poster": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS6/GS6_event_poster.jpeg",
+        "logo": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/gs6_logo.png",
+        "desc": "<orange>July 13th</orange> - The thunderous drumbeat of Inochi Taiko beckoned from the piping hot blacktop, as fans settled in to watch the sweetest edition of Gullet Stuffer yet.\\n\\nRocking a delightful shade of lavender, the Amateurs gave it their all in a performance that featured a cheese shower, a pickle parasol, and five flavors of mini donuts. Despite another valiant effort by 4-time athlete Stephen Legge, it was 'King George' Tecero who was crowned the 2024 Amateur champ.\\n\\nEleven more athletes made their way through the crowd from behind the El Gran Taco Truck, taking their place in front of another packed out parking lot. Sarah 'Babs' Rodriguez came out of the gate on fire, as the Amateur high mark of 45 was quickly burnt to a crisp. A three way battle emerged between Sarah, Juan 'More Bite' and Dee Street, and down to the wire it went! After the plume of powder, glaze and sprinkles subsided, it was a Dee Street repeat, as she edged out Juan More Bite by a mere two minis!",
+        "competitors": [
+            {
+                "firstName": "George",
+                "lastName": "Tecero",
+                "rank": "Amateur",
+                "result": 45,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/george_cropped.jpg"
+            },
+            {
+                "firstName": "Stephen",
+                "lastName": "Legge",
+                "rank": "Amateur",
+                "result": 37,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/stevenLegge_cropped.jpg"
+            },
+            {
+                "firstName": "Alec",
+                "lastName": "Betancur",
+                "rank": "Amateur",
+                "result": 35,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/alecB_cropped.jpg"
+            },
+            {
+                "firstName": "Karisa",
+                "lastName": "Gurtiza",
+                "rank": "Amateur",
+                "result": 32,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/karisa_cropped.jpg"
+            },
+            {
+                "firstName": "Ellie",
+                "lastName": "Masters",
+                "rank": "Amateur",
+                "result": 30,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/elliem_cropped.jpg"
+            },
+            {
+                "firstName": "Quinn",
+                "lastName": "Madsen",
+                "rank": "Amateur",
+                "result": 30,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/quinn_cropped.jpg"
+            },
+            {
+                "firstName": "Jun-Yea",
+                "lastName": "Wu",
+                "rank": "Amateur",
+                "result": 28,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/jun_cropped.jpg"
+            },
+            {
+                "firstName": "Parisa",
+                "lastName": "Shahbaz",
+                "rank": "Amateur",
+                "result": 26,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/theguzzler_cropped.jpg"
+            },
+            {
+                "firstName": "Rosa",
+                "lastName": "Mestas",
+                "rank": "Amateur",
+                "result": 15,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/rosa_cropped.jpg"
+            },
+            {
+                "firstName": "A Block",
+                "lastName": "of Cheeze",
+                "rank": "Amateur",
+                "result":  "31 (DQ)",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/blockofcheeze_cropped.jpg"
+            },
+            {
+                "firstName": "Dee",
+                "lastName": "Street",
+                "rank": "Professional",
+                "result": 103,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/deestreet_cropped.jpg"
+            },
+            {
+                "firstName": "Juan",
+                "lastName": "Rodriguez",
+                "rank": "Professional",
+                "result": 101,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/juan_cropped.jpg"
+            },
+            {
+                "firstName": "Sarah",
+                "lastName": "Rodriguez",
+                "rank": "Professional",
+                "result": 91,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/sarahrodriguez_cropped.jpg"
+            },
+            {
+                "firstName": "Sam",
+                "lastName": "Shirley",
+                "rank": "Professional",
+                "result": 56,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/samshirley_cropped.jpg"
+            },
+            {
+                "firstName": "Odin",
+                "lastName": "",
+                "rank": "Professional",
+                "result": 45,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/Odin_cropped.jpg"
+            },
+            {
+                "firstName": "Dan",
+                "lastName": "W",
+                "rank": "Professional",
+                "result": 37,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/danw_cropped.jpg"
+            },
+            {
+                "firstName": "Matt",
+                "lastName": "Park",
+                "rank": "Professional",
+                "result": 31,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/mattpark_cropped.jpg"
+            },
+            {
+                "firstName": "Mark",
+                "lastName": "Bechtel",
+                "rank": "Professional",
+                "result": 30,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/markB_cropped.jpg"
+            },
+            {
+                "firstName": "Tyler",
+                "lastName": "Engleman",
+                "rank": "Professional",
+                "result": 30,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/tylerE_cropped.jpg"
+            },
+            {
+                "firstName": "Jason",
+                "lastName": "Cole",
+                "rank": "Professional",
+                "result": 20,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/jasoncole_cropped.jpg"
+            },
+            {
+                "firstName": "Ryan",
+                "lastName": "Trelstad",
+                "rank": "Professional",
+                "result": "41 (DQ)",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/chefboy_cropped.jpg"
+            }
+        ]
     }
 ]
