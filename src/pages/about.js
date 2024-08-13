@@ -46,7 +46,7 @@ class AboutPage extends React.Component {
                 </div>
                 <div className="w-11/12 md:w-2/3 mx-4 mt-4 p-4 border border-white rounded-xl md:mx-auto">
                     <div className="w-full">
-                        <p className="text-white text-xl">Follow us on Instagram (testing)</p>
+                        <p className="text-white text-xl">Follow us on Instagram</p>
                     </div>
                     <IGFeed />
                 </div>
