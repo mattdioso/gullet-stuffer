@@ -1,7 +1,4 @@
 import React from 'react';
-import haiming from '../imgs/GulletStufferONEstills/jaybee_hype1.png';
-import jaybee from '../imgs/AthleteSquares/athletesquare3.png';
-import ContestantProfile from '../components/contestant_profile';
 import Accordion from '../components/accordion';
 import Reveal from '../components/utils/reveal';
 

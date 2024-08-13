@@ -1,9 +1,5 @@
 import React from 'react';
 import ContestantCard from '../components/contestant_card';
-import ContestantProfile from '../components/contestant_profile';
-import jaybee from '../imgs/ContestantCards/jaybee_spicy.jpg';
-import max from '../imgs/ContestantCards/maxgo.jpg';
-import legge from '../imgs/ContestantCards/legge2.jpg';
 import { hof_data } from '../data/hof';
 
 

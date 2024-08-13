@@ -1,5 +1,5 @@
 import React from 'react';
-import jaybee from '../imgs/ContestantCards/jaybee_spicy.jpg';
+
 
 class ContestantCard extends React.Component {
     constructor(props) {
