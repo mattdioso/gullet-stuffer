@@ -1,6 +1,5 @@
 import React from 'react';
 import IntroVideo from '../components/intro_video';
-import video from '../imgs/TestVideo.mp4';
 import Carousel from '../components/carousel';
 import { Car } from 'react-ionicons';
 import IGFeed from '../components/ig_feed';
