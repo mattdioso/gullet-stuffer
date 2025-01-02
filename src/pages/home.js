@@ -50,11 +50,13 @@ class HomePage extends React.Component {
                       <br/>
                       <div className='md:flex w-full'>
                         <div className="w-full md:w-2/3">
-                          <p className='text-xs md:text-base font-heavitas text-white'>Total Competitors (All Time): 84</p>
+                          <p className='text-xs md:text-base font-heavitas text-white'>Total Competitors (All Time): 95</p>
                           <br/>
-                          <p className='text-xs md:text-base font-heavitas text-orange-400'>Eggos Eliminated in 10 mins @ Gullet Stuffer V: 327</p>
+                          <p className='text-xs md:text-base font-heavitas text-orange-400'>Mini Donuts Eliminated in 10 mins @ Gullet Stuffer VI: 922</p>
                           <br/>
-                          <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VI - July 13th, 2024</p>
+                          <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VII - July 12th, 2025</p>
+                          <br/>
+                          <p className='text-xs md:text-base font-heavitas text-white'>Money Raised for Seattle Community Fridge: $13,200</p>
                         </div>
                         <div className="w-full h-16 md:h-20 md:w-2/3 mt-6 md:mt-0">
                           <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdxoIUFxZy8FQ_oga8EFz-seF2dF67oov13g18pbKgNJPOJ3g/closedform" target="_blank">

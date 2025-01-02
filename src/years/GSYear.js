@@ -14,7 +14,7 @@ class GSYear extends React.Component {
             '2021': 'https://www.youtube.com/embed/kot5BXUPZJg',
             '2022': 'https://www.youtube.com/embed/fR5OlKENIUM',
             '2023': 'https://www.youtube.com/embed/Up799qwivC8?si=6f8_bBZ3mDlMIrHl',
-            '2024': 'https://www.youtube.com/embed/RYolWQluSbQ?si=Gh1ueuOaWP6MSl4Y'
+            '2024': 'https://www.youtube.com/embed/b-LUO9aRseI?si=y2pWBo2RM_bOJccy'
         }
         let year = this.props.year.year;
         let link = info[year];
