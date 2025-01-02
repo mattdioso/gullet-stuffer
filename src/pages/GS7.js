@@ -24,7 +24,7 @@ class GS7 extends React.Component {
                         <img class="w-9/12 h-9/12 rounded-l-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/GS1_logo.png" alt="logo"></img>
                     </div>
                     <div class="md:w-1/2 md:pt-10 md:pl-1">
-                        <p className="text-orange-400 text-center text-4xl md:text-6xl 2xl:text-8xl">Gullet Stuffer 7</p>
+                        <p className="text-orange-400 text-center text-4xl md:text-6xl 2xl:text-8xl">Gullet Stuffer VII</p>
                         <p className="text-white text-center text-xl 2xl:text-3xl my-4">Join us for our seventh annual live event!</p>
                         <div className="w-full flex mt-6 pb-6 md:pb-0 md:mt-4">
                             <div className="w-1/2 text-center">
