@@ -45,6 +45,15 @@ export const hof_data = [
                 "food": "Eggo Waffles",
                 "desc": "Completely unknown going into GSV, Domenica, aka Dee Street, put down an entire bottle of syrup and a tub of butter in addition to her 36 waffles. She is now the early favorite for GSVI.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/deewinsreal.png"
+            },
+            {
+                "firstName": "Dee",
+                "lastName": "Street",
+                "year": 2024,
+                "result": 103,
+                "food": "Mini Donuts",
+                "desc": "Dee went full sicko mode in her quest for a repeat, trailing early before making a mad dash for the finish line, becoming the first Gullet Stuffer to ever win multiple Professional titles",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/deegsvi.jpg"
             }
         ],
         "amateur_champs": [
@@ -92,6 +101,15 @@ export const hof_data = [
                 "food": "Eggo Waffles",
                 "desc": "After a year layoff, this time facing a solid food, Bechtel dug deep on his way to a one waffle win. Note: Amateur Champions are no longer allowed to appear for 2nd time, aka the \"Big Soup Rule\".",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/markwins2.png"
+            },
+            {
+                "firstName": "George",
+                "lastName": "Tecero",
+                "year": 2024,
+                "result": 45,
+                "food": "Mini Donuts",
+                "desc": "After receiving some pregame advice from 2024 Nathan's Hot Dog Champ Patrick Bertoletti, George stormed the podium, much to the delight of his many fans in attendance.",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/george.jpg"
             }
         ],
         "notable_competitors": [
