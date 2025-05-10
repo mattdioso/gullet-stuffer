@@ -1,5 +1,5 @@
 env: standard
-runtime: nodejs21
+runtime: nodejs20
 instance_class: F4
 resources:
   memory_gb: 4
