@@ -21,7 +21,7 @@ class GS7 extends React.Component {
                 <section class="w-11/12 bg-neutral-800 mx-auto rounded-xl perspective">
                     <div className="md:flex mt-6 sm:mt-0">
                         <div class="md:w-1/2">
-                            <video autoPlay loop muted playsInline id='intro_video' className="object-bottom m-auto perspective border border-gray-600 rounded-xl">
+                            <video autoPlay loop muted playsInline id='intro_video' className="object-bottom perspective border border-gray-600 rounded-xl">
                                 <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/gyozawins.mp4" type="video/mp4" />
                             </video>
                         </div>
