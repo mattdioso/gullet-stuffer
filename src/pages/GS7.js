@@ -57,7 +57,12 @@ class GS7 extends React.Component {
                                 <p className="text-orange-400 md:ml-6 text-xl 2xl:text-3xl">Want to Participate?</p>
                             </div>
                             <div className="w-full flex mt-4 place-content-center space-x-12 pb-6">
-                                <p className="text-white text-xl 2xl:text-2xl ml-6">Applications coming soon!</p>
+                                <a className="w-3/4 sm:w-2/3 h-[64px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLScPUIuPTlfG7RV7mm5INiLJXzzji0ILoxxK2lqVxAUzArMCFw/viewform" target="_blank">
+                                    <div className="w-1/2 md:w-1/2 h-full md:h-full bg-orange-400 flex mx-auto place-content-center rounded-2xl my-auto">
+                                        <p className="text-white my-auto text-sm md:text-2xl 2xl:text-2xl text-center">Apply here!</p>
+                                        <FaExternalLinkAlt className="my-auto w-10" color="white" />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
