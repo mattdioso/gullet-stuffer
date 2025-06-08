@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { decode } from "html-entities";
 
-const GulletStufferForm = ( { status, message, onValidated }) => {
-    const [ error, setError ] = useState(null);
-    const [ email, setEmail ] = useState(null);
+const GulletStufferForm = ({ status, message, onValidated }) => {
+    const [error, setError] = useState(null);
+    const [email, setEmail] = useState(null);
 
     const handleFormSubmit = () => {
         setError(null);
@@ -17,7 +17,7 @@ const GulletStufferForm = ( { status, message, onValidated }) => {
         return email && email.indexOf("@") > -1 && isFormValidated;
     }
 
-    const handleInputKeyEvent = ( event ) => {
+    const handleInputKeyEvent = (event) => {
         setError(null);
         if (event.keyCode === 13) {
             event.preventDefault();
@@ -30,7 +30,7 @@ const GulletStufferForm = ( { status, message, onValidated }) => {
             return null;
         }
         const result = message?.split('-') ?? null;
-        if ( "0" !== result?.[0]?.trim()) {
+        if ("0" !== result?.[0]?.trim()) {
             return decode(message);
         }
         const formattedMessage = result?.[1]?.trim() ?? null;
@@ -40,7 +40,7 @@ const GulletStufferForm = ( { status, message, onValidated }) => {
     return (
         <section className="w-full md:pl-20 mt-4">
             <div className="md:w-1/2 text-center md:text-left">
-                <p className="text-white text-3xl md:text-4xl">Join our mailing list!</p>
+                <p className="text-gold text-3xl md:text-4xl">Join our mailing list!</p>
             </div>
             <div className="w-full mt-2">
                 <div className="flex w-10/12 md:w-full mx-auto md:mx-0">
@@ -55,9 +55,9 @@ const GulletStufferForm = ( { status, message, onValidated }) => {
                     </div>
                     <div className="w-3/12 md:w-1/12 ml-2">
                         <button
-                            className="text-white bg-orange-400 h-8 w-full rounded-md"
+                            className="text-black bg-gold h-8 w-full rounded-md"
                             onClick={handleFormSubmit}>
-                                Submit
+                            Submit
                         </button>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ const GulletStufferForm = ( { status, message, onValidated }) => {
                     {status === "sending" && <div>Sending...</div>}
                     {status === "error" || error ? (
                         <div className=""
-                            dangerouslySetInnerHTML={{ __html: error || getMessage(message)}}>
+                            dangerouslySetInnerHTML={{ __html: error || getMessage(message) }}>
 
                         </div>
                     ) : null}

@@ -26,43 +26,47 @@ class GS7 extends React.Component {
                             </video>
                         </div>
                         <div class="md:w-1/2 md:pt-10 md:pl-1">
-                            <p className="text-orange-400 text-center text-4xl md:text-6xl 2xl:text-8xl">Gullet Stuffer VII</p>
+                            <p className="text-gold text-center text-4xl md:text-6xl 2xl:text-8xl">Gullet Stuffer VII</p>
                             <p className="text-white text-center text-xl 2xl:text-3xl my-4">Join us for our seventh annual live event!</p>
+                            <img className='h-40 w-40 mx-auto' src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/logo%20fire.png" alt="GS7logo"></img>
                             <div className="w-full flex mt-6 pb-6 md:pb-0 md:mt-4">
                                 <div className="w-1/2 text-center">
-                                    <p className="text-orange-400 text-2xl 2xl:text-4xl ml-6 mt-4 md:mt-8 2xl:mt-24">When</p>
+                                    <p className="text-gold text-2xl 2xl:text-4xl ml-6 mt-4 md:mt-8 2xl:mt-3">When</p>
                                     <p className="text-white text-xl 2xl:text-2xl ml-6 mt-2">Saturday, July 12th 2025</p>
 
                                 </div>
                                 <div className="w-1/2 text-center">
-                                    <p className="text-orange-400 text-2xl 2xl:text-4xl mt-4 md:mt-8 2xl:mt-24">Where</p>
+                                    <p className="text-gold text-2xl 2xl:text-4xl mt-4 md:mt-8 2xl:mt-3">Where</p>
                                     <p className="text-white text-xl 2xl:text-2xl">Grocery Outlet Bargain Market</p>
                                     <p className="text-white text-xl 2xl:text-2xl">1126 MLK Jr Way</p>
                                     {/* <p className="text-white text-xl 2xl:text-xl ml-6">1126 Martin Luther King Jr Way</p> */}
                                     <p className="text-white text-xl 2xl:text-2xl">Seattle, WA 98122</p>
                                 </div>
                             </div>
-                            <div className="w-full flex mt-6 pb-6 md:pb-0 md:mt-12">
+                            <div className="w-full flex mt-6 pb-6 md:pb-0 md:mt-6">
 
                                 <div className="w-full md:w-1/2 text-center mx-auto">
-                                    <p className="text-orange-400 text-2xl 2xl:text-4xl ml-6">Featured Food</p>
+                                    <p className="text-gold text-2xl 2xl:text-4xl ml-6">Featured Food</p>
                                     <p className="text-white text-xl 2xl:text-2xl ml-6">Gyoza! Check out the voting results below!</p>
                                 </div>
 
-                            </div>
-                            {/* <div className="w-full place-content-center mt-6">
+
+                                {/* <div className="w-full place-content-center mt-6">
                             <img className="w-3/4 mx-auto" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/GS1_logo.png" alt="logo"></img>
                         </div> */}
-                            <div className="w-full md:mt-6 text-center">
-                                <p className="text-orange-400 md:ml-6 text-xl 2xl:text-3xl">Want to Participate?</p>
-                            </div>
-                            <div className="w-full flex mt-4 place-content-center space-x-12 pb-6">
-                                <a className="w-3/4 sm:w-2/3 h-[64px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLScPUIuPTlfG7RV7mm5INiLJXzzji0ILoxxK2lqVxAUzArMCFw/viewform" target="_blank">
-                                    <div className="w-1/2 md:w-1/2 h-full md:h-full bg-orange-400 flex mx-auto place-content-center rounded-2xl my-auto">
-                                        <p className="text-white my-auto text-sm md:text-2xl 2xl:text-2xl text-center">Apply here!</p>
-                                        <FaExternalLinkAlt className="my-auto w-10" color="white" />
+                                <div className="w-full md:w-1/2 text-center mx-auto">
+                                    <div className="w-full md:mt-6 text-center">
+                                        <p className="text-gold md:ml-6 text-xl 2xl:text-3xl">Want to volunteer?</p>
                                     </div>
-                                </a>
+                                    <div className="w-full mt-4 place-content-center space-x-12 pb-6">
+                                        <a className="block w-3/4 sm:w-2/3 h-[60px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdv_X2rBRE_VGDmpYoO_wcgwBMkBGeoc_ZH0MZksF0YcFZm-A/viewform" target="_blank">
+                                            <div className="w-3/4 md:w-2/3 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+                                                <p className="text-black my-auto text-sm md:text-2xl 2xl:text-xl text-center">Apply here!</p>
+                                                <FaExternalLinkAlt className="my-auto w-10" color="black" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

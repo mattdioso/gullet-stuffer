@@ -2,7 +2,7 @@
 
 const plugin = require("tailwindcss/plugin");
 
-const cardClass = plugin(function({ addUtilities }) {
+const cardClass = plugin(function ({ addUtilities }) {
   addUtilities({
     '.rotate-y-180': {
       transform: 'rotateY(180deg)'
@@ -49,6 +49,9 @@ module.exports = {
       'LemonMilkMed': ['"Lemon Milk Medium"'],
     },
     extend: {
+      colors: {
+        "gold": "#ffd700"
+      },
       gridTemplateColumns: {
         'hof': 'repeat(auto-fit, minmax(300px, 1fr))'
       },
@@ -94,7 +97,7 @@ module.exports = {
   plugins: [
     require('tw-elements/dist/plugin'),
     cardClass,
-    plugin(function({ addBase }) {
+    plugin(function ({ addBase }) {
       addBase({
         '@font-face': {
           fontFamily: 'KC Leisure Park Bold',
@@ -102,7 +105,7 @@ module.exports = {
         }
       })
     }),
-    plugin(function({ addBase }) {
+    plugin(function ({ addBase }) {
       addBase({
         '@font-face': {
           fontFamily: 'KC Leisure Park Thin',

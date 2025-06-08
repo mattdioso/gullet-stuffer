@@ -1,11 +1,10 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .winner-left {
-    
+
     -webkit-clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
     clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
   }
@@ -18,11 +17,11 @@
   }
 
   .sidebar-hr {
-    @apply bg-gray-200 dark:bg-gray-800
-    border border-gray-200 dark:border-gray-800 rounded-full mx-2;
+    @apply bg-gray-200 dark:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-full mx-2;
   }
 
-  .navbar-left, navbar-right {
+  .navbar-left,
+  navbar-right {
     display: flex;
     align-items: center;
   }
@@ -41,9 +40,7 @@
   }
 
   .player-stats {
-    @apply absolute w-auto p-2 m-2 min-w-max rounded-md shadow-md
-    text-white bg-gray-900 text-xs font-bold transition-all duration-100
-    mb-20 scale-0 origin-left;
+    @apply absolute w-auto p-2 m-2 min-w-max rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 mb-20 scale-0 origin-left;
   }
 
   .no-scroll {
@@ -53,7 +50,7 @@
   }
 
   .no-scroll::-webkit-scrollbar {
-    display:none !important;
+    display: none !important;
   }
 }
 
@@ -160,7 +157,6 @@
 
 @layer utilities {
   .toggle-btn {
-    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent
-    [&>div]:rotate-[720deg]
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
   }
 }
