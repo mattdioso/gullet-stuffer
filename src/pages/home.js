@@ -40,7 +40,7 @@ class HomePage extends React.Component {
         <div className="md:flex w-full mt-6">
           <div className="w-10/12 md:w-5/12 2xl:w-1/3 border-b md:border-b-0 md:border-r border-gray-200 text-center md:text-left md:pl-20 py-auto mx-auto pb-12">
             <p className='text-7xl md:text-9xl text-white mx-auto'>Gullet</p>
-            <p className='text-[4.5rem] md:text-[7.5rem] text-gold leading-[35px] md:leading-[60px]'>Stuffer</p>
+            <p className='text-[4.5rem] md:text-[7.5rem] text-gold leading-[35px] md:leading-[60px]'>Stuffer-test</p>
           </div>
           <div className="w-full md:w-7/12 2xl:w-2/3 px-8 pt-4">
             <p className='text-xs md:text-base font-heavitas text-white'>A neon orange glow fills the Grocery Outlet parking lot... It's time for Gullet Stuffer! This annual eating contest
