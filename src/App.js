@@ -17,11 +17,11 @@ import HomeTwitchPage from './pages/home_twitch';
 import GS7 from './pages/GS7';
 function App() {
   return (
-    
+
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />}/>
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/gs7" element={<GS7 />} />
@@ -33,7 +33,7 @@ function App() {
         {/* <Route path="/twitch" element={<HomeTwitchPage />} /> */}
       </Routes>
     </Router>
-    
+
   );
 }
 

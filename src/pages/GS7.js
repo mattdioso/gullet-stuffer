@@ -61,12 +61,21 @@ class GS7 extends React.Component {
                                     <div className="w-full mt-4 place-content-center space-x-12 pb-6">
                                         <a className="block w-3/4 sm:w-2/3 h-[60px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdv_X2rBRE_VGDmpYoO_wcgwBMkBGeoc_ZH0MZksF0YcFZm-A/viewform" target="_blank">
                                             <div className="w-3/4 md:w-2/3 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
-                                                <p className="text-black my-auto text-sm md:text-2xl 2xl:text-xl text-center">Apply here!</p>
+                                                <p className="text-black my-auto text-sm md:text-lg 2xl:text-xl text-center">Apply here!</p>
                                                 <FaExternalLinkAlt className="my-auto w-10" color="black" />
                                             </div>
                                         </a>
                                     </div>
                                 </div>
+
+                            </div>
+                            <div className="w-full text-center mx-auto mb-8">
+                                <a className="block w-3/4 sm:w-2/3 h-[60px] mx-auto" href="https://go.dojiggy.io/gyoza/Campaign/Details" target="_blank">
+                                    <div className="w-3/4 md:w-2/3 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+                                        <p className="text-black my-auto text-sm md:text-xl 2xl:text-xl text-center">Support an Athlete!</p>
+                                        <FaExternalLinkAlt className="my-auto w-10" color="black" />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>

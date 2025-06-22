@@ -24,7 +24,7 @@ const IGFeed = () => {
     //const post_url = `https://graph.instagram.com/${}`;
 
     useEffect(() => {
-        const fetch_post = async(id) => {
+        const fetch_post = async (id) => {
             const post_url = `https://graph.instagram.com/${id}?access_token=${access_token}&fields=media_url,permalink,media_type`;
             const res = await fetch(post_url);
             const json = (await res.json());
@@ -38,9 +38,9 @@ const IGFeed = () => {
 
             return ig_item;
         }
-        const doFetch = async() => {
+        const doFetch = async () => {
             if (!user_id || !access_token) {
-                console.log(`userId or access_token is undefined: `, {user_id, access_token});
+                console.log(`userId or access_token is undefined: `, { user_id, access_token });
                 return;
             }
             const res = await fetch(media_url);
@@ -50,7 +50,6 @@ const IGFeed = () => {
             const all_items = []
 
             for (let i = 0; i < json.data.length; i++) {
-                
                 const item = json.data[i];
                 const item_id = item.id;
                 const ig_item = await fetch_post(item_id);
@@ -68,7 +67,7 @@ const IGFeed = () => {
     }, [user_id, access_token, media_url]);
 
     return (
-        
+
         <div className="overflow-hidden mx-auto" ref={emblaRef}>
 
             <div id="embla_container" className="flex touch-pan-y touch-pinch-zoom gap-4">
@@ -86,13 +85,13 @@ const IGFeed = () => {
                     <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
                 </div>
                 <a href="https://www.instagram.com/gulletstuffer/" target="_blank" className="flex border border-white rounded-3xl pr-4">
-                    <SocialIcon network="instagram" bgColor="transparent" fgColor="white" url="https://www.instagram.com/gulletstuffer/"/>
+                    <SocialIcon network="instagram" bgColor="transparent" fgColor="white" url="https://www.instagram.com/gulletstuffer/" />
                     <p className="text-white text-base md:text-xl my-auto">gulletstuffer</p>
                 </a>
                 <SelectedSnapDisplay selectedSnap={selectedSnap} snapCount={snapCount} />
             </div>
         </div>
-                
+
     )
 }
 

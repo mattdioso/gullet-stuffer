@@ -37,7 +37,7 @@ class AboutPage extends React.Component {
 
                             </div>
                             <div className="w-full 2xl:w-4/5 mt-12">
-                                <a href="https://www.instagram.com/seattlecommunityfridge/?hl=en" target="_blank"><img class="mx-auto rounded-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/SCFbanner_new.png" alt="scf_banner"></img></a>
+                                <a href="https://www.seattlecommunityfridge.org/" target="_blank"><img class="mx-auto rounded-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/SCFbanner_new.png" alt="scf_banner"></img></a>
                             </div>
 
                         </div>
