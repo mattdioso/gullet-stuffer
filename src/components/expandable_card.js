@@ -193,7 +193,7 @@ const ExpandableCard = ({ image, username, donationUrl, email, custom }) => {
     };
 
     return (
-        <div className="max-w-[30rem] mb-8 m-auto flex flex-col w-100 bg-gradient-to-r from-gray-100 to-gray-300 min-h-16 rounded-lg">
+        <div className="max-w-[30rem] m-auto mb-8 flex flex-col w-100 bg-gradient-to-r from-gray-100 to-gray-300 min-h-16 rounded-lg">
             <motion.div
                 onClick={handleCardClick}
                 initial="close"

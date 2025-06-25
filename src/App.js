@@ -15,6 +15,7 @@ import CustomMerchPage from './pages/merch_custom';
 import Success from './components/merch_success';
 import HomeTwitchPage from './pages/home_twitch';
 import GS7 from './pages/GS7';
+
 function App() {
   return (
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/merch2" element={<MerchPage />} />
         <Route path="/merch/success" element={<Success />} />
         {/* <Route path="/twitch" element={<HomeTwitchPage />} /> */}
+
       </Routes>
     </Router>
 

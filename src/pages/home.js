@@ -58,13 +58,21 @@ class HomePage extends React.Component {
                 <br />
                 <p className='text-xs md:text-base font-heavitas text-white'>Money Raised for Seattle Community Fridge: $13,200</p>
               </div>
-              <div className="w-full h-16 md:h-20 md:w-2/3 mt-6 md:mt-0">
-                <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdv_X2rBRE_VGDmpYoO_wcgwBMkBGeoc_ZH0MZksF0YcFZm-A/viewform" target="_blank">
-                  <div className="w-1/2 md:w-1/2 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
-                    <p className="text-black my-auto text-sm md:text-2xl 2xl:text-2xl text-center">Join the Team!</p>
-                    <FaExternalLinkAlt className="my-auto w-10" color="black" />
-                  </div>
-                </a>
+              <div className="w-full space-y-4">
+                <div className="w-full h-16 md:h-20 md:w-3/4 mt-6 md:mt-0">
+                  <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdv_X2rBRE_VGDmpYoO_wcgwBMkBGeoc_ZH0MZksF0YcFZm-A/viewform" target="_blank">
+                    <div className="w-1/2 md:w-1/2 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+                      <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Join the Team!</p>
+                    </div>
+                  </a>
+                </div>
+                <div className="w-full h-16 md:h-20 md:w-3/4 mt-6 md:mt-0">
+                  <a className="w-full h-[54px] mx-auto" href="https://go.dojiggy.io/gyoza/Campaign/Details" target="_blank">
+                    <div className="w-3/4 md:w-2/3 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+                      <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Support an Athlete!</p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

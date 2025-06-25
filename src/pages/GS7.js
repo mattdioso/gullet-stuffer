@@ -1,5 +1,8 @@
 import React from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import { gs7_contestants } from "../data/gs7_contestants"
+import AthleteCard from '../components/athlete_card';
+import { motion } from 'framer-motion';
 
 class GS7 extends React.Component {
     constructor(props) {
@@ -9,15 +12,6 @@ class GS7 extends React.Component {
     render() {
         return (
             <main className="w-full pt-28 md:pt-40 bg-black">
-                {/* <div className="flex">
-                    <div className="flex mx-auto">
-                        <img className="winner-left w-1/2" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/george_win.jpg" alt="event_announcement">
-                        </img>
-                        <img className="winner-right w-1/2" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/dee_win.jpg" alt="event_announcement">
-                        </img>
-                        </div>
-                        
-                    </div> */}
                 <section class="w-11/12 bg-neutral-800 mx-auto rounded-xl perspective">
                     <div className="md:flex mt-6 sm:mt-0">
                         <div class="md:w-1/2">
@@ -71,14 +65,20 @@ class GS7 extends React.Component {
                                 <a className="block w-3/4 sm:w-2/3 h-[60px] mx-auto" href="https://go.dojiggy.io/gyoza/Campaign/Details" target="_blank">
                                     <div className="w-3/4 md:w-2/3 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
                                         <p className="text-black my-auto text-sm md:text-xl 2xl:text-xl text-center">Support an Athlete!</p>
-                                        <FaExternalLinkAlt className="my-auto w-10" color="black" />
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-
                 </section>
+                <motion.div layout transition={{ duration: 0.4, delay: 0.2 }} style={{ height: "fit-content" }} className="w-11/12 mx-auto rounded-xl mt-4 border border-white">
+                    <h2 className="text-gold ml-4 text-3xl">Gullet Stuffer 7 Amateurs</h2>
+                    <div className="flex flex-wrap w-11/12 sm:space-x-6 mx-auto justify-center my-4">
+                        {gs7_contestants.map((contestant) => (
+                            <AthleteCard name={contestant.name} campaignUrl={contestant.campaignUrl} imgUrl={contestant.img} />
+                        ))}
+                    </div>
+                </motion.div>
 
                 <footer className='h-24 bg-black'></footer>
             </main>

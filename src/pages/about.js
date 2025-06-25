@@ -49,9 +49,9 @@ class AboutPage extends React.Component {
                                 </div>
                             </a>
                         </div>
-                        <div className="w-full 2xl:w-4/5 mt-12">
+                        <div className="mt-4 md:mt-0 md:pl-8 px-4 md:px-0 md:pr-8 pt-0 w-full 2xl:w-4/5 text-center">
                             <br />
-                            <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-gold'>Gullet Stuffer is a 501c3 non-profit organization. EIN: 99-2709550</p>
+                            <p className='text-sm md:text-base 2xl:text-xl font-heavitas text-gold'>Gullet Stuffer is a 501c3 non-profit organization. EIN: 99-2709550</p>
                         </div>
                     </div>
                 </div>
