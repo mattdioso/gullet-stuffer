@@ -21,9 +21,7 @@ class GS7 extends React.Component {
                 <section class="w-11/12 bg-neutral-800 mx-auto rounded-xl perspective">
                     <div className="md:flex mt-6 sm:mt-0">
                         <div class="md:w-1/2">
-                            <video autoPlay loop muted playsInline id='intro_video' className="object-bottom perspective border border-gray-600 rounded-xl">
-                                <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/gyozawins.mp4" type="video/mp4" />
-                            </video>
+                            <img className="rounded-l-xl" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/gs7_poster-1.jpg" alt="poster" />
                         </div>
                         <div class="md:w-1/2 md:pt-10 md:pl-1">
                             <p className="text-gold text-center text-4xl md:text-6xl 2xl:text-8xl">Gullet Stuffer VII</p>
@@ -79,9 +77,7 @@ class GS7 extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full">
-                        <img src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/2025BracketChampionship.png" alt="bracket" />
-                    </div>
+
                 </section>
 
                 <footer className='h-24 bg-black'></footer>

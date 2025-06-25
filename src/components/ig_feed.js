@@ -67,31 +67,35 @@ const IGFeed = () => {
     }, [user_id, access_token, media_url]);
 
     return (
-
-        <div className="overflow-hidden mx-auto" ref={emblaRef}>
-
-            <div id="embla_container" className="flex touch-pan-y touch-pinch-zoom gap-4">
-                {ig_items.map((item) => (
-                    <div className="flex-none min-w-0">
-                        <a href={item.permalink} target="_blank">
-                            <img className="h-64" src={item.mediaUrl} alt={item.key}></img>
-                        </a>
-                    </div>
-                ))}
+        ig_items.length &&
+        <div className="w-11/12 md:w-2/3 mx-4 mt-4 p-4 border border-white rounded-xl md:mx-auto">
+            <div className="w-full">
+                <p className="text-white text-xl">Follow us on Instagram</p>
             </div>
-            <div id="embla_controls" className="flex justify-between gap-5 mt-7">
-                <div id="embla_buttons" className="grid grid-cols-2 gap-2.5 align-center">
-                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                    <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+            <div className="overflow-hidden mx-auto" ref={emblaRef}>
+
+                <div id="embla_container" className="flex touch-pan-y touch-pinch-zoom gap-4">
+                    {ig_items.map((item) => (
+                        <div className="flex-none min-w-0">
+                            <a href={item.permalink} target="_blank">
+                                <img className="h-64" src={item.mediaUrl} alt={item.key}></img>
+                            </a>
+                        </div>
+                    ))}
                 </div>
-                <a href="https://www.instagram.com/gulletstuffer/" target="_blank" className="flex border border-white rounded-3xl pr-4">
-                    <SocialIcon network="instagram" bgColor="transparent" fgColor="white" url="https://www.instagram.com/gulletstuffer/" />
-                    <p className="text-white text-base md:text-xl my-auto">gulletstuffer</p>
-                </a>
-                <SelectedSnapDisplay selectedSnap={selectedSnap} snapCount={snapCount} />
+                <div id="embla_controls" className="flex justify-between gap-5 mt-7">
+                    <div id="embla_buttons" className="grid grid-cols-2 gap-2.5 align-center">
+                        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+                        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+                    </div>
+                    <a href="https://www.instagram.com/gulletstuffer/" target="_blank" className="flex border border-white rounded-3xl pr-4">
+                        <SocialIcon network="instagram" bgColor="transparent" fgColor="white" url="https://www.instagram.com/gulletstuffer/" />
+                        <p className="text-white text-base md:text-xl my-auto">gulletstuffer</p>
+                    </a>
+                    <SelectedSnapDisplay selectedSnap={selectedSnap} snapCount={snapCount} />
+                </div>
             </div>
         </div>
-
     )
 }
 

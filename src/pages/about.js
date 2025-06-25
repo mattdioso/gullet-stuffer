@@ -3,6 +3,7 @@ import IntroVideo from '../components/intro_video';
 import Carousel from '../components/carousel';
 import { Car } from 'react-ionicons';
 import IGFeed from '../components/ig_feed';
+import { FaExternalLinkAlt } from 'react-icons/fa'
 class AboutPage extends React.Component {
     constructor(props) {
         super(props);
@@ -34,22 +35,29 @@ class AboutPage extends React.Component {
                                 <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-gold'>Brought back by popular demand and here to stay, this infamous annual event serves as a fundraiser, community gathering, and showcase of local eating talent.</p>
                                 <br />
                                 <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-white'>Gullet Stuffer fundraising efforts have raised a combined total of $10,000 for local food-based organizations. Our primary beneficiary is Seattle Community Fridge, a mutual-aid group that provides permanent fridge locations for those in need.</p>
-
                             </div>
                             <div className="w-full 2xl:w-4/5 mt-12">
                                 <a href="https://www.seattlecommunityfridge.org/" target="_blank"><img class="mx-auto rounded-xl " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/SCFbanner_new.png" alt="scf_banner"></img></a>
                             </div>
 
                         </div>
+                        <div className="w-full text-center mx-auto mt-8">
+                            <a className="block w-3/4 sm:w-2/3 h-[60px] mx-auto" href="https://www.seattlecommunityfridge.org/" target="_blank">
+                                <div className="w-3/4 md:w-2/3 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+                                    <p className="text-black my-auto text-sm md:text-xl 2xl:text-xl text-center">Check them out here</p>
+                                    <FaExternalLinkAlt className="my-auto w-10" color="black" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className="w-full 2xl:w-4/5 mt-12">
+                            <br />
+                            <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-gold'>Gullet Stuffer is a 501c3 non-profit organization. EIN: 99-2709550</p>
+                        </div>
+                    </div>
+                </div>
 
-                    </div>
-                </div>
-                <div className="w-11/12 md:w-2/3 mx-4 mt-4 p-4 border border-white rounded-xl md:mx-auto">
-                    <div className="w-full">
-                        <p className="text-white text-xl">Follow us on Instagram</p>
-                    </div>
-                    <IGFeed />
-                </div>
+                <IGFeed />
+
                 <footer className='h-36 w-full bg-black'></footer>
             </section>
         )
