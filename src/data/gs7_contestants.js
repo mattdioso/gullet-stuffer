@@ -36,7 +36,7 @@ export const gs7_contestants = {
             "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/athletes/amateur/Josh.png"
         },
         {
-            "name": "Kate Shageman",
+            "name": "Kate Schageman",
             "campaignUrl": "https://go.dojiggy.io/454659/m/crumbs",
             "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/athletes/amateur/Kate.png"
         },
