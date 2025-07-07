@@ -74,7 +74,16 @@ class GS7 extends React.Component {
                 <motion.div layout transition={{ duration: 0.4, delay: 0.2 }} style={{ height: "fit-content" }} className="w-11/12 mx-auto rounded-xl mt-4 border border-white">
                     <h2 className="text-gold ml-4 text-3xl">Gullet Stuffer 7 Amateurs</h2>
                     <div className="flex flex-wrap w-11/12 sm:space-x-6 mx-auto justify-center my-4">
-                        {gs7_contestants.map((contestant) => (
+                        {gs7_contestants.amateurs.map((contestant) => (
+                            <AthleteCard name={contestant.name} campaignUrl={contestant.campaignUrl} imgUrl={contestant.img} />
+                        ))}
+                    </div>
+                </motion.div>
+
+                <motion.div layout transition={{ duration: 0.4, delay: 0.2 }} style={{ height: "fit-content" }} className="w-11/12 mx-auto rounded-xl mt-4 border border-white">
+                    <h2 className="text-gold ml-4 text-3xl">Gullet Stuffer 7 Professionals</h2>
+                    <div className="flex flex-wrap w-11/12 sm:space-x-6 mx-auto justify-center my-4">
+                        {gs7_contestants.pros.map((contestant) => (
                             <AthleteCard name={contestant.name} campaignUrl={contestant.campaignUrl} imgUrl={contestant.img} />
                         ))}
                     </div>
