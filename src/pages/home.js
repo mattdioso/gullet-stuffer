@@ -41,6 +41,13 @@ class HomePage extends React.Component {
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
           </video> */}
         </div>
+        <div className="my-4 h-[80px]">
+          <a className="w-full h-[480px] mx-auto" href="https://www.twitch.tv/gulletstuffer" target="_blank">
+            <div className="w-3/4 md:w-2/3 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+              <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Watch the livestream</p>
+            </div>
+          </a>
+        </div>
         <div className="md:flex w-full mt-6">
           <div className="w-10/12 md:w-5/12 2xl:w-1/3 border-b md:border-b-0 md:border-r border-gray-200 text-center md:text-left md:pl-20 py-auto mx-auto pb-12">
             <p className='text-7xl md:text-9xl text-white mx-auto'>Gullet</p>
