@@ -835,140 +835,147 @@ export const years_data = [
                 "lastName": "Reichmann",
                 "rank": "Amateur",
                 "result": 74,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/jessamyn.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/jesscrop.png"
             },
             {
                 "firstName": "Marlon",
                 "lastName": "",
                 "rank": "Amateur",
                 "result": 60,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/marlon.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/marloncrop.png"
             },
             {
                 "firstName": "Josh",
                 "lastName": "Ungurait",
                 "rank": "Amateur",
                 "result": 56,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/ungurait.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/joshcrop.png"
             },
             {
                 "firstName": "Stephen",
                 "lastName": "Legge",
                 "rank": "Amateur",
                 "result": 53,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/leggend.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/leggecrop.png"
             },
             {
                 "firstName": "Kate",
                 "lastName": "Schageman",
                 "rank": "Amateur",
                 "result": 50,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/schageman.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/katecrop.png"
             },
             {
                 "firstName": "Nour",
                 "lastName": "Benmohamed",
                 "rank": "Amateur",
                 "result": 43,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/nour.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/nourcrop.png"
             },
             {
                 "firstName": "Parisa",
                 "lastName": "Shahbaz",
                 "rank": "Amateur",
                 "result": 43,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/guzzler.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/parcrop.png"
             },
             {
                 "firstName": "A Block",
                 "lastName": "of Cheeze",
                 "rank": "Amateur",
                 "result": 38,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/cheez.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/cheezcrop.png"
             },
             {
                 "firstName": "Quinn",
                 "lastName": "Madsen",
                 "rank": "Amateur",
                 "result": 36,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/maddawg.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/quinncrop.png"
+            },
+            {
+                "firstName": "Dallas",
+                "lastName": "",
+                "rank": "Amateur",
+                "result":  32,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/dallascrop.png"
             },
             {
                 "firstName": "Jason",
                 "lastName": "Cole",
                 "rank": "Amateur",
                 "result":  26,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/jasoncole.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/jcolecrop.png"
             },
             {
                 "firstName": "Naader",
                 "lastName": "Reda",
                 "rank": "Professional",
                 "result": 116,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/freakeating.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/freakcrop.png"
             },
             {
                 "firstName": "Miles",
                 "lastName": "Zoltak",
                 "rank": "Professional",
                 "result": 115,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/zoltak.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/milescrop.png"
             },
             {
                 "firstName": "Sam",
                 "lastName": "Shirley",
                 "rank": "Professional",
                 "result": 94,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/samshirley.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/samcrop.png"
             },
             {
                 "firstName": "Jeremy",
                 "lastName": "Katz",
                 "rank": "Professional",
                 "result": 89,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/katz.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/katzcrop.png"
             },
             {
                 "firstName": "Julian",
                 "lastName": "Saquic Ray",
                 "rank": "Professional",
                 "result": 80,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/julian.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/juliancrop.png"
             },
             {
                 "firstName": "Kenney",
                 "lastName": "Tran",
                 "rank": "Professional",
                 "result": 73,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/kenney.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/kenneycrop.png"
             },
             {
                 "firstName": "Oden",
                 "lastName": "",
                 "rank": "Professional",
                 "result": 70,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/oden.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/odencrop.png"
             },
             {
                 "firstName": "Crosby",
                 "lastName": "Schultz",
                 "rank": "Professional",
                 "result": 69,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/crosby.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/crosbycrop.png"
             },
             {
                 "firstName": "Michael",
                 "lastName": "Pascua",
                 "rank": "Professional",
                 "result": 67,
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/pascua.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/pascuacrop.png"
             },
             {
                 "firstName": "Conner",
                 "lastName": "Deal",
                 "rank": "Professional",
                 "result": "39 (DQ)",
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/connerdeal.jpg"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/dealcrop.png"
             }
         ]
     }
