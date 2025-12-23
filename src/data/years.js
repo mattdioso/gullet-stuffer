@@ -817,5 +817,159 @@ export const years_data = [
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20pros/chefboy_cropped.jpg"
             }
         ]
+    },
+    {
+        "year": 2025,
+        "food": "Gyoza",
+        "title": "Going Gyoza",
+        "professional_winner": "Naader 'Freak Eating' Reda",
+        "video": "https://www.youtube.com/embed/rjAA-JpOcfs?si=ONlSpeXy-UmXL4N1",
+        "food_img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/foods/waffle_resized.png",
+        "amateur_winner": "Jessamyn Reichmann",
+        "event_poster": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/gs7_poster-1.jpg",
+        "logo": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/gs7_logo.png",
+        "desc": "<orange>July 12th</orange> - 'G-Y... O-Z-A!' Another packed out parking lot was on hand to watch a bit sized battle for vegetarian dumpling supremacy.\\n\\nThe Amateur group was highlighted by five-time athletes Stephen 'Leggend' Legge and Quinn 'Rad Dog' Madsen, Grocery Outlet employees Marlon and Jason 'Mr. Terrific' Cole, and the surprise return of 11-year-old Dallas. Fans tried with all their might to urge their favorites to the podium, but it was Seattle's Sweetheart, Jessamyn Reichmann who jumped out to a commanding lead, smiling, dancing and vibing her way to a dominant victory by the margin of 14 delicious gyoza!\\n\\nIn the Professional Category, the field was wide-open, as the Top 3 finishers of 2024 were all absent. Who would fill their void? Rookie Miles 'Ahead' Zoltak made his case as he set off like a munching missile, swallowing whole gyozas with nary a bite. As he eclipsed the century mark with multiple minutes to spare, his stomach began to seize and what looked to be a victory lap turned into a battle of willpower between man and belly. All the while, Naader 'Freak Eating' Reda kept his eyes on the prize, gaining steady ground before making a last gasp effort, stuffing his gullet full of dumplings as the buzzer sounded. Upon further review, in one of the closes finishes in contest history, fans saw 'The Freak' crowned as the true Gyoza GOAT of Gullet Stuffer VII, by one singular gyoza!",
+        "competitors": [
+            {
+                "firstName": "Jessamyn",
+                "lastName": "Reichmann",
+                "rank": "Amateur",
+                "result": 74,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/jessamyn.jpg"
+            },
+            {
+                "firstName": "Marlon",
+                "lastName": "",
+                "rank": "Amateur",
+                "result": 60,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/marlon.jpg"
+            },
+            {
+                "firstName": "Josh",
+                "lastName": "Ungurait",
+                "rank": "Amateur",
+                "result": 56,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/ungurait.jpg"
+            },
+            {
+                "firstName": "Stephen",
+                "lastName": "Legge",
+                "rank": "Amateur",
+                "result": 53,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/leggend.jpg"
+            },
+            {
+                "firstName": "Kate",
+                "lastName": "Schageman",
+                "rank": "Amateur",
+                "result": 50,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/schageman.jpg"
+            },
+            {
+                "firstName": "Nour",
+                "lastName": "Benmohamed",
+                "rank": "Amateur",
+                "result": 43,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/nour.jpg"
+            },
+            {
+                "firstName": "Parisa",
+                "lastName": "Shahbaz",
+                "rank": "Amateur",
+                "result": 43,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/guzzler.jpg"
+            },
+            {
+                "firstName": "A Block",
+                "lastName": "of Cheeze",
+                "rank": "Amateur",
+                "result": 38,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/cheez.jpg"
+            },
+            {
+                "firstName": "Quinn",
+                "lastName": "Madsen",
+                "rank": "Amateur",
+                "result": 36,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/maddawg.jpg"
+            },
+            {
+                "firstName": "Jason",
+                "lastName": "Cole",
+                "rank": "Amateur",
+                "result":  26,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/jasoncole.jpg"
+            },
+            {
+                "firstName": "Naader",
+                "lastName": "Reda",
+                "rank": "Professional",
+                "result": 116,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/freakeating.jpg"
+            },
+            {
+                "firstName": "Miles",
+                "lastName": "Zoltak",
+                "rank": "Professional",
+                "result": 115,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/zoltak.jpg"
+            },
+            {
+                "firstName": "Sam",
+                "lastName": "Shirley",
+                "rank": "Professional",
+                "result": 94,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/samshirley.jpg"
+            },
+            {
+                "firstName": "Jeremy",
+                "lastName": "Katz",
+                "rank": "Professional",
+                "result": 89,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/katz.jpg"
+            },
+            {
+                "firstName": "Julian",
+                "lastName": "Saquic Ray",
+                "rank": "Professional",
+                "result": 80,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/julian.jpg"
+            },
+            {
+                "firstName": "Kenney",
+                "lastName": "Tran",
+                "rank": "Professional",
+                "result": 73,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/kenney.jpg"
+            },
+            {
+                "firstName": "Oden",
+                "lastName": "",
+                "rank": "Professional",
+                "result": 70,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/oden.jpg"
+            },
+            {
+                "firstName": "Crosby",
+                "lastName": "Schultz",
+                "rank": "Professional",
+                "result": 69,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/crosby.jpg"
+            },
+            {
+                "firstName": "Michael",
+                "lastName": "Pascua",
+                "rank": "Professional",
+                "result": 67,
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/pascua.jpg"
+            },
+            {
+                "firstName": "Conner",
+                "lastName": "Deal",
+                "rank": "Professional",
+                "result": "39 (DQ)",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20pros/connerdeal.jpg"
+            }
+        ]
     }
 ]

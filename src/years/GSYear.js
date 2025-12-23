@@ -14,7 +14,8 @@ class GSYear extends React.Component {
             '2021': 'https://www.youtube.com/embed/kot5BXUPZJg',
             '2022': 'https://www.youtube.com/embed/fR5OlKENIUM',
             '2023': 'https://www.youtube.com/embed/Up799qwivC8?si=6f8_bBZ3mDlMIrHl',
-            '2024': 'https://www.youtube.com/embed/b-LUO9aRseI?si=y2pWBo2RM_bOJccy'
+            '2024': 'https://www.youtube.com/embed/b-LUO9aRseI?si=y2pWBo2RM_bOJccy',
+            '2025': 'https://www.youtube.com/embed/rjAA-JpOcfs?si=ONlSpeXy-UmXL4N1'
         }
         let year = this.props.year.year;
         let link = info[year];
@@ -26,7 +27,7 @@ class GSYear extends React.Component {
         let event_poster = this.props.year['event_poster'];
         if (typeof (desc) !== 'undefined')
             desc = desc.replaceAll("\\n", "<br/>").replaceAll("<orange>", "<span class='text-gold'>").replaceAll("</orange>", "</span>");
-        console.log(desc);
+        
 
         amateurs.sort((a, b) => b.result - a.result);
         pros.sort((a, b) => b.result - a.result);
@@ -65,9 +66,9 @@ class GSYear extends React.Component {
                             title={`Gullet Stuffer ${year}`}
                             poster="https://img.youtube.com/vi/0-7L21ZieD8/default.jpg"
                             frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
-                            referrerpolicy="no-referrer-when-downgrade"
+                            referrerpolicy="no-referrer-when-downgrade strict-origin-when-cross-origin"
                         ></iframe>
                     </div>
                 </Reveal>

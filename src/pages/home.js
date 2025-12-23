@@ -41,13 +41,7 @@ class HomePage extends React.Component {
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
           </video> */}
         </div>
-        <div className="my-4 h-[80px]">
-          <a className="w-full h-[480px] mx-auto" href="https://www.twitch.tv/gulletstuffer" target="_blank">
-            <div className="w-3/4 md:w-2/3 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
-              <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Watch the livestream</p>
-            </div>
-          </a>
-        </div>
+        
         <div className="md:flex w-full mt-6">
           <div className="w-10/12 md:w-5/12 2xl:w-1/3 border-b md:border-b-0 md:border-r border-gray-200 text-center md:text-left md:pl-20 py-auto mx-auto pb-12">
             <p className='text-7xl md:text-9xl text-white mx-auto'>Gullet</p>
@@ -61,26 +55,19 @@ class HomePage extends React.Component {
             <br />
             <div className='md:flex w-full'>
               <div className="w-full md:w-2/3">
-                <p className='text-xs md:text-base font-heavitas text-white'>Total Competitors (All Time): 95</p>
+                <p className='text-xs md:text-base font-heavitas text-white'>Total Competitors (All Time): 109</p>
                 <br />
-                <p className='text-xs md:text-base font-heavitas text-gold'>Mini Donuts Eliminated in 10 mins @ Gullet Stuffer VI: 922</p>
+                <p className='text-xs md:text-base font-heavitas text-gold'>Gyoza Eliminated in 10 mins @ Gullet Stuffer VII: 1,291</p>
                 <br />
-                <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VII - July 12th, 2025</p>
+                <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VIII - July 11th, 2025</p>
                 <br />
-                <p className='text-xs md:text-base font-heavitas text-white'>Money Raised for Seattle Community Fridge: $13,200</p>
+                <p className='text-xs md:text-base font-heavitas text-white'>Money Raised for Seattle Community Fridge: $20,200</p>
               </div>
               <div className="w-full space-y-4">
                 <div className="w-full h-16 md:h-20 md:w-3/4 mt-6 md:mt-0">
                   <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdv_X2rBRE_VGDmpYoO_wcgwBMkBGeoc_ZH0MZksF0YcFZm-A/viewform" target="_blank">
                     <div className="w-1/2 md:w-1/2 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
                       <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Join the Team!</p>
-                    </div>
-                  </a>
-                </div>
-                <div className="w-full h-16 md:h-20 md:w-3/4 mt-6 md:mt-0">
-                  <a className="w-full h-[54px] mx-auto" href="https://go.dojiggy.io/gyoza/Campaign/Details" target="_blank">
-                    <div className="w-3/4 md:w-2/3 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
-                      <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Support an Athlete!</p>
                     </div>
                   </a>
                 </div>

@@ -11,8 +11,8 @@ const Navbar = () => {
             <section className="fixed w-full mx-auto bg-black p-4 flex items-center z-50">
                 <div className="md:flex items-center justify-between bg-black">
                     <div className="items-center p-2">
-                        {/* <a className='w-28 h-20 md:w-20' href="https://www.gulletstuffer.com"><img className="w-28 h-20 md:w-20" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/Gullet-Stuffer-II.png" alt="logo"/></a> */}
-                        <a className='w-28 h-20 md:w-20' href="https://www.gulletstuffer.com"><img className="w-28 h-26 md:w-28" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/logo%20fire.png" alt="logo" /></a>
+                        <a className='w-28 h-20 md:w-20' href="https://www.gulletstuffer.com"><img className="w-28 h-20 md:w-20" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/Gullet-Stuffer-II.png" alt="logo"/></a>
+                        {/* <a className='w-28 h-20 md:w-20' href="https://www.gulletstuffer.com"><img className="w-28 h-26 md:w-28" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/logo%20fire.png" alt="logo" /></a> */}
                     </div>
                 </div>
                 <div className="w-full md:hidden">
@@ -35,7 +35,7 @@ const Navbar = () => {
                         <Link to="/" className="md:ml-8 md:my-0 my-7 text-gray-500 hover:text-gray-700 focus:text-gray-700">Home</Link>
                         <Link to="/about" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">About</Link>
                         <Link to="/events" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">History</Link>
-                        <Link to="/gs7" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">GSVII</Link>
+                        <Link to="/gs8" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">GSVIII</Link>
                         <Link to="/hof" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700 ">Hall of Fame</Link>
                         <Link to="/partners" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">Community</Link>
                         {/* <Link to="/merch" className="md:ml-4 md:my-0 my-7 p-2 text-gray-500 hover:text-gray-700 focus:text-gray-700">Merch</Link> */}
@@ -56,7 +56,7 @@ const Navbar = () => {
                     <Link to="/" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Home</Link>
                     <Link to="/about" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">About</Link>
                     <Link to="/events" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">History</Link>
-                    <Link to="/gs7" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">GSVII</Link>
+                    <Link to="/gs8" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">GSVIII</Link>
                     <Link to="/hof" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Hall of Fame</Link>
                     <Link to="/partners" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Community</Link>
                     {/* <Link to="/merch" onClick={() => setOpen(!open)} className="w-full text-white text-center py-6 hover:opacity-90">Merch</Link> */}

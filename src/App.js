@@ -14,7 +14,7 @@ import MerchPage from './pages/merch';
 import CustomMerchPage from './pages/merch_custom';
 import Success from './components/merch_success';
 import HomeTwitchPage from './pages/home_twitch';
-import GS7 from './pages/GS7';
+import GS8 from './pages/GS8';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/events" element={<EventsPage />} />
-        <Route path="/gs7" element={<GS7 />} />
+        <Route path="/gs8" element={<GS8 />} />
         <Route path="/hof" element={<HallOfFame />} />
         <Route path="/partners" element={<SponsorPage />} />
         <Route path="/merch" element={<CustomMerchPage />} />
