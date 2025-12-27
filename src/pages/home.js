@@ -59,7 +59,7 @@ class HomePage extends React.Component {
                 <br />
                 <p className='text-xs md:text-base font-heavitas text-gold'>Gyoza Eliminated in 10 mins @ Gullet Stuffer VII: 1,291</p>
                 <br />
-                <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VIII - July 11th, 2025</p>
+                <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VIII - July 11th, 2026</p>
                 <br />
                 <p className='text-xs md:text-base font-heavitas text-white'>Money Raised for Seattle Community Fridge: $20,200</p>
               </div>
