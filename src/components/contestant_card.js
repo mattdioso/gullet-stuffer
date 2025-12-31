@@ -16,12 +16,11 @@ class ContestantCard extends React.Component {
     }
 
     render() {
-        console.log(this.props.division);
         return (
             <div class="group h-[250px] w-[200px] rounded-3xl shadow-2xl bg-transparent cursor-pointer group perspective flex-shrink-0">
                 <div class="relative preserve-3d group-hover:rotate-y-180 w-full h-full duration-1000">
                     <Front pic={this.props.pic}/>
-                    <Back name={this.props.name} division={this.props.division} title={this.props.title} subtitle={this.props.subtitle} desc={this.props.desc}/>
+                    <Back name={this.props.name} division={this.props.division} title={this.props.title} subtitle={this.props.subtitle} desc={this.props.desc} result={this.props.result} fundraiser={this.props.fundraiser}/>
                 </div>
             </div>
             // <div onMouseEnter={this.flip} onMouseLeave={this.flip} className={"card-container group relative w-[350px] h-[450px] bg-white rounded-3xl shadow-2xl" + (this.state.flipped ? " flipped" : "")}>
@@ -49,7 +48,7 @@ class Back extends React.Component {
     constructor(props) {
         super(props);
     }
-
+    
     render() {
         return (
             <div class="absolute rotate-y-180 backface-hidden w-full h-full bg-gray-100 overflow-hidden shadow-2xl rounded-3xl">
@@ -58,9 +57,13 @@ class Back extends React.Component {
                         {/* <span className="font-semibold text-center text-sm text-neutral-500">{this.props.division}</span> */}
                     </h2>
                     <div className="px-2 justify-between">
+                        {
+                            this.props.fundraiser ? 
+                            <h2 className="text-3xl text-center font-heavitas">{this.props.result ? this.props.result : ""}</h2> : <></>
+                        }
                         
                         {   this.props.title ? 
-                            <h3 className="text-base text-center font-heavitas">{this.props.title}<br/></h3> : <></>
+                            <h3 className="text-base text-center font-heavitas">{this.props.title ? this.props.title : ""}<br/></h3> : <></>
                         }
                         {
                             this.props.subtitle ? 

@@ -54,6 +54,15 @@ export const hof_data = [
                 "food": "Mini Donuts",
                 "desc": "Dee went full sicko mode in her quest for a repeat, trailing early before making a mad dash for the finish line, becoming the first Gullet Stuffer to ever win multiple Professional titles",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/deegsvi.jpg"
+            },
+            {
+                "firstName": "Naader",
+                "lastName": "Reda",
+                "year": 2025,
+                "result": 116,
+                "food": "Gyoza",
+                "desc": "Making the trip all the way from Las Vegas, 'FreakEating' watched track star Miles Zoltak burst out of the starting block to a big lead, then methodically hawked him down in the home stretch, winning in the final moments by a single gyoza in a Gullet Stuffer instant classic.",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/naader.jpg"
             }
         ],
         "amateur_champs": [
@@ -110,6 +119,15 @@ export const hof_data = [
                 "food": "Mini Donuts",
                 "desc": "After receiving some pregame advice from 2024 Nathan's Hot Dog Champ Patrick Bertoletti, George stormed the podium, much to the delight of his many fans in attendance.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/george.jpg"
+            },
+            {
+                "firstName": "Jessamyn",
+                "lastName": "Reichmann",
+                "year": 2025,
+                "result": 74,
+                "food": "Gyoza",
+                "desc": "Seattle's Sweetheart made her much anticipated Amateur debut by jumping out to a huge lead and dancing her way to the finish line while onlookers shrieked in delight.",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/amateur_champs/jessamyn.jpg"
             }
         ],
         "notable_competitors": [
@@ -169,9 +187,71 @@ export const hof_data = [
                 "food": "",
                 "title": "The Prodigy",
                 "subtitle": "",
-                "desc": "At just 8 years old, GSIV saw Dallas become the youngest athlete to ever take the stage, winning over the hearts of all in attendance.",
+                "desc": "At just 8 years old, GSIV saw Dallas become the youngest athlete to ever take the stage, winning over the hearts of all in attendance. She made a surprise return in 2025 at age 11, thrilling thousands!",
                 "division": "Amateur",
-                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/TheProdigy.png"
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/dallas.jpg"
+            },
+            {
+                "firstName": "Quinn",
+                "lastName": "Madsen",
+                "year": 2025,
+                "result": 0,
+                "food": "",
+                "title": "Rad Dog Madsen",
+                "subtitle": "",
+                "desc": "Originally known as \"Mad Dog\", Quinn Madsen is a five time athlete that has inspired fans since his first appearance in 2019. He was honored with a Five Time Fork at GSVII alongside Stephen Legge.",
+                "division": "Amateur",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/maddog.jpg"
+            },
+            {
+                "firstName": "Conner",
+                "lastName": "Deal",
+                "year": 2025,
+                "result": 0,
+                "food": "",
+                "title": "The Pickle",
+                "subtitle": "",
+                "desc": "In a shocking first impression, Conner took Grocery Outlet by storm at GSVII with a thunderous entrance and subsequent DQ, leaving fans wondering, what will he do next in his quest to become Seattle’s most iconic gherkin?",
+                "division": "Amateur",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/thepickle.jpg"
+            },
+            {
+                "firstName": "Parisa",
+                "lastName": "Shahbaz",
+                "year": 2025,
+                "result": 0,
+                "food": "",
+                "title": "The Guzzler",
+                "subtitle": "",
+                "desc": "Goddess, Diva, Visionary… the list goes on. This Pickle Princess knows how to put on a show, whether it's starring in a promo video or taking the esteemed title of Top Fundraiser. Sit back and enjoy the show!",
+                "division": "Amateur",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/notable_competitors/theguzz.jpg"
+            }
+        ],
+        "top_fundraisers": [
+            {
+                "firstName": "Karisa",
+                "lastName": "Gurtiza",
+                "year": 2024,
+                "result": "$917",
+                "food": "",
+                "title": "",
+                "subtitle": "",
+                "desc": "",
+                "division": "",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/top_fundraisers/gurtiza_2024.jpg"
+            },
+            {
+                "firstName": "Parisa",
+                "lastName": "Shabaz",
+                "year": 2025,
+                "result": "$1359",
+                "food": "",
+                "title": "",
+                "subtitle": "",
+                "desc": "",
+                "division": "",
+                "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/top_fundraisers/TheGuzzler_2025.jpg"
             }
         ],
         "iconic_moments": [
