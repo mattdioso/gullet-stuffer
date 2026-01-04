@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import RevealTable from './utils/reveal_table';
-const Accordion = ({ year, title, content}) => {
+const Accordion = ({ year, title, content }) => {
     const [isActive, setIsActive] = useState(false);
 
-    let amateurs = year['competitors'].filter(athlete => athlete.rank=="Amateur");
-    let pros = year['competitors'].filter(ath => ath.rank=="Professional");
+    let amateurs = year['competitors'].filter(athlete => athlete.rank == "Amateur");
+    let pros = year['competitors'].filter(ath => ath.rank == "Professional");
     let logo = year['logo'];
     amateurs.sort((a, b) => b.result - a.result);
     pros.sort((a, b) => b.result - a.result);
@@ -25,7 +25,7 @@ const Accordion = ({ year, title, content}) => {
                     <div className="md:flex md:flex-row-reverse md:row-span-2 5 mt-4 md:mt-0 md:col-start-6 md:col-span-2">
                         <img className="h-20 w-20 md:h-24 md:w-24 md:mx-0 mx-auto my-auto object-cover rounded-2xl" src={amateurs[0].img} alt=""></img>
                     </div>
-                    
+
                 </div>
                 <div className="hidden md:block">
                     <img className="h-10 w-10 md:h-32 md:w-32 rounded-lg" src={logo} alt=""></img>
@@ -48,39 +48,39 @@ const Accordion = ({ year, title, content}) => {
             </div>
             {
                 isActive && (
-                <RevealTable>
-                <div className="flex flex-row justify-between cursor-pointer bg-gray-800 p-2">
-                    <table class='w-1/2 table-auto'>
-                        <tbody>
-                            {
-                                amateurs.slice(1).map((amateur, i) => (
-                                    <tr>
-                                        {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
-                                        <td><img className="h-12 w-12 md:h-16 md:w-16 rounded-lg" src={amateur.img} alt=""></img></td>
-                                        <td className='text-[10px] text-center font-heavitas md:text-2xl text-white'>{amateur.firstName}<br className="md:hidden"/> {amateur.lastName}</td>
-                                        <td className='text-[12px] text-center font-heavitas md:text-2xl text-white drop-shadow-2xl pr-2 md:pr-4'>{amateur.result}</td>
-                                    </tr>
-                                ))
-                            }
-                        </tbody>
-                    </table>
-                    <table class='w-1/2 table-auto'>
-                        <tbody>
-                            {
-                                pros.slice(1).map((pro, i) => (
-                                    <tr>
-                                        {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
-                                        <td><img className="h-12 w-12 md:h-16 md:w-16 rounded-lg" src={pro.img} alt=""></img></td>
-                                        <td className='text-[10px] text-center font-heavitas  md:text-2xl text-white'>{pro.firstName}<br className="md:hidden"/> {pro.lastName}</td>
-                                        <td className='text-[12px] text-center font-heavitas  md:text-2xl text-white drop-shadow-2xl md:pr-2'>{pro.result}</td>
-                                    </tr>
-                                ))
-                            }
-                        </tbody>
-                    </table>
-                </div>
-                </RevealTable>
-            )}
+                    <RevealTable>
+                        <div className="flex flex-row justify-between cursor-pointer bg-gray-800 p-2">
+                            <table class='w-1/2 table-auto'>
+                                <tbody>
+                                    {
+                                        amateurs.slice(1).map((amateur, i) => (
+                                            <tr>
+                                                {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
+                                                <td><img className="h-12 w-12 md:h-16 md:w-16 rounded-lg" src={amateur.img} alt=""></img></td>
+                                                <td className='text-[10px] text-center font-heavitas md:text-2xl text-white'>{amateur.firstName}<br className="md:hidden" /> {amateur.lastName}</td>
+                                                <td className='text-[12px] text-center font-heavitas md:text-2xl text-white drop-shadow-2xl pr-2 md:pr-4'>{amateur.result}</td>
+                                            </tr>
+                                        ))
+                                    }
+                                </tbody>
+                            </table>
+                            <table class='w-1/2 table-auto'>
+                                <tbody>
+                                    {
+                                        pros.slice(1).map((pro, i) => (
+                                            <tr>
+                                                {/* <td className='text-xs md:text-base text-white'>{i + 2}.</td> */}
+                                                <td><img className="h-12 w-12 md:h-16 md:w-16 rounded-lg" src={pro.img} alt=""></img></td>
+                                                <td className='text-[10px] text-center font-heavitas  md:text-2xl text-white'>{pro.firstName}<br className="md:hidden" /> {pro.lastName}</td>
+                                                <td className='text-[12px] text-center font-heavitas  md:text-2xl text-white drop-shadow-2xl md:pr-2'>{pro.result}</td>
+                                            </tr>
+                                        ))
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </RevealTable>
+                )}
         </div>
     );
 };

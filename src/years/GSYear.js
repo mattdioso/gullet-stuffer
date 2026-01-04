@@ -27,7 +27,7 @@ class GSYear extends React.Component {
         let event_poster = this.props.year['event_poster'];
         if (typeof (desc) !== 'undefined')
             desc = desc.replaceAll("\\n", "<br/>").replaceAll("<orange>", "<span class='text-gold'>").replaceAll("</orange>", "</span>");
-        
+
 
         amateurs.sort((a, b) => b.result - a.result);
         pros.sort((a, b) => b.result - a.result);
@@ -73,7 +73,7 @@ class GSYear extends React.Component {
                     </div>
                 </Reveal>
                 <Reveal useBar="false">
-                    <div class="w-10/12 md:w-8/12 mx-auto mb-2">
+                    <div class="w-11/12 md:w-8/12 mx-auto mb-2">
                         <Accordion year={this.props.year}></Accordion>
                     </div>
                 </Reveal>
