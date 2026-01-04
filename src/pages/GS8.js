@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import Countdown, { zeroPad } from 'react-countdown';
+import EventInvite from '../components/event_invite';
 
 
 class GS8 extends React.Component {
@@ -8,48 +9,58 @@ class GS8 extends React.Component {
     }
 
     render() {
-        return (
-            <main className="w-full pt-28 md:pt-40 bg-black">
-                <section class="w-11/12 bg-neutral-800 mx-auto rounded-xl perspective">
-                    <div className="md:flex mt-6 sm:mt-0">
-                        <div class="md:w-1/2">
-                            <img className="rounded-t-xl md:rounded-l-xl" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/cool_imgs/stuffer-308.jpg" alt="poster" />
+        const renderer = ({ days, hours, minutes, seconds, completed }) => {
+            if (completed) {
+                return <span className="text-white">huh</span>
+            } else {
+                return (
+                    <div className="flex text-gold space-x-14">
+                        <div>
+                            <div className="text-9xl text-center w-40">
+                                {zeroPad(days)}
+                            </div>
+                            <div className="text-center text-2xl">
+                                days
+                            </div>
                         </div>
-                        <div class="md:w-1/2 md:pt-6 md:pl-1">
-                            <p className="text-gold text-center text-4xl md:text-5xl 2xl:text-5xl">Gullet Stuffer VIII</p>
-                            <p className="text-white text-center text-xl 2xl:text-2xl my-4">Join us for our eighth annual live event!</p>
-                            <img className='h-40 w-40 mx-auto' src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/GS1_logo.png" alt="GSlogo"></img>
-                            <div className="w-full flex mt-6 pb-6 md:pb-0 md:mt-2">
-                                <div className="w-1/2 text-center">
-                                    <p className="text-gold text-2xl 2xl:text-3xl ml-6 mt-4 md:mt-8 2xl:mt-3">When</p>
-                                    <p className="text-white text-xl 2xl:text-xl ml-6 mt-2">Saturday, July 11th 2026</p>
-
-                                </div>
-                                <div className="w-1/2 text-center">
-                                    <p className="text-gold text-2xl 2xl:text-3xl mt-4 md:mt-8 2xl:mt-3">Where</p>
-                                    <p className="text-white text-xl 2xl:text-xl">Grocery Outlet Bargain Market</p>
-                                    <p className="text-white text-xl 2xl:text-xl">1126 MLK Jr Way</p>
-                                    {/* <p className="text-white text-xl 2xl:text-xl ml-6">1126 Martin Luther King Jr Way</p> */}
-                                    <p className="text-white text-xl 2xl:text-xl">Seattle, WA 98122</p>
-                                </div>
+                        <div>
+                            <div className="text-9xl text-center w-40">
+                                {zeroPad(hours)}
                             </div>
-                            <div className="w-full flex mt-6 pb-6 md:pb-0 md:mt-6">
-
-                                <div className="w-full md:w-1/2 text-center mx-auto">
-                                    <p className="text-gold text-2xl 2xl:text-3xl ml-6">Featured Food</p>
-                                    <p className="text-white text-xl 2xl:text-xl ml-6">Coming soon... Vote in January!</p>
-                                </div>
-
-
-                                {/* <div className="w-full place-content-center mt-6">
-                            <img className="w-3/4 mx-auto" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/GS1_logo.png" alt="logo"></img>
-                        </div> */}
-
+                            <div className="text-center text-2xl">
+                                hours
                             </div>
-                            
+                        </div>
+                        <div>
+                            <div className="text-9xl text-center w-40">
+                                {zeroPad(minutes)}
+                            </div>
+                            <div className="text-center text-2xl">
+                                minutes
+                            </div>
+                        </div>
+                        <div>
+                            <div className="text-9xl text-center w-40">
+                                {zeroPad(seconds)}
+                            </div>
+                            <div className="text-center text-2xl">
+                                seconds
+                            </div>
                         </div>
                     </div>
-                </section>
+                )
+            }
+
+        }
+        return (
+            <main className="w-full pt-28 md:pt-40 bg-black">
+                <div className="w-full flex justify-center">
+                    <Countdown date={new Date(1783821600000)} renderer={renderer} />
+                </div>
+                <EventInvite />
+                <div className="flex justify-center">
+                    <img className="w-10/12 rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026Bracket.png" alt="bracket" />
+                </div>
                 <footer className='h-24 bg-black'></footer>
             </main>
         )

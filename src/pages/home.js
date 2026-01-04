@@ -28,7 +28,7 @@ class HomePage extends React.Component {
           <p className="text-gold text-center">Competitive Eating Contest</p>
         </div>
         <div className="visible h-fit w-11/12 flex pt-4 md:pt-0 m-auto md:invisible md:w-0 md:h-0 md:opacity-0">
-          <iframe className="w-full h-[18rem]" src="https://www.youtube.com/embed/rjAA-JpOcfs?si=ONlSpeXy-UmXL4N1" title="GS7 Hype video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026Bracket.png" alt="bracket" />
 
 
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
@@ -36,12 +36,12 @@ class HomePage extends React.Component {
           </video> */}
         </div>
         <div className="h-0 md:w-10/12 md:mx-auto flex md:pt-12 md:visible invisible md:h-fit opacity-0 md:opacity-100 md:z-50">
-          <iframe className="h-[48rem] w-full" src="https://www.youtube.com/embed/rjAA-JpOcfs?si=ONlSpeXy-UmXL4N1" title="GS& Hype video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026Bracket.png" alt="bracket" />
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
           </video> */}
         </div>
-        
+
         <div className="md:flex w-full mt-6">
           <div className="w-10/12 md:w-5/12 2xl:w-1/3 border-b md:border-b-0 md:border-r border-gray-200 text-center md:text-left md:pl-20 py-auto mx-auto pb-12">
             <p className='text-7xl md:text-9xl text-white mx-auto'>Gullet</p>
