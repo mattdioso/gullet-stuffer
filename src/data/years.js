@@ -667,7 +667,7 @@ export const years_data = [
         "amateur_winner": "George Tecero",
         "event_poster": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS6/GS6_event_poster.jpeg",
         "logo": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/gs6_logo.png",
-        "desc": "<orange>July 13th</orange> - The thunderous drumbeat of Inochi Taiko beckoned from the piping hot blacktop, as fans settled in to watch the sweetest edition of Gullet Stuffer yet.\\n\\nRocking a delightful shade of lavender, the Amateurs gave it their all in a performance that featured a cheese shower, a pickle parasol, and five flavors of mini donuts. Despite another valiant effort by 4-time athlete Stephen Legge, it was 'King George' Tecero who was crowned the 2024 Amateur champ.\\n\\nEleven more athletes made their way through the crowd from behind the El Gran Taco Truck, taking their place in front of another packed out parking lot. Sarah 'Babs' Rodriguez came out of the gate on fire, as the Amateur high mark of 45 was quickly burnt to a crisp. A three way battle emerged between Sarah, Juan 'More Bite' and Dee Street, and down to the wire it went! After the plume of powder, glaze and sprinkles subsided, it was a Dee Street repeat, as she edged out Juan More Bite by a mere two minis!",
+        "desc": "<orange>July 13th</orange> - The thunderous drumbeat of Inochi Taiko beckoned from the piping hot blacktop, as fans settled in to watch the sweetest edition of Gullet Stuffer yet.\\n\\nRocking a delightful shade of lavender, the Amateurs gave it their all in a performance that featured a cheese shower, a pickle parasol, and five flavors of mini donuts. Despite another valiant effort by 4-time athlete Stephen Legge, it was <orange>'King George' Tecero</orange> who was crowned the 2024 Amateur champ.\\n\\nEleven more athletes made their way through the crowd from behind the El Gran Taco Truck, taking their place in front of another packed out parking lot. Sarah 'Babs' Rodriguez came out of the gate on fire, as the Amateur high mark of 45 was quickly burnt to a crisp. A three way battle emerged between Sarah, Juan 'More Bite' and Dee Street, and down to the wire it went! After the plume of powder, glaze and sprinkles subsided, it was a <orange>Dee Street</orange> repeat, as she edged out Juan More Bite by a mere two minis!",
         "competitors": [
             {
                 "firstName": "George",
@@ -736,7 +736,7 @@ export const years_data = [
                 "firstName": "A Block",
                 "lastName": "of Cheeze",
                 "rank": "Amateur",
-                "result":  "31 (DQ)",
+                "result": "31 (DQ)",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2024%20amateurs/blockofcheeze_cropped.jpg"
             },
             {
@@ -828,7 +828,7 @@ export const years_data = [
         "amateur_winner": "Jessamyn Reichmann",
         "event_poster": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/gs7_poster-1.jpg",
         "logo": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/gs7_logo.png",
-        "desc": "<orange>July 12th</orange> - 'G-Y... O-Z-A!' Another packed out parking lot was on hand to watch a bit sized battle for vegetarian dumpling supremacy.\\n\\nThe Amateur group was highlighted by five-time athletes Stephen 'Leggend' Legge and Quinn 'Rad Dog' Madsen, Grocery Outlet employees Marlon and Jason 'Mr. Terrific' Cole, and the surprise return of 11-year-old Dallas. Fans tried with all their might to urge their favorites to the podium, but it was Seattle's Sweetheart, Jessamyn Reichmann who jumped out to a commanding lead, smiling, dancing and vibing her way to a dominant victory by the margin of 14 delicious gyoza!\\n\\nIn the Professional Category, the field was wide-open, as the Top 3 finishers of 2024 were all absent. Who would fill their void? Rookie Miles 'Ahead' Zoltak made his case as he set off like a munching missile, swallowing whole gyozas with nary a bite. As he eclipsed the century mark with multiple minutes to spare, his stomach began to seize and what looked to be a victory lap turned into a battle of willpower between man and belly. All the while, Naader 'Freak Eating' Reda kept his eyes on the prize, gaining steady ground before making a last gasp effort, stuffing his gullet full of dumplings as the buzzer sounded. Upon further review, in one of the closes finishes in contest history, fans saw 'The Freak' crowned as the true Gyoza GOAT of Gullet Stuffer VII, by one singular gyoza!",
+        "desc": "<orange>July 12th</orange> - 'G-Y... O-Z-A!' Another packed out parking lot was on hand to watch a bit sized battle for vegetarian dumpling supremacy.\\n\\nThe Amateur group was highlighted by five-time athletes Stephen 'Leggend' Legge and Quinn 'Rad Dog' Madsen, Grocery Outlet employees Marlon and Jason 'Mr. Terrific' Cole, and the surprise return of 11-year-old Dallas. Fans tried with all their might to urge their favorites to the podium, but it was Seattle's Sweetheart, <orange>Jessamyn Reichmann</orange> who jumped out to a commanding lead, smiling, dancing and vibing her way to a dominant victory by the margin of 14 delicious gyoza!\\n\\nIn the Professional Category, the field was wide-open, as the Top 3 finishers of 2024 were all absent. Who would fill their void? Rookie Miles 'Ahead' Zoltak made his case as he set off like a munching missile, swallowing whole gyozas with nary a bite. As he eclipsed the century mark with multiple minutes to spare, his stomach began to seize and what looked to be a victory lap turned into a battle of willpower between man and belly. All the while, <orange>Naader 'Freak Eating' Reda</orange> kept his eyes on the prize, gaining steady ground before making a last gasp effort, stuffing his gullet full of dumplings as the buzzer sounded. Upon further review, in one of the closes finishes in contest history, fans saw <orange>'The Freak'</orange> crowned as the true Gyoza GOAT of Gullet Stuffer VII, by one singular gyoza!",
         "competitors": [
             {
                 "firstName": "Jessamyn",
@@ -897,14 +897,14 @@ export const years_data = [
                 "firstName": "Dallas",
                 "lastName": "",
                 "rank": "Amateur",
-                "result":  32,
+                "result": 32,
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/dallascrop.png"
             },
             {
                 "firstName": "Jason",
                 "lastName": "Cole",
                 "rank": "Amateur",
-                "result":  26,
+                "result": 26,
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/AthleteSquares/2025%20amateurs/jcolecrop.png"
             },
             {
