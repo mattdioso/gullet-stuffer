@@ -27,19 +27,32 @@ class HomePage extends React.Component {
 
           <p className="text-gold text-center">Competitive Eating Contest</p>
         </div>
-        <div className="visible h-fit w-11/12 flex pt-4 md:pt-0 m-auto md:invisible md:w-0 md:h-0 md:opacity-0">
+        <div className="visible h-fit w-11/12 pt-4 md:pt-0 m-auto md:invisible md:w-0 md:h-0 md:opacity-0">
           <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026Bracket.png" alt="bracket" />
-
+          <div className="h-16 mt-2">
+            <a className="h-full mx-auto" href="/vote">
+              <div className="w-72 md:w-96 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+                <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Check out our Voter's Guide!</p>
+              </div>
+            </a>
+          </div>
 
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
           </video> */}
         </div>
-        <div className="h-0 md:w-10/12 md:mx-auto flex md:pt-12 md:visible invisible md:h-fit opacity-0 md:opacity-100 md:z-50">
+        <div className="h-0 md:w-10/12 md:mx-auto md:pt-12 md:visible invisible md:h-fit opacity-0 md:opacity-100 md:z-50">
           <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026Bracket.png" alt="bracket" />
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
           </video> */}
+          <div className="h-16 mt-2">
+            <a className="h-full mx-auto" href="/vote">
+              <div className="w-36 md:w-96 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+                <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Check out our Voter's Guide!</p>
+              </div>
+            </a>
+          </div>
         </div>
 
         <div className="md:flex w-full mt-6">
