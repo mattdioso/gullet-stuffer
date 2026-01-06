@@ -61,7 +61,7 @@ export const hof_data = [
                 "year": 2025,
                 "result": 116,
                 "food": "Gyoza",
-                "desc": "Making the trip all the way from Las Vegas, 'FreakEating' watched track star Miles Zoltak burst out of the starting block to a big lead, then methodically hawked him down in the home stretch, winning in the final moments by a single gyoza in a Gullet Stuffer instant classic.",
+                "desc": "Making the trip all the way from Las Vegas, 'FreakEating' watched Miles Zoltak burst out to a big lead, then methodically hawked him down in the home stretch, winning in the final moments by a single gyoza in a Gullet Stuffer instant classic.",
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/pro_champs/naader.jpg"
             }
         ],
@@ -242,8 +242,8 @@ export const hof_data = [
                 "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/hof_pics/top_fundraisers/gurtiza_2024.jpg"
             },
             {
-                "firstName": "Parisa",
-                "lastName": "Shabaz",
+                "firstName": "The",
+                "lastName": "Guzzler",
                 "year": 2025,
                 "result": "$1359",
                 "food": "",

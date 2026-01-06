@@ -29,7 +29,7 @@ class HallOfFame extends React.Component {
                     <div className="w-10/12 mt-52 absolute left-[8%] h-20 bg-gradient-to-br from-yellow-400 to-yellow-100">
 
                     </div>
-                    <div className='w-11/12 flex gap-4 mx-auto overflow-x-auto md:overflow-x-scroll overflow-y-none'>
+                    <div className='w-11/12 flex gap-4 mx-auto overflow-x-auto md:overflow-x-scroll no-scroll overflow-y-none'>
                         {
                             pros.map((pro) => (
 
@@ -49,7 +49,7 @@ class HallOfFame extends React.Component {
                     <div className="w-10/12 mt-52 absolute left-[8%] h-20 bg-gradient-to-br from-yellow-400 to-yellow-100">
 
                     </div>
-                    <div className='w-11/12 flex gap-4 mx-auto overflow-x-auto md:overflow-x-scroll overflow-y-none'>
+                    <div className='w-11/12 flex gap-4 mx-auto overflow-x-auto md:overflow-x-scroll no-scroll overflow-y-none'>
                         {
                             amateurs.map((amateur) => (
                                 <ContestantCard name={`${amateur.firstName} ${amateur.lastName}`} division="" title={`${amateur.result} ${amateur.food}`} pic={`${amateur.img}`} desc={`${amateur.desc}`}></ContestantCard>
@@ -68,7 +68,7 @@ class HallOfFame extends React.Component {
                     <div className="w-10/12 mt-52 absolute left-[8%] h-20 bg-gradient-to-br from-yellow-400 to-yellow-100">
 
                     </div>
-                    <div className='w-11/12 flex gap-4 mx-auto overflow-x-auto md:overflow-x-scroll overflow-y-none'>
+                    <div className='w-11/12 flex gap-4 mx-auto overflow-x-auto md:overflow-x-scroll no-scroll overflow-y-none'>
                         {
                             notable_competitors.map((comp) => (
                                 <ContestantCard name={`${comp.firstName} ${comp.lastName}`} division={`${comp.division}`} title={`${comp.title}`} subtitle={`${comp.subtitle}`} desc={`${comp.desc}`} pic={`${comp.img}`} />
@@ -87,10 +87,10 @@ class HallOfFame extends React.Component {
                     <div className="w-10/12 mt-52 absolute left-[8%] h-20 bg-gradient-to-br from-yellow-400 to-yellow-100">
 
                     </div>
-                    <div className='w-11/12 flex gap-4 mx-auto md:justify-center overflow-x-auto md:overflow-x-scroll overflow-y-none'>
+                    <div className='w-11/12 flex gap-4 mx-auto md:justify-center overflow-x-auto md:overflow-x-scroll no-scroll overflow-y-none'>
                         {
                             top_fundraisers.map((comp) => (
-                                <ContestantCard name={`${comp.firstName} ${comp.lastName}`} division={`${comp.division}`} title={`${comp.title}`} subtitle={`${comp.subtitle}`} desc={`${comp.desc}`} pic={`${comp.img}`} result={comp.result} fundraiser/>
+                                <ContestantCard name={`${comp.firstName} ${comp.lastName}`} division={`${comp.division}`} title={`${comp.title}`} subtitle={`${comp.subtitle}`} desc={`${comp.desc}`} pic={`${comp.img}`} result={comp.result} fundraiser />
                             ))
                         }
 
@@ -106,7 +106,7 @@ class HallOfFame extends React.Component {
                     <div className="w-10/12 mt-52 absolute left-[8%] h-20 bg-gradient-to-br from-yellow-400 to-yellow-100">
 
                     </div>
-                    <div className='w-11/12 flex gap-4 mx-auto md:justify-center overflow-x-auto md:overflow-x-scroll overflow-y-none'>
+                    <div className='w-11/12 flex gap-4 mx-auto md:justify-center overflow-x-auto md:overflow-x-scroll no-scroll overflow-y-none'>
                         {
                             iconic_moments.map((comp) => (
                                 <ContestantCard name={`${comp.firstName} ${comp.lastName}`} division={`${comp.division}`} title={`${comp.title}`} subtitle={`${comp.subtitle}`} desc={`${comp.desc}`} pic={`${comp.img}`} />
