@@ -59,7 +59,7 @@ class GS8 extends React.Component {
                 </div>
                 <EventInvite />
                 <div className="flex justify-center">
-                    <img className="w-10/12 rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026BracketQUARTERS.png" alt="bracket" />
+                    <img className="w-10/12 rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026Bracket.png" alt="bracket" />
                 </div>
                 <div className="h-16">
                     <a className="h-full mx-auto" href="/vote">
