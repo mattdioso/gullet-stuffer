@@ -28,7 +28,7 @@ class HomePage extends React.Component {
           <p className="text-gold text-center">Competitive Eating Contest</p>
         </div>
         <div className="visible h-fit w-11/12 pt-4 md:pt-0 m-auto md:invisible md:w-0 md:h-0 md:opacity-0">
-          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026BracketQUARTERS.png" alt="bracket" />
+          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026Bracket.png" alt="bracket" />
           <div className="h-16 mt-2">
             <a className="h-full mx-auto" href="/vote">
               <div className="w-72 md:w-96 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
@@ -42,7 +42,7 @@ class HomePage extends React.Component {
           </video> */}
         </div>
         <div className="h-0 md:w-10/12 md:mx-auto md:pt-12 md:visible invisible md:h-fit opacity-0 md:opacity-100 md:z-50">
-          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026BracketQUARTERS.png" alt="bracket" />
+          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/2026Bracket.png" alt="bracket" />
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
           </video> */}
@@ -78,7 +78,7 @@ class HomePage extends React.Component {
               </div>
               <div className="w-full space-y-4">
                 <div className="w-full h-16 md:h-20 md:w-3/4 mt-6 md:mt-0">
-                  <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdv_X2rBRE_VGDmpYoO_wcgwBMkBGeoc_ZH0MZksF0YcFZm-A/viewform" target="_blank">
+                  <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdbjNwt2vampg_iGE6waSzQujxn9SO18OlL2VZmfI0fcqLTgQ/viewform" target="_blank">
                     <div className="w-1/2 md:w-1/2 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
                       <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Join the Team!</p>
                     </div>
