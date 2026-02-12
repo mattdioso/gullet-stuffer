@@ -24,7 +24,7 @@ const EventInvite = () => {
                             <div className="mt-6 pb-6 md:pb-0 md:mt-4 mb-6">
                                 <div className="w-full text-center mx-auto">
                                     <p className="text-gold text-2xl 2xl:text-3xl ml-6">Featured Food</p>
-                                    <p className="text-white text-xl 2xl:text-xl ml-6">Coming soon... Vote now on Instagram!</p>
+                                    <p className="text-white text-xl 2xl:text-xl ml-6">Uncrustables</p>
                                 </div>
                             </div>
                         </div>
