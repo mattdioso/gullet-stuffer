@@ -20,8 +20,6 @@ class SponsorPage extends React.Component {
                         &nbsp;&nbsp;
                         <a className='w-24 h-24 md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.cappysgym.com/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/cappys.png" width="150px" alt="cappys" /></a>
                         &nbsp;&nbsp;
-                        <a className='hidden md:block w-24 h-24 md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.lenysplace.net/" target="_blank"><img className="object-center sm:ml-5 rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/LenysPlace.jpg" width="130px" alt="lenys" /></a>
-                        &nbsp;&nbsp;
                         <a className='hidden md:block w-24 h-24 md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.thepickledchefnw.com/" target="_blank"><img className="object-center sm:ml-5 sm:mt-[-10px] sm:h-40 rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/PickledChef1.png" width="125px" alt="pickledchef" /></a>
                         &nbsp;&nbsp;
                         <a className='hidden md:block md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.msjoycescatering.com/" target="_blank"><img className="w-24 md:w-44 md:h-42 object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/joyces.jpeg" width="150px" alt="joyces" /></a>
@@ -50,8 +48,6 @@ class SponsorPage extends React.Component {
                         &nbsp;&nbsp;
                     </div>
                     <div className="md:hidden flex mt-4 place-content-center space-x-4">
-                        <a className='w-24 h-24 md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.lenysplace.net/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/LenysPlace.jpg" width="135px" alt="lenys" /></a>
-                        &nbsp;&nbsp;
                         <a className='w-24 h-24 md:h-44 md:w-44 place-content-center flex rounded-full border-2 border-yellow-400' href="https://www.thepickledchefnw.com/" target="_blank"><img className="object-center rounded-full" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/PickledChef1.png" height="210px" width="115px" alt="pickledchef" /></a>
                         &nbsp;&nbsp;
                         <a className='md:block h-24 w-24 md:h-44 md:w-44 flex rounded-full border-2 border-yellow-400' href="https://inochitaiko.com/" target="_blank"><img className="md:h-44 md:w-44 object-center mx-auto object-scale-down " src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/Sponsors/inochitaiko.png" width="200px" alt="inochi" /></a>
