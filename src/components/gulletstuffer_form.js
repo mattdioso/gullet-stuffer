@@ -40,7 +40,7 @@ const GulletStufferForm = ({ status, message, onValidated }) => {
     return (
         <section className="w-full md:pl-20 mt-4">
             <div className="md:w-1/2 text-center md:text-left">
-                <p className="text-gold text-3xl md:text-4xl">Join our mailing list!</p>
+                <p className="text-gs_purple text-3xl md:text-4xl">Join our mailing list!</p>
             </div>
             <div className="w-full mt-2">
                 <div className="flex w-10/12 md:w-full mx-auto md:mx-0">
@@ -55,7 +55,7 @@ const GulletStufferForm = ({ status, message, onValidated }) => {
                     </div>
                     <div className="w-3/12 md:w-1/12 ml-2">
                         <button
-                            className="text-black bg-gold h-8 w-full rounded-md"
+                            className="text-black bg-gs_purple h-8 w-full rounded-md"
                             onClick={handleFormSubmit}>
                             Submit
                         </button>

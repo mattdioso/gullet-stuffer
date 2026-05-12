@@ -11,8 +11,8 @@ const Navbar = () => {
             <section className="fixed w-full mx-auto bg-black p-4 flex items-center z-50">
                 <div className="md:flex items-center justify-between bg-black">
                     <div className="items-center p-2">
-                        <a className='w-28 h-20 md:w-20' href="https://www.gulletstuffer.com"><img className="w-28 h-20 md:w-20" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/Gullet-Stuffer-II.png" alt="logo"/></a>
-                        {/* <a className='w-28 h-20 md:w-20' href="https://www.gulletstuffer.com"><img className="w-28 h-26 md:w-28" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/logo%20fire.png" alt="logo" /></a> */}
+                        {/* <a className='w-28 h-20 md:w-20' href="https://www.gulletstuffer.com"><img className="w-28 h-20 md:w-20" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/Gullet-Stuffer-II.png" alt="logo"/></a> */}
+                        <a className='w-28 h-20 md:w-20' href="https://www.gulletstuffer.com"><img className="w-28 h-26 md:w-28" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/gs8_purplelogo.png" alt="logo" /></a>
                     </div>
                 </div>
                 <div className="w-full md:hidden">

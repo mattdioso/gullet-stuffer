@@ -26,7 +26,7 @@ class GSYear extends React.Component {
         let title = this.props.year['title'];
         let event_poster = this.props.year['event_poster'];
         if (typeof (desc) !== 'undefined')
-            desc = desc.replaceAll("\\n", "<br/>").replaceAll("<orange>", "<span class='text-gold'>").replaceAll("</orange>", "</span>");
+            desc = desc.replaceAll("\\n", "<br/>").replaceAll("<orange>", "<span class='text-gs_purple'>").replaceAll("</orange>", "</span>");
 
 
         amateurs.sort((a, b) => b.result - a.result);
@@ -38,8 +38,8 @@ class GSYear extends React.Component {
                 <Reveal useBar="false">
                     <div class="flex mt-16 md:mt-36 px-4 md:px-24 w-full">
                         <div class="w-fit m-0">
-                            {/* <h2 className={this.props.i % 2 === 1 ? "text-gold text-5xl md:text-6xl" : "text-white text-5xl md:text-6xl"}>{year} - {title}</h2> */}
-                            <h2 className={this.props.i % 2 === 1 ? "text-gold text-3xl md:text-6xl" : "text-gold text-3xl md:text-6xl"}>{year} - {title}</h2>
+                            {/* <h2 className={this.props.i % 2 === 1 ? "text-gs_red text-5xl md:text-6xl" : "text-white text-5xl md:text-6xl"}>{year} - {title}</h2> */}
+                            <h2 className={this.props.i % 2 === 1 ? "text-gs_red text-3xl md:text-6xl" : "text-gs_red text-3xl md:text-6xl"}>{year} - {title}</h2>
                         </div>
 
                         <div class="h-[1px] bg-white my-auto"></div>

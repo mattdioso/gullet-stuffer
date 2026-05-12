@@ -12,7 +12,7 @@ const AthleteCard = ({ name, campaignUrl, imgUrl }) => {
     }
 
     return (
-        <motion.div layout transition={expand_transition} onClick={() => setIsOpen(!isOpen)} className={`relative mt-3 border-white bg-gold w-72 border rounded-xl ${isOpen ? 'h-96 w-81' : 'h-72 w-72'}`}>
+        <motion.div layout transition={expand_transition} onClick={() => setIsOpen(!isOpen)} className={`relative mt-3 border-white bg-gs_purple w-72 border rounded-xl ${isOpen ? 'h-96 w-81' : 'h-72 w-72'}`}>
             <motion.img mode="wait" layout className="w-68 h-70 rounded-xl" src={imgUrl} alt="guzzler" />
             {isOpen && campaignUrl &&
                 <div className="w-full text-center mx-auto mt-4">

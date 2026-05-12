@@ -37,7 +37,7 @@ const Reveal = ({ children, width, useBar = "true" }) => {
                     transition={{ duration: 2.0, ease: "easeIn" }}
                     className="absolute top-2 bottom-2 left-0 mt-32 md:mt-72 right-0 z-20"
                 >
-                    <div className='h-28 md:h-48 w-3/5 mx-auto bg-gold'>
+                    <div className='h-28 md:h-48 w-3/5 mx-auto bg-gs_purple'>
 
                     </div>
                 </motion.div> : <></>

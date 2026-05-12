@@ -50,7 +50,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        "gold": "#ffd700"
+        "gold": "#ffd700",
+        "gs_red": "#cd0f2d",
+        "gs_purple": "#95509c"
       },
       gridTemplateColumns: {
         'hof': 'repeat(auto-fit, minmax(300px, 1fr))'

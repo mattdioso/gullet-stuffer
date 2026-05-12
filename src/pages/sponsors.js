@@ -55,7 +55,7 @@ class SponsorPage extends React.Component {
                     </div>
                 </div>
                 <div className="w-full pt-16 md:pt-24 pl-4">
-                    <p className="text-gold text-3xl">Want to join the club?</p>
+                    <p className="text-gs_purple text-3xl">Want to join the club?</p>
                     <p className="text-white text-xl">
                         Contact us for more information about becoming a supporter!
                     </p>

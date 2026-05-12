@@ -4,15 +4,15 @@ const EventInvite = () => {
             <div className="md:flex mt-6 sm:mt-0">
 
                 <div class="w-full md:pt-6 md:pl-1">
-                    <p className="text-gold text-center text-4xl md:text-5xl 2xl:text-5xl">Gullet Stuffer VIII</p>
+                    <p className="text-gs_red text-center text-4xl md:text-5xl 2xl:text-5xl">Gullet Stuffer VIII</p>
                     <p className="text-white text-center text-xl 2xl:text-2xl my-4">Join us for our eighth annual live event!</p>
                     <div className="md:flex md:flex-row-reverse">
                         <div className="md:w-1/2 md:flex justify-center my-auto">
                             <div className="pb-8 flex flex-col items-center">
-                                <img className="h-28 w-28 md:h-56 md:w-56" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/GS1_logo.png" alt="logo" />
+                                <img className="h-28 w-28 md:h-56 md:w-56" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/gs8_redlogo.png" alt="logo" />
                                 <div className="h-16 mt-6">
                                     <a className="h-full" href="https://docs.google.com/forms/d/e/1FAIpQLSfTKAtBZHXmxi7nTXckwGpWiqXyfklwVlQIhkbLvQXPnai36w/viewform" target="_blank" rel="noreferrer">
-                                        <div className="w-72 md:w-80 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+                                        <div className="w-72 md:w-80 h-full md:h-full bg-gs_purple flex mx-auto place-content-center rounded-2xl my-auto">
                                             <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Apply to Compete!</p>
                                         </div>
                                     </a>
@@ -21,18 +21,18 @@ const EventInvite = () => {
                         </div>
                         <div className="md:w-1/2 mt-6 pb-6 md:pb-0 md:mt-2">
                             <div className="text-center">
-                                <p className="text-gold text-2xl 2xl:text-3xl ml-6 mt-4 md:mt-2 2xl:mt-3">When</p>
+                                <p className="text-gs_purple text-2xl 2xl:text-3xl ml-6 mt-4 md:mt-2 2xl:mt-3">When</p>
                                 <p className="text-white text-xl 2xl:text-xl ml-6 mt-2">Saturday, July 11th 2026</p>
                             </div>
                             <div className="text-center">
-                                <p className="text-gold text-2xl 2xl:text-3xl mt-4 md:mt-4 2xl:mt-3">Where</p>
+                                <p className="text-gs_purple text-2xl 2xl:text-3xl mt-4 md:mt-4 2xl:mt-3">Where</p>
                                 <p className="text-white text-xl 2xl:text-xl">Grocery Outlet Bargain Market</p>
                                 <p className="text-white text-xl 2xl:text-xl">1126 MLK Jr Way</p>
                                 <p className="text-white text-xl 2xl:text-xl">Seattle, WA 98122</p>
                             </div>
                             <div className="mt-6 pb-6 md:pb-0 md:mt-4 mb-6">
                                 <div className="w-full text-center mx-auto">
-                                    <p className="text-gold text-2xl 2xl:text-3xl ml-6">Featured Food</p>
+                                    <p className="text-gs_purple text-2xl 2xl:text-3xl ml-6">Featured Food</p>
                                     <p className="text-white text-xl 2xl:text-xl ml-6">Uncrustables</p>
                                 </div>
                             </div>

@@ -22,7 +22,7 @@ class HallOfFame extends React.Component {
                 <section className='relative mb-16 md:mb-0 md:my-16 2xl:w-4/5 mx-auto'>
                     <div className='grid grid-cols-12 w-4/5 mx-auto'>
                         <div className='col-span-6 md:col-span-3 w-fit m-0'>
-                            <h3 className='text-gold text-base md:text-xl'>Past Pro Champs</h3>
+                            <h3 className='text-gs_red text-base md:text-xl'>Past Pro Champs</h3>
                         </div>
                         <div className='col-span-6 md:col-span-9 h-[1px] w-full bg-white my-auto'></div>
                     </div>
@@ -42,7 +42,7 @@ class HallOfFame extends React.Component {
                 <section className='relative my-16 2xl:w-4/5 mx-auto'>
                     <div className='grid grid-cols-12 w-4/5 mx-auto'>
                         <div className='col-span-7 md:col-span-3 w-fit m-0'>
-                            <h3 className='text-gold text-base md:text-xl'>Past Amateur Champs</h3>
+                            <h3 className='text-gs_purple text-base md:text-xl'>Past Amateur Champs</h3>
                         </div>
                         <div className='col-span-5 md:col-span-9 h-[1px] w-full bg-white my-auto'></div>
                     </div>
@@ -61,7 +61,7 @@ class HallOfFame extends React.Component {
                 <section className='relative my-16 2xl:w-4/5 mx-auto'>
                     <div className='grid grid-cols-12 w-4/5 mx-auto'>
                         <div className='col-span-7 md:col-span-3 w-fit m-0'>
-                            <h3 className='text-gold text-base md:text-xl'>Notable Competitors</h3>
+                            <h3 className='text-gs_red text-base md:text-xl'>Notable Competitors</h3>
                         </div>
                         <div className='col-span-5 md:col-span-9 h-[1px] w-full bg-white my-auto'></div>
                     </div>
@@ -80,7 +80,7 @@ class HallOfFame extends React.Component {
                 <section className='relative my-16 2xl:w-4/5 mx-auto'>
                     <div className='grid grid-cols-12 w-4/5 mx-auto'>
                         <div className='col-span-7 md:col-span-3 w-fit m-0'>
-                            <h3 className='text-gold text-base md:text-xl'>Top Fundraisers</h3>
+                            <h3 className='text-gs_purple text-base md:text-xl'>Top Fundraisers</h3>
                         </div>
                         <div className='col-span-5 md:col-span-9 h-[1px] w-full bg-white my-auto'></div>
                     </div>
@@ -99,7 +99,7 @@ class HallOfFame extends React.Component {
                 <section className='relative my-16 2xl:w-4/5 mx-auto'>
                     <div className='grid grid-cols-12 w-4/5 mx-auto'>
                         <div className='col-span-6 md:col-span-3 w-fit m-0'>
-                            <h3 className='text-gold text-base md:text-xl'>Iconic Moments</h3>
+                            <h3 className='text-gs_red text-base md:text-xl'>Iconic Moments</h3>
                         </div>
                         <div className='col-span-6 md:col-span-9 h-[1px] w-full bg-white my-auto'></div>
                     </div>

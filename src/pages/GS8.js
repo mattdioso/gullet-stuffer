@@ -14,7 +14,7 @@ class GS8 extends React.Component {
                 return <span className="text-white">huh</span>
             } else {
                 return (
-                    <div className="flex text-gold space-x-2 md:space-x-14">
+                    <div className="flex text-gs_red space-x-2 md:space-x-14">
                         <div>
                             <div className="text-4xl md:text-9xl text-center md:w-40">
                                 {zeroPad(days)}
