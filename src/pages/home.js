@@ -25,36 +25,36 @@ class HomePage extends React.Component {
         return <span className="text-white">huh</span>
       } else {
         return (
-          <div className="flex text-gs_red space-x-2 md:space-x-14">
+          <div className="flex text-gs_red space-x-4 md:space-x-14">
             <div>
-              <div className="text-4xl md:text-9xl text-center md:w-40">
+              <div className="text-6xl md:text-9xl text-center md:w-40">
                 {zeroPad(days)}
               </div>
-              <div className="text-center text-xs md:text-2xl">
+              <div className="text-center text-base md:text-2xl">
                 days
               </div>
             </div>
             <div>
-              <div className="text-4xl md:text-9xl text-center md:w-40">
+              <div className="text-6xl md:text-9xl text-center md:w-40">
                 {zeroPad(hours)}
               </div>
-              <div className="text-center text-xs md:text-2xl">
+              <div className="text-center text-base md:text-2xl">
                 hours
               </div>
             </div>
             <div>
-              <div className="text-4xl md:text-9xl text-center md:w-40">
+              <div className="text-6xl md:text-9xl text-center md:w-40">
                 {zeroPad(minutes)}
               </div>
-              <div className="text-center text-xs md:text-2xl">
+              <div className="text-center text-base md:text-2xl">
                 minutes
               </div>
             </div>
             <div>
-              <div className="text-4xl md:text-9xl text-center md:w-40">
+              <div className="text-6xl md:text-9xl text-center md:w-40">
                 {zeroPad(seconds)}
               </div>
-              <div className="text-center text-xs md:text-2xl">
+              <div className="text-center text-base md:text-2xl">
                 seconds
               </div>
             </div>
@@ -74,15 +74,15 @@ class HomePage extends React.Component {
         <div className="w-full flex justify-center mt-10 md:mt-16">
           <Countdown date={new Date(1783821600000)} renderer={countdownRenderer} />
         </div>
-        <div className="visible h-fit w-11/12 pt-4 md:pt-0 m-auto md:invisible md:w-0 md:h-0 md:opacity-0">
-          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/homepageuncrust.png" alt="uncrust" />
+        <div className="visible h-fit w-8/12 pt-4 md:pt-0 m-auto md:invisible md:w-0 md:h-0 md:opacity-0">
+          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/gs8_purplelogo.png" alt="uncrust" />
 
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
           </video> */}
         </div>
-        <div className="h-0 md:w-10/12 md:mx-auto md:pt-12 md:visible invisible md:h-fit opacity-0 md:opacity-100 md:z-50">
-          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/homepageuncrust.png" alt="uncrust" />
+        <div className="h-0 md:w-5/12 md:mx-auto md:pt-12 md:visible invisible md:h-fit opacity-0 md:opacity-100 md:z-50">
+          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/gs8_purplelogo.png" alt="uncrust" />
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
           </video> */}

@@ -51,7 +51,7 @@ module.exports = {
     extend: {
       colors: {
         "gold": "#ffd700",
-        "gs_red": "#cd0f2d",
+        "gs_red": "#ff3b6e",
         "gs_purple": "#95509c"
       },
       gridTemplateColumns: {

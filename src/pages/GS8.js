@@ -14,36 +14,36 @@ class GS8 extends React.Component {
                 return <span className="text-white">huh</span>
             } else {
                 return (
-                    <div className="flex text-gs_red space-x-2 md:space-x-14">
+                    <div className="flex text-gs_red space-x-4 md:space-x-14">
                         <div>
-                            <div className="text-4xl md:text-9xl text-center md:w-40">
+                            <div className="text-6xl md:text-9xl text-center md:w-40">
                                 {zeroPad(days)}
                             </div>
-                            <div className="text-center text-xs md:text-2xl">
+                            <div className="text-center text-base md:text-2xl">
                                 days
                             </div>
                         </div>
                         <div>
-                            <div className="text-4xl md:text-9xl text-center md:w-40">
+                            <div className="text-6xl md:text-9xl text-center md:w-40">
                                 {zeroPad(hours)}
                             </div>
-                            <div className="text-center text-xs md:text-2xl">
+                            <div className="text-center text-base md:text-2xl">
                                 hours
                             </div>
                         </div>
                         <div>
-                            <div className="text-4xl md:text-9xl text-center md:w-40">
+                            <div className="text-6xl md:text-9xl text-center md:w-40">
                                 {zeroPad(minutes)}
                             </div>
-                            <div className="text-center text-xs md:text-2xl">
+                            <div className="text-center text-base md:text-2xl">
                                 minutes
                             </div>
                         </div>
                         <div>
-                            <div className="text-4xl md:text-9xl text-center md:w-40">
+                            <div className="text-6xl md:text-9xl text-center md:w-40">
                                 {zeroPad(seconds)}
                             </div>
-                            <div className="text-center text-xs md:text-2xl">
+                            <div className="text-center text-base md:text-2xl">
                                 seconds
                             </div>
                         </div>
