@@ -61,13 +61,6 @@ class GS8 extends React.Component {
                 <div className="flex justify-center">
                     <img className="w-10/12 rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/resofinalresults.png" alt="bracket" />
                 </div>
-                <div className="h-16">
-                    <a className="h-full mx-auto" href="/vote">
-                        <div className="w-36 md:w-96 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
-                            <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Check out our Voter's Guide!</p>
-                        </div>
-                    </a>
-                </div>
                 <footer className='h-24 bg-black'></footer>
             </main>
         )

@@ -76,13 +76,6 @@ class HomePage extends React.Component {
         </div>
         <div className="visible h-fit w-11/12 pt-4 md:pt-0 m-auto md:invisible md:w-0 md:h-0 md:opacity-0">
           <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/homepageuncrust.png" alt="uncrust" />
-          <div className="h-16 mt-2">
-            <a className="h-full mx-auto" href="/vote">
-              <div className="w-72 md:w-96 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
-                <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Check out our Voter's Guide!</p>
-              </div>
-            </a>
-          </div>
 
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
@@ -93,13 +86,6 @@ class HomePage extends React.Component {
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
             <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
           </video> */}
-          <div className="h-16 mt-2">
-            <a className="h-full mx-auto" href="/vote">
-              <div className="w-36 md:w-96 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
-                <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Check out our Voter's Guide!</p>
-              </div>
-            </a>
-          </div>
         </div>
 
         <div className="w-11/12 2xl:w-4/5 mx-auto mt-10 md:grid md:grid-cols-[minmax(360px,0.42fr)_minmax(0,0.58fr)] md:gap-12 md:items-center">
@@ -133,7 +119,10 @@ class HomePage extends React.Component {
                 <p className="text-gold text-2xl md:text-4xl leading-tight">$20,200</p>
               </div>
             </div>
-            <div className="mt-8 flex justify-center">
+            <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+              <a className="inline-flex min-h-[54px] bg-gold px-8 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-2xl" href="https://docs.google.com/forms/d/e/1FAIpQLSfTKAtBZHXmxi7nTXckwGpWiqXyfklwVlQIhkbLvQXPnai36w/viewform" target="_blank" rel="noreferrer">
+                Apply to Compete!
+              </a>
               <a className="inline-flex min-h-[54px] bg-gold px-8 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-2xl" href="https://docs.google.com/forms/d/e/1FAIpQLSdbjNwt2vampg_iGE6waSzQujxn9SO18OlL2VZmfI0fcqLTgQ/viewform" target="_blank" rel="noreferrer">
                 Join the Team!
               </a>

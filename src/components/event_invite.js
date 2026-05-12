@@ -8,7 +8,16 @@ const EventInvite = () => {
                     <p className="text-white text-center text-xl 2xl:text-2xl my-4">Join us for our eighth annual live event!</p>
                     <div className="md:flex md:flex-row-reverse">
                         <div className="md:w-1/2 md:flex justify-center my-auto">
-                            <img className="h-28 w-28 md:h-56 md:w-56 mx-auto md:mx-0" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/GS1_logo.png" alt="logo" />
+                            <div className="pb-8 flex flex-col items-center">
+                                <img className="h-28 w-28 md:h-56 md:w-56" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/logos/GS1_logo.png" alt="logo" />
+                                <div className="h-16 mt-6">
+                                    <a className="h-full" href="https://docs.google.com/forms/d/e/1FAIpQLSfTKAtBZHXmxi7nTXckwGpWiqXyfklwVlQIhkbLvQXPnai36w/viewform" target="_blank" rel="noreferrer">
+                                        <div className="w-72 md:w-80 h-full md:h-full bg-gold flex mx-auto place-content-center rounded-2xl my-auto">
+                                            <p className="text-black my-auto text-lg md:text-2xl 2xl:text-2xl text-center">Apply to Compete!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div className="md:w-1/2 mt-6 pb-6 md:pb-0 md:mt-2">
                             <div className="text-center">
