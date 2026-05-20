@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
 import { PrevButton, NextButton, usePrevNextButtons } from './ig_feed_buttons';
 import { SelectedSnapDisplay, useSelectedSnapDisplay } from './ig_feed_selected_snap_display';
 import { SocialIcon } from 'react-social-icons';
+import { fetchInstagramFeed } from './ig_feed_api';
 
 const IGFeed = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true });
-    const [ig_items, setIGItems] = useState([]);
-    const user_id = process.env.REACT_APP_IG_USER_ID;
-    const access_token = process.env.REACT_APP_IG_ACCESS_TOKEN;
+    const [igItems, setIGItems] = useState([]);
+    const [error, setError] = useState(null);
+    const feedEndpoint = process.env.REACT_APP_IG_FEED_URL || '/api/instagram-feed';
+    const accountUsername = process.env.REACT_APP_IG_USERNAME || 'gulletstuffer';
+    const accountUrl = `https://www.instagram.com/${accountUsername}/`;
 
     const {
         prevBtnDisabled,
@@ -20,65 +22,70 @@ const IGFeed = () => {
 
     const { selectedSnap, snapCount } = useSelectedSnapDisplay(emblaApi);
 
-    const media_url = `https://graph.instagram.com/${user_id}/media?access_token=${access_token}`;
-    //const post_url = `https://graph.instagram.com/${}`;
-
     useEffect(() => {
-        const fetch_post = async (id) => {
-            const post_url = `https://graph.instagram.com/${id}?access_token=${access_token}&fields=media_url,permalink,media_type`;
-            const res = await fetch(post_url);
-            const json = (await res.json());
+        let isMounted = true;
 
-            const ig_item = {
-                'permalink': json.permalink,
-                'mediaUrl': json.media_url,
-                'mediaType': json.media_type,
-                'caption': json.caption
-            };
+        const loadFeed = async () => {
+            try {
+                const items = await fetchInstagramFeed({
+                    endpoint: feedEndpoint,
+                    limit: 10
+                });
 
-            return ig_item;
-        }
-        const doFetch = async () => {
-            if (!user_id || !access_token) {
-                console.log(`userId or access_token is undefined: `, { user_id, access_token });
-                return;
-            }
-            const res = await fetch(media_url);
-            const json = (await res.json());
+                if (!isMounted) return;
 
+                setIGItems(items);
+                setError(null);
+            } catch (err) {
+                if (!isMounted) return;
 
-            const all_items = []
-
-            for (let i = 0; i < json.data.length; i++) {
-                const item = json.data[i];
-                const item_id = item.id;
-                const ig_item = await fetch_post(item_id);
-                if (ig_item.mediaType == 'IMAGE') {
-                    ig_item.key = i;
-                    all_items.push(ig_item);
-                }
-                if (all_items.length >= 10) {
-                    break;
+                setIGItems([]);
+                setError(err);
+                if (process.env.NODE_ENV !== 'production') {
+                    console.warn('Unable to load Instagram feed:', err);
                 }
             }
-            setIGItems(all_items);
+        };
+
+        loadFeed();
+
+        return () => {
+            isMounted = false;
+        };
+    }, [feedEndpoint]);
+
+    if (!igItems.length) {
+        if (!error) {
+            return null;
         }
-        doFetch();
-    }, [user_id, access_token, media_url]);
+
+        return (
+            <div className="w-11/12 md:w-2/3 mx-4 mt-4 p-4 border border-white rounded-xl md:mx-auto">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <p className="text-white text-xl">Follow us on Instagram</p>
+                    <a href={accountUrl} target="_blank" rel="noreferrer" className="flex w-fit border border-white rounded-3xl pr-4">
+                        <SocialIcon network="instagram" bgColor="transparent" fgColor="white" url={accountUrl} />
+                        <p className="text-white text-base md:text-xl my-auto">{accountUsername}</p>
+                    </a>
+                </div>
+                {process.env.NODE_ENV !== 'production' && (
+                    <p className="text-gs_red text-sm mt-3">{error.message}</p>
+                )}
+            </div>
+        );
+    }
 
     return (
-        ig_items.length &&
         <div className="w-11/12 md:w-2/3 mx-4 mt-4 p-4 border border-white rounded-xl md:mx-auto">
             <div className="w-full">
                 <p className="text-white text-xl">Follow us on Instagram</p>
             </div>
             <div className="overflow-hidden mx-auto" ref={emblaRef}>
-
                 <div id="embla_container" className="flex touch-pan-y touch-pinch-zoom gap-4">
-                    {ig_items.map((item) => (
-                        <div className="flex-none min-w-0">
-                            <a href={item.permalink} target="_blank">
-                                <img className="h-64" src={item.mediaUrl} alt={item.key}></img>
+                    {igItems.map((item) => (
+                        <div key={item.id} className="flex-none min-w-0">
+                            <a href={item.permalink} target="_blank" rel="noreferrer">
+                                <img className="h-64" src={item.mediaUrl} alt={item.caption || `Instagram post from ${accountUsername}`}></img>
                             </a>
                         </div>
                     ))}
@@ -88,9 +95,9 @@ const IGFeed = () => {
                         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                         <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
                     </div>
-                    <a href="https://www.instagram.com/gulletstuffer/" target="_blank" className="flex border border-white rounded-3xl pr-4">
-                        <SocialIcon network="instagram" bgColor="transparent" fgColor="white" url="https://www.instagram.com/gulletstuffer/" />
-                        <p className="text-white text-base md:text-xl my-auto">gulletstuffer</p>
+                    <a href={accountUrl} target="_blank" rel="noreferrer" className="flex border border-white rounded-3xl pr-4">
+                        <SocialIcon network="instagram" bgColor="transparent" fgColor="white" url={accountUrl} />
+                        <p className="text-white text-base md:text-xl my-auto">{accountUsername}</p>
                     </a>
                     <SelectedSnapDisplay selectedSnap={selectedSnap} snapCount={snapCount} />
                 </div>

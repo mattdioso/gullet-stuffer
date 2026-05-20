@@ -24,7 +24,7 @@ export const usePrevNextButtons = (emblaApi) => {
         if (!emblaApi) return
         onSelect(emblaApi)
         emblaApi.on('reInit', onSelect).on('select', onSelect);
-    }, emblaApi, onSelect);
+    }, [emblaApi, onSelect]);
 
     return {
         prevBtnDisabled,

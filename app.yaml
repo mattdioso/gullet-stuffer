@@ -1,12 +1,9 @@
 env: standard
 runtime: nodejs22
 instance_class: F4
-handlers:
-- url: /static
-  static_dir: build/static
-- url: /(.*\.(json|ico|js))$
-  static_files: build/\1
-  upload: build/.*\.(json|ico|js)$
-- url: .*
-  static_files: build/index.html
-  upload: build/index.html
+entrypoint: npm start
+
+env_variables:
+  IG_USER_ID: "me"
+  IG_FEED_LIMIT: "10"
+  IG_CACHE_TTL_SECONDS: "900"
