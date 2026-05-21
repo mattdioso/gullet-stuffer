@@ -1,0 +1,17 @@
+{
+  "updatedAt": "2026-05-20T00:00:00.000Z",
+  "fundraisers": [
+    {
+      "name": "Sample Fundraiser",
+      "amount": 1250,
+      "donationCount": 18
+    }
+  ],
+  "donors": [
+    {
+      "name": "Sample Donor",
+      "amount": 500,
+      "message": "Go Gullet Stuffer"
+    }
+  ]
+}
