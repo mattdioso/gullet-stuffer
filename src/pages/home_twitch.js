@@ -1,8 +1,7 @@
 import React from 'react';
-import GulletStufferForm from '../components/gulletstuffer_form';
 import GulletStufferSubscribe from '../components/mailchimp_subscribe';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import ReactTwitchEmbedVideo from 'react-twitch-embed-video';
+import TwitchLivestream from '../components/twitch_livestream';
 
 class HomeTwitchPage extends React.Component {
   constructor(props) {
@@ -29,7 +28,7 @@ class HomeTwitchPage extends React.Component {
           {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
                       <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/home/homepagevideo.mp4" type="video/mp4"/>
                   </video> */}
-          <ReactTwitchEmbedVideo channel="gulletstuffer" allowfullscreen />
+          <TwitchLivestream channel="gulletstuffer" />
         </div>
         <div className="md:flex w-full mt-6">
           <div className="w-10/12 md:w-5/12 2xl:w-1/3 border-b md:border-b-0 md:border-r border-gray-200 text-center md:text-left md:pl-20 py-auto mx-auto pb-12">
@@ -51,7 +50,7 @@ class HomeTwitchPage extends React.Component {
                 <p className='text-xs md:text-base font-heavitas text-white'>Next Event: Gullet Stuffer VI - July 13th, 2024</p>
               </div>
               <div className="w-full h-16 md:h-20 md:w-2/3 mt-6 md:mt-0">
-                <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdxoIUFxZy8FQ_oga8EFz-seF2dF67oov13g18pbKgNJPOJ3g/closedform" target="_blank">
+                <a className="w-full h-[54px] mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdxoIUFxZy8FQ_oga8EFz-seF2dF67oov13g18pbKgNJPOJ3g/closedform" target="_blank" rel="noreferrer">
                   <div className="w-1/2 md:w-1/2 h-full md:h-full bg-orange-400 flex mx-auto place-content-center rounded-2xl my-auto">
                     <p className="text-white my-auto text-sm md:text-3xl 2xl:text-3xl text-center">Apply NOW</p>
                     <FaExternalLinkAlt className="my-auto w-10" color="white" />
