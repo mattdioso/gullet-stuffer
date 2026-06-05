@@ -1,6 +1,8 @@
 import React from 'react';
 import Countdown, { zeroPad } from 'react-countdown';
 import EventInvite from '../components/event_invite';
+import GS8AthleteSection from '../components/gs8_athlete_section';
+import { gs8_contestants } from '../data/gs8_contestants';
 
 
 class GS8 extends React.Component {
@@ -58,9 +60,7 @@ class GS8 extends React.Component {
                     <Countdown date={new Date(1783821600000)} renderer={renderer} />
                 </div>
                 <EventInvite />
-                <div className="flex justify-center">
-                    <img className="w-10/12 rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/resofinalresults.png" alt="bracket" />
-                </div>
+                <GS8AthleteSection contestants={gs8_contestants} />
                 <footer className='h-24 bg-black'></footer>
             </main>
         )
