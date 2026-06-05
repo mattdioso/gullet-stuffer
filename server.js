@@ -24,6 +24,27 @@ let cachedAt = 0;
 const dojiggyCacheTtlMs = Number(process.env.DOJIGGY_CACHE_TTL_SECONDS || 900) * 1000;
 let cachedDojiggyLeaderboards = null;
 let cachedDojiggyAt = 0;
+const gs8AthleteCampaigns = [
+    { name: 'Crosby Schultz', campaignUrl: 'https://go.dojiggy.io/a46932/m/crozbaby/Member/Details' },
+    { name: 'Micheal Pascua', campaignUrl: 'https://go.dojiggy.io/a46932/m/pascua/Member/Details' },
+    { name: 'Dan W', campaignUrl: 'https://go.dojiggy.io/a46932/m/thevoid/Member/Details' },
+    { name: 'Rosa Mestas', campaignUrl: 'https://go.dojiggy.io/nocrust/m/8d8834' },
+    { name: 'Mathias Deeg', campaignUrl: 'https://go.dojiggy.io/nocrust/m/sweetcream' },
+    { name: 'Jon Pendleton', campaignUrl: 'https://go.dojiggy.io/nocrust/m/jonp' },
+    { name: 'Raul Melgarejo', campaignUrl: 'https://go.dojiggy.io/nocrust/m/gulletmullet' },
+    { name: 'Diontae Harden', campaignUrl: 'https://go.dojiggy.io/nocrust/m/darkknight' },
+    { name: 'Madi Hinkel', campaignUrl: 'https://go.dojiggy.io/nocrust/m/hinkel' },
+    { name: 'Scott Petrushka', campaignUrl: 'https://go.dojiggy.io/nocrust/m/thegobbler' },
+    { name: 'Naader Reda', campaignUrl: 'https://go.dojiggy.io/nocrust/m/freak' },
+    { name: 'Miles Zoltak', campaignUrl: 'https://go.dojiggy.io/nocrust/m/miles' },
+    { name: 'Sam Shirley', campaignUrl: 'https://go.dojiggy.io/nocrust/m/mermaid' },
+    { name: 'Jeremy Katz', campaignUrl: 'https://go.dojiggy.io/nocrust/m/jaws' },
+    { name: 'Kenney Tran', campaignUrl: 'https://go.dojiggy.io/nocrust/m/thepeoplesmusubi' },
+    { name: 'Oden', campaignUrl: 'https://go.dojiggy.io/nocrust/m/734514' },
+    { name: 'Jessamyn Reichmann', campaignUrl: 'https://go.dojiggy.io/nocrust/m/sweetheart' },
+    { name: 'Jonathan Gong', campaignUrl: 'https://go.dojiggy.io/nocrust/m/jonboat' },
+    { name: 'Ashwin Muthy', campaignUrl: 'https://go.dojiggy.io/nocrust/m/darkhorse' }
+];
 
 const getInstagramConfig = () => ({
     userId: process.env.IG_USER_ID || process.env.REACT_APP_IG_USER_ID || 'me',
@@ -106,8 +127,14 @@ const getFirstValue = (item, keys) => {
 };
 
 const defaultNameKeys = ['name', 'displayName', 'participantName', 'fundraiserName', 'donorName'];
-const fundraiserNameKeys = ['fundraiserName', 'participantName', 'athleteName', 'teamMemberName', 'memberName'];
+const fundraiserNameKeys = ['fundraiserName', 'participantName', 'creditedFundraiser', 'athleteName', 'teamMemberName', 'memberName'];
 const donorNameKeys = ['donorName', 'donor', 'supporterName', 'name', 'displayName'];
+const donorIdentityKeys = ['donorName', 'donor', 'supporterName'];
+const fundraiserTypeMatchers = ['fundraiser', 'participant', 'team', 'member', 'athlete'];
+const donationTypeMatchers = ['donation', 'transaction', 'gift', 'payment'];
+const donorTypeMatchers = ['donor', 'supporter'];
+const eventTypeMatchers = ['campaign', 'event', 'organization', 'charity'];
+const eventFundraiserNameMatchers = ['gulletstuffer', 'nocrustnoproblem'];
 
 const normalizeName = (item, nameKeys = defaultNameKeys) => {
     const directName = getFirstValue(item, nameKeys);
@@ -126,6 +153,11 @@ const normalizeName = (item, nameKeys = defaultNameKeys) => {
 
     const fallbackName = getFirstValue(item, ['name', 'displayName']);
     return fallbackName ? String(fallbackName).trim() : '';
+};
+
+const isEventFundraiserName = (name) => {
+    const normalizedName = normalizeFieldName(name);
+    return eventFundraiserNameMatchers.some((matcher) => normalizedName.includes(matcher));
 };
 
 const normalizeDonationRow = (item, index) => {
@@ -150,15 +182,16 @@ const normalizeDonationRow = (item, index) => {
         'athleteName',
         'teamMemberName'
     ]);
+    const validFundraiserName = isEventFundraiserName(fundraiserName) ? '' : fundraiserName;
 
-    if (amount <= 0 && !fundraiserName && !donorName) {
+    if (amount <= 0 && !validFundraiserName && !donorName) {
         return null;
     }
 
     return {
         id: getFirstValue(item, ['id', 'transactionId', 'donationId']) || `donation-${index}`,
         donorName: String(donorName).trim() || 'Anonymous',
-        fundraiserName: String(fundraiserName).trim(),
+        fundraiserName: String(validFundraiserName).trim(),
         amount,
         message: getFirstValue(item, ['message', 'comment', 'note']),
         timestamp: getFirstValue(item, ['timestamp', 'createdAt', 'date', 'donationDate'])
@@ -230,6 +263,101 @@ const sortAndLimitEntries = (entries, limit, nameKeys) => entries
     .sort((a, b) => b.amount - a.amount)
     .slice(0, limit);
 
+const rowTypeIncludes = (type, matchers) => matchers.some((matcher) => type.includes(matcher));
+
+const hasFundraiserIdentity = (row) => {
+    const fundraiserName = getFirstValue(row, fundraiserNameKeys);
+    return Boolean(fundraiserName) && !isEventFundraiserName(fundraiserName);
+};
+
+const hasDonorIdentity = (row) => Boolean(getFirstValue(row, donorIdentityKeys));
+
+const hasDonationIdentity = (row) => Boolean(getFirstValue(row, [
+    'transactionId',
+    'donationId',
+    'giftId',
+    'paymentId',
+    'donationDate',
+    'transactionDate'
+]));
+
+const isEventSummaryRow = (row, type) => {
+    if (hasFundraiserIdentity(row)) {
+        return false;
+    }
+
+    return rowTypeIncludes(type, eventTypeMatchers) || Boolean(getFirstValue(row, [
+        'campaignName',
+        'campaignTitle',
+        'eventName',
+        'eventTitle',
+        'organizationName',
+        'charityName'
+    ]));
+};
+
+const decodeEscapedJsonValue = (value) => {
+    try {
+        return JSON.parse(`"${value}"`);
+    } catch (error) {
+        return value;
+    }
+};
+
+const parseDojiggyMemberPage = (html, fallbackName) => {
+    const totalRaisedMatch = html.match(/\\"TotalRaised\\":([0-9.]+)/);
+    const memberNameMatch = html.match(/\\"MemberName\\":\\"((?:\\\\.|[^\\"])*)\\"/);
+    const donorCountMatch = html.match(/\\"SupportersCount\\":([0-9]+)/);
+
+    return {
+        name: memberNameMatch ? decodeEscapedJsonValue(memberNameMatch[1]) : fallbackName,
+        amount: totalRaisedMatch ? Number(totalRaisedMatch[1]) : 0,
+        donationCount: donorCountMatch ? Number(donorCountMatch[1]) : 0
+    };
+};
+
+const fetchAthleteCampaignTotal = async ({ name, campaignUrl }) => {
+    const response = await fetch(campaignUrl);
+
+    if (!response.ok) {
+        throw new Error(`DoJiggy member page returned ${response.status}.`);
+    }
+
+    const html = await response.text();
+    const memberPage = parseDojiggyMemberPage(html, name);
+
+    return {
+        id: campaignUrl,
+        name: memberPage.name,
+        amount: memberPage.amount,
+        donationCount: memberPage.donationCount,
+        avatarUrl: '',
+        message: ''
+    };
+};
+
+const fetchAthleteCampaignLeaderboards = async (limit) => {
+    if (process.env.DOJIGGY_ATHLETE_PAGES_ENABLED === 'false') {
+        return [];
+    }
+
+    const entries = await Promise.all(
+        gs8AthleteCampaigns.map(async (athlete) => {
+            try {
+                return await fetchAthleteCampaignTotal(athlete);
+            } catch (error) {
+                console.error(`DoJiggy athlete page request failed for ${athlete.name}:`, error.message);
+                return null;
+            }
+        })
+    );
+
+    return entries
+        .filter((entry) => entry && entry.amount > 0)
+        .sort((a, b) => b.amount - a.amount)
+        .slice(0, limit);
+};
+
 const parseCsvRows = (csv) => {
     const rows = [];
     let row = [];
@@ -287,14 +415,24 @@ const splitLeaderboardRows = (rows) => {
 
     rows.forEach((row) => {
         const type = String(getFirstValue(row, ['type', 'leaderboard', 'category', 'role'])).toLowerCase();
-        const fundraiserName = getFirstValue(row, ['fundraiserName', 'participantName', 'creditedFundraiser', 'athleteName', 'teamMemberName']);
+        const fundraiserIdentity = hasFundraiserIdentity(row);
+        const donorIdentity = hasDonorIdentity(row);
 
-        if (type.includes('donor')) {
-            donors.push(row);
-        } else if (type.includes('fundraiser') || type.includes('participant') || type.includes('team')) {
-            fundraisers.push(row);
-        } else if (fundraiserName) {
+        if (isEventSummaryRow(row, type)) {
+            return;
+        }
+
+        if (
+            rowTypeIncludes(type, donationTypeMatchers)
+            || (fundraiserIdentity && donorIdentity)
+            || (fundraiserIdentity && hasDonationIdentity(row))
+            || (donorIdentity && hasDonationIdentity(row))
+        ) {
             donations.push(row);
+        } else if (rowTypeIncludes(type, donorTypeMatchers)) {
+            donors.push(row);
+        } else if (rowTypeIncludes(type, fundraiserTypeMatchers) || fundraiserIdentity) {
+            fundraisers.push(row);
         }
     });
 
@@ -305,7 +443,7 @@ const splitLeaderboardRows = (rows) => {
     }
 
     return {
-        fundraisers: fundraisers.length ? fundraisers : rows,
+        fundraisers,
         donors
     };
 };
@@ -366,10 +504,16 @@ const fetchDojiggyLeaderboards = async () => {
         ? JSON.parse(body)
         : parseCsvRows(body);
 
-    return {
+    const leaderboards = {
         ...normalizeDojiggyPayload(payload, limit),
         configured: true
     };
+
+    if (!leaderboards.fundraisers.length) {
+        leaderboards.fundraisers = await fetchAthleteCampaignLeaderboards(limit);
+    }
+
+    return leaderboards;
 };
 
 const fetchInstagramFeed = async () => {

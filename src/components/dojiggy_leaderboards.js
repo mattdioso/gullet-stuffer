@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { gs8_contestants } from '../data/gs8_contestants';
 
 const currencyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -7,6 +8,48 @@ const currencyFormatter = new Intl.NumberFormat('en-US', {
 });
 
 const formatCurrency = (amount) => currencyFormatter.format(Number(amount || 0));
+
+const normalizeLeaderboardText = (value) => String(value || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+const getCampaignSlug = (campaignUrl) => {
+  if (!campaignUrl) {
+    return '';
+  }
+
+  const match = campaignUrl.match(/\/m\/([^/]+)/);
+  return match ? match[1] : '';
+};
+
+const athleteFundraiserAliases = [
+  ...gs8_contestants.amateurs,
+  ...gs8_contestants.pros
+].flatMap((contestant) => [
+  contestant.name,
+  contestant.nickname,
+  getCampaignSlug(contestant.campaignUrl)
+]).map(normalizeLeaderboardText).filter(Boolean);
+
+const eventFundraiserMatchers = [
+  'gulletstuffer',
+  'gulletstufferviii',
+  'gulletstuffer8',
+  'campaign',
+  'event'
+];
+
+const isAthleteFundraiser = (entry) => {
+  const normalizedName = normalizeLeaderboardText(entry.name);
+
+  if (!normalizedName || eventFundraiserMatchers.some((matcher) => normalizedName.includes(matcher))) {
+    return false;
+  }
+
+  return athleteFundraiserAliases.some((alias) => (
+    normalizedName === alias
+    || normalizedName.includes(alias)
+    || (alias.includes(normalizedName) && normalizedName.length >= 4)
+  ));
+};
 
 const LeaderboardSkeleton = () => (
   <div className="space-y-3">
@@ -143,12 +186,16 @@ export const DojiggyLeaderboards = ({ endpoint = '/api/dojiggy-leaderboards' }) 
     })}`;
   }, [leaderboards.updatedAt]);
 
+  const athleteFundraisers = useMemo(() => (
+    leaderboards.fundraisers.filter(isAthleteFundraiser)
+  ), [leaderboards.fundraisers]);
+
   return (
     <section className="relative w-full my-16 py-12 bg-black border-y border-neutral-800">
       <div className="w-11/12 2xl:w-4/5 mx-auto">
         <div className="grid grid-cols-12 gap-4 items-center mb-8">
           <div className="col-span-12 md:col-span-5">
-            <h2 className="text-gs_red text-4xl md:text-6xl leading-none">Fundraising Leaders</h2>
+            <h2 className="text-gs_red text-4xl md:text-6xl leading-none">2026 Fundraising Leaders</h2>
           </div>
           <div className="hidden md:block md:col-span-7 h-[1px] w-full bg-white"></div>
         </div>
@@ -162,7 +209,7 @@ export const DojiggyLeaderboards = ({ endpoint = '/api/dojiggy-leaderboards' }) 
         <div className="grid gap-8 lg:grid-cols-2">
           <LeaderboardPanel
             title="Top Fundraisers"
-            entries={leaderboards.fundraisers}
+            entries={athleteFundraisers}
             kind="fundraisers"
             loading={loading}
             configured={leaderboards.configured}
