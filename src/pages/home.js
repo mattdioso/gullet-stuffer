@@ -1,6 +1,7 @@
 import React from 'react';
 import Countdown, { zeroPad } from 'react-countdown';
 import GulletStufferSubscribe from '../components/mailchimp_subscribe';
+import DojiggyLeaderboards from '../components/dojiggy_leaderboards';
 import { hof_data } from '../data/hof';
 
 class HomePage extends React.Component {
@@ -129,6 +130,7 @@ class HomePage extends React.Component {
             </div>
           </div>
         </div>
+        <DojiggyLeaderboards />
         <section className="relative w-full my-16 py-12 bg-neutral-950 border-y border-neutral-800">
           <div className="w-11/12 2xl:w-4/5 mx-auto">
             <div className="grid grid-cols-12 gap-4 items-center mb-8">

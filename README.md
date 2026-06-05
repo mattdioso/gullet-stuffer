@@ -7,6 +7,42 @@ Our instagram page [@gulletstuffer](https://www.instagram.com/gulletstuffer/?hl=
 
 The project kept here is the source code for Gullet Stuffers' website coming soon!
 
+### DoJiggy Leaderboards
+The homepage includes live leaderboard components for top fundraisers and top donors.
+
+Configure the server with:
+
+```
+DOJIGGY_LEADERBOARDS_URL=https://...
+DOJIGGY_GOOGLE_SHEET_GID=0
+DOJIGGY_ACCESS_TOKEN=optional-bearer-token
+DOJIGGY_LEADERBOARD_LIMIT=5
+DOJIGGY_CACHE_TTL_SECONDS=900
+```
+
+For the Zapier + Google Sheets setup:
+
+1. Create a Google Sheet with these columns: `Donation ID`, `Donation Date`, `Donor Name`, `Fundraiser Name`, `Amount`, `Message`.
+2. Create a Zap with DoJiggy as the trigger and Google Sheets as the action.
+3. Use DoJiggy's donation/transaction trigger, then add one row to the sheet for each donation.
+4. Share the sheet so anyone with the link can view it, or publish the sheet tab as CSV.
+5. Set `DOJIGGY_LEADERBOARDS_URL` to the shared sheet URL or published CSV URL.
+
+For a shared sheet URL, use the normal spreadsheet URL and set `DOJIGGY_GOOGLE_SHEET_GID` to the tab gid:
+
+```
+DOJIGGY_LEADERBOARDS_URL=https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/edit
+DOJIGGY_GOOGLE_SHEET_GID=0
+```
+
+For a published sheet, use the CSV URL:
+
+```
+DOJIGGY_LEADERBOARDS_URL=https://docs.google.com/spreadsheets/d/e/PUBLISHED_ID/pub?gid=0&single=true&output=csv
+```
+
+The server aggregates those donation rows into top fundraiser totals and top donor totals. The React app only calls `/api/dojiggy-leaderboards`, so private integration details stay on the server. See `public/dojiggy-zapier-sheet.sample.csv` for the preferred sheet shape and `public/dojiggy-leaderboards.sample.json` for the optional direct JSON shape.
+
 ### Sponsors
 Gullet Stuffer is proudly partnered with the following sponsors
 

@@ -19,6 +19,8 @@ jobs:
         run: |
           touch .env
           echo IG_ACCESS_TOKEN=${{ secrets.IG_ACCESS_TOKEN }} >> .env
+          echo DOJIGGY_LEADERBOARDS_URL=${{ secrets.DOJIGGY_LEADERBOARDS_URL }} >> .env
+          echo DOJIGGY_GOOGLE_SHEET_GID=${{ secrets.DOJIGGY_GOOGLE_SHEET_GID }} >> .env
       
       - name: install dependencies
         run: npm install
