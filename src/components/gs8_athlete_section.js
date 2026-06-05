@@ -85,7 +85,7 @@ const AthleteCard = ({ contestant }) => {
 
     return (
         <article className="mx-auto flex h-full w-full max-w-[260px] flex-col overflow-hidden rounded-lg border border-white/20 bg-neutral-900 shadow-xl">
-            <div className="aspect-[3/4] w-full overflow-hidden bg-neutral-800">
+            <div className="aspect-[4/5] w-full overflow-hidden bg-neutral-800 sm:aspect-[3/4]">
                 <img
                     className={imageClassName}
                     src={image}
@@ -93,8 +93,8 @@ const AthleteCard = ({ contestant }) => {
                     loading="lazy"
                 />
             </div>
-            <div className="flex flex-1 flex-col p-3">
-                <p className="font-heavitas text-xl leading-tight text-white">
+            <div className="flex flex-1 flex-col p-2 sm:p-3">
+                <p className="font-heavitas text-base leading-tight text-white sm:text-xl">
                     {firstName}
                     {contestant.nickname && (
                         <span className="text-gs_red"> "{contestant.nickname}"</span>
@@ -103,9 +103,9 @@ const AthleteCard = ({ contestant }) => {
                 </p>
 
                 <div className="mt-auto pt-3">
-                    <p className="font-OpenSansSemiBold text-xs uppercase text-gs_purple">Past performances</p>
+                    <p className="font-OpenSansSemiBold text-[10px] uppercase text-gs_purple sm:text-xs">Past performances</p>
                     {!isDebut && finishes.length > 0 ? (
-                        <ul className="mt-2 space-y-1 font-OpenSansReg text-xs leading-snug text-neutral-100">
+                        <ul className="mt-2 space-y-1 font-OpenSansReg text-[11px] leading-snug text-neutral-100 sm:text-xs">
                             {finishes.map((finish) => (
                                 <li
                                     className="flex items-center gap-2"
@@ -117,13 +117,13 @@ const AthleteCard = ({ contestant }) => {
                             ))}
                         </ul>
                     ) : (
-                        <p className="mt-2 font-OpenSansReg text-xs text-neutral-100">Gullet Stuffer debut</p>
+                        <p className="mt-2 font-OpenSansReg text-[11px] text-neutral-100 sm:text-xs">Gullet Stuffer debut</p>
                     )}
                 </div>
 
                 {contestant.campaignUrl && (
                     <a
-                        className="mt-4 inline-flex min-h-[40px] items-center justify-center rounded-md bg-gs_red px-3 py-2 font-OpenSansBold text-xs text-white transition hover:bg-white hover:text-black"
+                        className="mt-3 inline-flex min-h-[36px] items-center justify-center rounded-md bg-gs_red px-2 py-2 font-OpenSansBold text-[11px] text-white transition hover:bg-white hover:text-black sm:mt-4 sm:min-h-[40px] sm:px-3 sm:text-xs"
                         href={contestant.campaignUrl}
                         target="_blank"
                         rel="noreferrer"
@@ -145,7 +145,7 @@ const AthleteDivision = ({ title, accentClass, contestants }) => (
                 Meet the athletes raising funds and taking the table at Gullet Stuffer VIII.
             </p>
         </div>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5">
+        <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-4 2xl:grid-cols-5">
             {contestants.map((contestant) => (
                 <AthleteCard key={contestant.name} contestant={contestant} />
             ))}
