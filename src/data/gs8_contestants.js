@@ -81,7 +81,7 @@ export const gs8_contestants = {
             "img": ""
         },
         {
-            "name": "Diontae Harden",
+            "name": "Diontaé Harden",
             "nickname": "Dark Knight",
             "experience": 0,
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/darkknight",
@@ -92,7 +92,7 @@ export const gs8_contestants = {
             "nickname": "HumuHumu",
             "experience": 0,
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/hinkel",
-            "img": ""
+            "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/amateurs/Madi.jpg"
         },
         {
             "name": "Scott Petrushka",
@@ -131,7 +131,7 @@ export const gs8_contestants = {
                 }
             ],
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/miles",
-            "img": ""
+            "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/pros/Miles.jpg"
         },
         {
             "name": "Sam Shirley",
