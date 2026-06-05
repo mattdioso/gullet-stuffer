@@ -16,10 +16,15 @@ const resultValue = result => {
     return Number.isNaN(value) ? 0 : value;
 };
 
+const isDqResult = result => /\bDQ\b/i.test(String(result));
+
 const getDivision = (year, division) => (
     year.competitors
         .filter(athlete => athlete.rank === division)
-        .sort((a, b) => resultValue(b.result) - resultValue(a.result))
+        .sort((a, b) => {
+            const dqDiff = Number(isDqResult(a.result)) - Number(isDqResult(b.result));
+            return dqDiff || resultValue(b.result) - resultValue(a.result);
+        })
 );
 
 const formatDesc = desc => (desc || '')
