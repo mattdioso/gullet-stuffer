@@ -121,8 +121,8 @@ class HomePage extends React.Component {
               </div>
             </div>
             <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-              <a className="inline-flex min-h-[54px] bg-gs_purple px-8 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-2xl" href="https://docs.google.com/forms/d/e/1FAIpQLSfTKAtBZHXmxi7nTXckwGpWiqXyfklwVlQIhkbLvQXPnai36w/viewform" target="_blank" rel="noreferrer">
-                Apply to Compete!
+              <a className="inline-flex min-h-[54px] bg-gs_purple px-8 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-2xl" href="https://go.dojiggy.io/nocrust" target="_blank" rel="noreferrer">
+                Support our Athletes!
               </a>
               <a className="inline-flex min-h-[54px] bg-gs_purple px-8 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-2xl" href="https://docs.google.com/forms/d/e/1FAIpQLSdbjNwt2vampg_iGE6waSzQujxn9SO18OlL2VZmfI0fcqLTgQ/viewform" target="_blank" rel="noreferrer">
                 Join the Team!
