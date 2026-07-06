@@ -71,21 +71,21 @@ export const gs8_contestants = {
             "nickname": "The Sleeper",
             "experience": 0,
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/jonp",
-            "img": ""
+            "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/amateurs/JonPendleton.jpg"
         },
         {
             "name": "Raul Melgarejo",
             "nickname": "Gullet Mullet",
             "experience": 0,
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/gulletmullet",
-            "img": ""
+            "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/amateurs/Raul.jpg"
         },
         {
             "name": "Diontaé Harden",
             "nickname": "Dark Knight",
             "experience": 0,
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/darkknight",
-            "img": ""
+            "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/amateurs/Dionte%CC%81.jpg"
         },
         {
             "name": "Madi Hinkel",
@@ -99,7 +99,7 @@ export const gs8_contestants = {
             "nickname": "The Gobbler",
             "experience": 0,
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/thegobbler",
-            "img": ""
+            "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/amateurs/scott%20p.jpg"
         }
     ],
     "pros": [
@@ -225,7 +225,7 @@ export const gs8_contestants = {
             "experience": 0,
             "finishes": [],
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/jonboat",
-            "img": ""
+            "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/pros/Gong%20The%20GodFather%20of%20Uncrustables.jpg"
         },
         {
             "name": "Ashwin Muthy",
@@ -234,6 +234,14 @@ export const gs8_contestants = {
             "finishes": [],
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/darkhorse",
             "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/pros/AshwinMurthy.jpg"
+        },
+        {
+            "name": "Miller Michaud",
+            "nickname": "The Crust Redeemer",
+            "experience": 0,
+            "finishes": [],
+            "campaignUrl": "https://go.dojiggy.io/nocrust/m/redeemer",
+            "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/pros/Miller%20Michaud%20(The%20Crust%20Redeemer).jpg"
         },
     ]
 }
