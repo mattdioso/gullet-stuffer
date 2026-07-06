@@ -75,18 +75,19 @@ class HomePage extends React.Component {
         <div className="w-full flex justify-center mt-10 md:mt-16">
           <Countdown date={new Date(1783821600000)} renderer={countdownRenderer} />
         </div>
-        <div className="visible h-fit w-8/12 pt-4 md:pt-0 m-auto md:invisible md:w-0 md:h-0 md:opacity-0">
-          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/gs8_event_poster.png" alt="Gullet Stuffer VIII event poster" />
-
-          {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
-            <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
-          </video> */}
-        </div>
-        <div className="h-0 md:w-5/12 md:mx-auto md:pt-12 md:visible invisible md:h-fit opacity-0 md:opacity-100 md:z-50">
-          <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/gs8_event_poster.png" alt="Gullet Stuffer VIII event poster" />
-          {/* <video autoPlay loop muted playsInline id='intro_video' className="object-bottom mx-auto perspective border border-gray-600 rounded-xl">
-            <source src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS7/homepage.mp4" type="video/mp4" />
-          </video> */}
+        <div className="w-11/12 max-w-4xl mx-auto pt-6 md:pt-12">
+          {/* <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/gs8_event_poster.png" alt="Gullet Stuffer VIII event poster" /> */}
+          <div className="aspect-video w-full overflow-hidden rounded-md bg-black shadow-2xl">
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube.com/embed/zvwujllzALs?si=QB_g70-C4n0TQ7Qb"
+              title="GS8 Promo Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
 
         <div className="w-11/12 2xl:w-4/5 mx-auto mt-10 md:grid md:grid-cols-[minmax(360px,0.42fr)_minmax(0,0.58fr)] md:gap-12 md:items-center">

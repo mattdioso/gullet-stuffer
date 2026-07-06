@@ -598,9 +598,23 @@ app.get('/api/dojiggy-leaderboards', async (req, res) => {
     }
 });
 
-app.use(express.static(buildPath));
+app.use(express.static(buildPath, {
+    index: false,
+    setHeaders: (res, filePath) => {
+        if (filePath === path.join(buildPath, 'index.html')) {
+            res.set('Cache-Control', 'no-cache');
+        } else if (filePath.startsWith(path.join(buildPath, 'static'))) {
+            res.set('Cache-Control', 'public, max-age=31536000, immutable');
+        }
+    }
+}));
 
 app.get('*', (req, res) => {
+    if (path.extname(req.path) || !req.accepts('html')) {
+        return res.status(404).send('Not found');
+    }
+
+    res.set('Cache-Control', 'no-cache');
     res.sendFile(path.join(buildPath, 'index.html'));
 });
 
