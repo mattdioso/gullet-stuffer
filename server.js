@@ -7,6 +7,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8080;
 const buildPath = path.join(__dirname, 'build');
+const assetManifestPath = path.join(buildPath, 'asset-manifest.json');
 const instagramBaseUrl = 'https://graph.instagram.com';
 const mediaFields = [
     'id',
@@ -24,6 +25,7 @@ let cachedAt = 0;
 const dojiggyCacheTtlMs = Number(process.env.DOJIGGY_CACHE_TTL_SECONDS || 900) * 1000;
 let cachedDojiggyLeaderboards = null;
 let cachedDojiggyAt = 0;
+let builtAssetAliases = {};
 const gs8AthleteCampaigns = [
     { name: 'Crosby Schultz', campaignUrl: 'https://go.dojiggy.io/a46932/m/crozbaby/Member/Details' },
     { name: 'Micheal Pascua', campaignUrl: 'https://go.dojiggy.io/a46932/m/pascua/Member/Details' },
@@ -45,6 +47,12 @@ const gs8AthleteCampaigns = [
     { name: 'Jonathan Gong', campaignUrl: 'https://go.dojiggy.io/nocrust/m/jonboat' },
     { name: 'Ashwin Muthy', campaignUrl: 'https://go.dojiggy.io/nocrust/m/darkhorse' }
 ];
+
+try {
+    builtAssetAliases = require(assetManifestPath).files || {};
+} catch (error) {
+    console.warn('Build asset manifest could not be loaded:', error.message);
+}
 
 const getInstagramConfig = () => ({
     userId: process.env.IG_USER_ID || process.env.REACT_APP_IG_USER_ID || 'me',
@@ -596,6 +604,17 @@ app.get('/api/dojiggy-leaderboards', async (req, res) => {
             error: 'DoJiggy leaderboards are unavailable.'
         });
     }
+});
+
+app.get(['/main.js', '/main.css'], (req, res, next) => {
+    const assetPath = builtAssetAliases[req.path.slice(1)];
+
+    if (!assetPath) {
+        return next();
+    }
+
+    res.set('Cache-Control', 'no-cache');
+    return res.redirect(302, assetPath);
 });
 
 app.use(express.static(buildPath, {
