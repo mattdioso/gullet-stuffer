@@ -100,6 +100,13 @@ export const gs8_contestants = {
             "experience": 0,
             "campaignUrl": "https://go.dojiggy.io/nocrust/m/thegobbler",
             "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/amateurs/scott%20p.jpg"
+        },
+        {
+            "name": "Kamran Abri",
+            "nickname": "Karnivorous Kami",
+            "experience": 0,
+            "campaignUrl": "https://go.dojiggy.io/nocrust/m/506204",
+            "img": "https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/athletes/amateurs/kamranabri.jpg"
         }
     ],
     "pros": [
