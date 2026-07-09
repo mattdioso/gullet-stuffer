@@ -54,6 +54,20 @@ try {
     console.warn('Build asset manifest could not be loaded:', error.message);
 }
 
+const resolveBuiltAssetAlias = (assetName) => {
+    const manifestPath = builtAssetAliases[assetName]
+        || builtAssetAliases[`static/${assetName}`]
+        || Object.values(builtAssetAliases).find((assetPath) => path.basename(assetPath) === assetName);
+
+    if (!manifestPath) {
+        return null;
+    }
+
+    const resolvedPath = path.join(buildPath, manifestPath);
+    const relativePath = path.relative(buildPath, resolvedPath);
+    return relativePath && !relativePath.startsWith('..') && !path.isAbsolute(relativePath) ? resolvedPath : null;
+};
+
 const getInstagramConfig = () => ({
     userId: process.env.IG_USER_ID || process.env.REACT_APP_IG_USER_ID || 'me',
     accessToken: process.env.IG_ACCESS_TOKEN || process.env.REACT_APP_IG_ACCESS_TOKEN,
@@ -607,14 +621,22 @@ app.get('/api/dojiggy-leaderboards', async (req, res) => {
 });
 
 app.get(['/main.js', '/main.css'], (req, res, next) => {
-    const assetPath = builtAssetAliases[req.path.slice(1)];
+    const assetPath = resolveBuiltAssetAlias(req.path.slice(1));
 
     if (!assetPath) {
         return next();
     }
 
-    res.set('Cache-Control', 'no-cache');
-    return res.redirect(302, assetPath);
+    res.set('Cache-Control', 'public, max-age=31536000, immutable');
+    return res.sendFile(assetPath, (error) => {
+        if (!error) {
+            return;
+        }
+
+        if (!res.headersSent) {
+            next();
+        }
+    });
 });
 
 app.use(express.static(buildPath, {
