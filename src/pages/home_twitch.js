@@ -88,30 +88,20 @@ class HomeTwitchPage extends React.Component {
             <p className='text-[4.5rem] md:text-[6rem] lg:text-[7.5rem] text-gs_red leading-[45px] md:leading-[65px] lg:leading-[80px]'>Stuffer</p>
           </div>
           <div className="min-w-0 pt-6 md:pt-0">
-            <p className='text-sm md:text-lg font-heavitas text-white leading-relaxed'>
-              A neon orange glow fills the Grocery Outlet parking lot. It's time for Gullet Stuffer! This annual eating contest supports local food aid, bringing the community together with every bite.
+            <h2 className="text-gs_red text-3xl md:text-5xl leading-none">Watch the Livestream</h2>
+            <p className='mt-4 text-sm md:text-lg font-heavitas text-white leading-relaxed'>
+              Catch every bite live on Twitch, Instagram, or YouTube. Choose your favorite platform below and join us when the contest begins.
             </p>
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
-              <div className="border-l-4 border-gs_red pl-4">
-                <p className="text-neutral-300 text-xs md:text-sm font-heavitas">Current Home Field</p>
-                <p className="text-gs_purple text-base md:text-xl leading-tight">Central District Grocery Outlet Bargain Market</p>
-              </div>
-              <div className="border-l-4 border-white pl-4">
-                <p className="text-neutral-300 text-xs md:text-sm font-heavitas">Total Competitors</p>
-                <p className="text-white text-base md:text-xl leading-tight">109 All Time</p>
-              </div>
-              <div className="border-l-4 border-gs_red pl-4">
-                <p className="text-neutral-300 text-xs md:text-sm font-heavitas">GSVII Food Count</p>
-                <p className="text-gs_purple text-base md:text-xl leading-tight">1,291 Gyoza in 10 Minutes</p>
-              </div>
-              <div className="border-l-4 border-white pl-4">
-                <p className="text-neutral-300 text-xs md:text-sm font-heavitas">Next Event</p>
-                <p className="text-white text-base md:text-xl leading-tight">Gullet Stuffer VIII - July 11th, 2026</p>
-              </div>
-              <div className="border-l-4 border-gs_red pl-4 md:col-span-2">
-                <p className="text-neutral-300 text-xs md:text-sm font-heavitas">Raised for Seattle Community Fridge</p>
-                <p className="text-gs_purple text-2xl md:text-4xl leading-tight">$20,200</p>
-              </div>
+            <div className="mt-6 grid gap-4 lg:grid-cols-3">
+              <a className="inline-flex min-h-[54px] bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.twitch.tv/gulletstuffer" target="_blank" rel="noreferrer">
+                Watch on Twitch
+              </a>
+              <a className="inline-flex min-h-[54px] bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.instagram.com/gulletstuffer/" target="_blank" rel="noreferrer">
+                Watch on Instagram
+              </a>
+              <a className="inline-flex min-h-[54px] bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.youtube.com/@gulletstufferz" target="_blank" rel="noreferrer">
+                Watch on YouTube
+              </a>
             </div>
             <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
               <a className="inline-flex min-h-[54px] bg-gs_purple px-8 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-2xl" href="https://go.dojiggy.io/nocrust" target="_blank" rel="noreferrer">
