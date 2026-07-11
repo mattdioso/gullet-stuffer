@@ -91,7 +91,7 @@ class HomeTwitchPage extends React.Component {
           <div className="min-w-0 pt-6 md:pt-0">
             <h2 className="text-gs_red text-3xl md:text-5xl leading-none">Watch the Livestream</h2>
             <p className='mt-4 text-sm md:text-lg font-heavitas text-white leading-relaxed'>
-              Catch every bite live on Twitch, Instagram, or YouTube. Choose your favorite platform below and join us when the contest begins.
+              Catch every bite live on Twitch, Instagram, or YouTube on <time dateTime="2026-07-11T19:00:00-07:00">July 11th, 2026 at 7:00 PM Pacific Time</time>. Choose your favorite platform below and join us when the contest begins.
             </p>
             <div className="mt-6 grid gap-4 lg:grid-cols-3">
               <a className="inline-flex min-h-[54px] gap-3 bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.twitch.tv/gulletstuffer" target="_blank" rel="noreferrer">
