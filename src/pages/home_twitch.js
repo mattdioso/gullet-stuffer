@@ -102,7 +102,7 @@ class HomeTwitchPage extends React.Component {
                 <FaInstagram className="h-5 w-5 shrink-0" aria-hidden="true" />
                 Watch on Instagram
               </a>
-              <a className="inline-flex min-h-[54px] gap-3 bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.youtube.com/@gulletstufferz" target="_blank" rel="noreferrer">
+              <a className="inline-flex min-h-[54px] gap-3 bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://youtube.com/live/N7V7luHn6D0?feature=share" target="_blank" rel="noreferrer">
                 <FaYoutube className="h-5 w-5 shrink-0" aria-hidden="true" />
                 Watch on YouTube
               </a>
