@@ -1,5 +1,6 @@
 import React from 'react';
 import Countdown, { zeroPad } from 'react-countdown';
+import { FaInstagram, FaTwitch, FaYoutube } from 'react-icons/fa';
 import GulletStufferSubscribe from '../components/mailchimp_subscribe';
 import DojiggyLeaderboards from '../components/dojiggy_leaderboards';
 import TwitchLivestream from '../components/twitch_livestream';
@@ -93,13 +94,16 @@ class HomeTwitchPage extends React.Component {
               Catch every bite live on Twitch, Instagram, or YouTube. Choose your favorite platform below and join us when the contest begins.
             </p>
             <div className="mt-6 grid gap-4 lg:grid-cols-3">
-              <a className="inline-flex min-h-[54px] bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.twitch.tv/gulletstuffer" target="_blank" rel="noreferrer">
+              <a className="inline-flex min-h-[54px] gap-3 bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.twitch.tv/gulletstuffer" target="_blank" rel="noreferrer">
+                <FaTwitch className="h-5 w-5 shrink-0" aria-hidden="true" />
                 Watch on Twitch
               </a>
-              <a className="inline-flex min-h-[54px] bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.instagram.com/gulletstuffer/" target="_blank" rel="noreferrer">
+              <a className="inline-flex min-h-[54px] gap-3 bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.instagram.com/gulletstuffer/" target="_blank" rel="noreferrer">
+                <FaInstagram className="h-5 w-5 shrink-0" aria-hidden="true" />
                 Watch on Instagram
               </a>
-              <a className="inline-flex min-h-[54px] bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.youtube.com/@gulletstufferz" target="_blank" rel="noreferrer">
+              <a className="inline-flex min-h-[54px] gap-3 bg-gs_purple px-6 py-3 items-center justify-center rounded-2xl text-black text-lg md:text-xl transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="https://www.youtube.com/@gulletstufferz" target="_blank" rel="noreferrer">
+                <FaYoutube className="h-5 w-5 shrink-0" aria-hidden="true" />
                 Watch on YouTube
               </a>
             </div>
