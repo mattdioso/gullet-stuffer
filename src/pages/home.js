@@ -72,15 +72,12 @@ class HomePage extends React.Component {
 
           <p className="text-gs_purple text-center">Competitive Eating Contest</p>
         </div>
-        <div className="w-full flex justify-center mt-10 md:mt-16">
-          <Countdown date={new Date(1783821600000)} renderer={countdownRenderer} />
-        </div>
         <div className="w-11/12 max-w-4xl mx-auto pt-6 md:pt-12">
           {/* <img className="rounded-md mt-4" src="https://storage.googleapis.com/gulllet-stuffer.appspot.com/GS8/gs8_event_poster.png" alt="Gullet Stuffer VIII event poster" /> */}
           <div className="aspect-video w-full overflow-hidden rounded-md bg-black shadow-2xl">
             <iframe
               className="h-full w-full"
-              src="https://www.youtube.com/embed/zvwujllzALs?si=QB_g70-C4n0TQ7Qb"
+              src="https://www.youtube.com/embed/N7V7luHn6D0?si=Q006s9HWze5GN5a-"
               title="GS8 Promo Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

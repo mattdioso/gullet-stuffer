@@ -23,7 +23,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomeTwitchPage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/gs8" element={<GS8 />} />
