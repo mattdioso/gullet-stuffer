@@ -56,9 +56,6 @@ class GS8 extends React.Component {
         }
         return (
             <main className="w-full pt-36 md:pt-40 bg-black">
-                <div className="w-full flex justify-center">
-                    <Countdown date={new Date(1783821600000)} renderer={renderer} />
-                </div>
                 <EventInvite />
                 <GS8AthleteSection contestants={gs8_contestants} />
                 <footer className='h-24 bg-black'></footer>

@@ -27,7 +27,6 @@ class AboutPage extends React.Component {
 
                     </div>
                     <div className='md:w-1/2 my-auto'>
-                        {/* <Carousel/> */}
                         <div className='mt-4 md:mt-0 md:pl-8 px-4 md:px-0 md:pr-8 pt-0 w-full text-center md:text-left'>
                             <div className='w-full 2xl:w-4/5'>
                                 <p className='text-xs md:text-base 2xl:text-xl font-heavitas text-white'>It was set to be a one-off event. A gathering of friends to see who could do the best Matt Stonie impersonation... But it wasn't enough!</p>
