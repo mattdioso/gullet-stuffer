@@ -1,19 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useMotionValue, useMotionValueEvent } from 'framer-motion';
-import { clear } from '@testing-library/user-event/dist/clear';
-
-const images = [
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/merch.JPG",
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/GS4_stage.jpg",
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/all_pros.jpg",
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/dee_won.jpg",
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/jaybee_award.jpg",
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/mom_front.jpg",
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/par_par.jpg",
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/pointing.jpg",
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/pre-pros.jpg",
-    "https://storage.googleapis.com/gulllet-stuffer.appspot.com/carousel/view_from_stage.jpg"
-];
 
 const SPRING_OPTS = {
     type: "spring",
@@ -26,9 +12,12 @@ const ONE_SECOND = 1000;
 const AUTO_DELAY = ONE_SECOND * 10;
 
 
-const Carousel = () => {
+const Carousel = ({ images = [] }) => {
     const [dragging, setDragging] = useState(false);
     const [imgIndex, setImgIndex ] = useState(0);
+    const activeImgIndex = images.length === 0
+        ? 0
+        : Math.min(imgIndex, images.length - 1);
 
     const DRAG_BUFFER = 50;
 
@@ -44,6 +33,20 @@ const Carousel = () => {
     })
 
     useEffect(() => {
+        setImgIndex((currentIndex) => {
+            if (images.length === 0) {
+                return 0;
+            }
+
+            return Math.min(currentIndex, images.length - 1);
+        });
+    }, [images.length]);
+
+    useEffect(() => {
+        if (images.length === 0) {
+            return undefined;
+        }
+
         const intervalRef = setInterval(() => {
             const x = dragXProgress.get();
             if (x === 0) {
@@ -57,7 +60,7 @@ const Carousel = () => {
         }, AUTO_DELAY);
 
         return () => clearInterval(intervalRef);
-    }, [])
+    }, [dragXProgress, images.length])
 
     const onDragStart = () => {
         setDragging(true);
@@ -88,13 +91,13 @@ const Carousel = () => {
 
                 }}
                 animate={{
-                    translateX: `-${imgIndex * 100}%`
+                    translateX: `-${activeImgIndex * 100}%`
                 }}
                 transition={SPRING_OPTS}
                 onDragStart={onDragStart}
                 onDragEnd={onDragEnd}
                 className='w-full flex items-center cursor-grab active:cursor-grabbing '>
-                <Images imgIndex={imgIndex}/>
+                <Images images={images}/>
             </motion.div>
             <div
                 className='flex w-full justify-center gap-2'
@@ -103,7 +106,7 @@ const Carousel = () => {
                     <button
                         key={idx}
                         onClick={() => setImgIndex(idx)}
-                        className={`h-3 w-3 rounded-full transition-colors ${idx === imgIndex ? "bg-neutral-50" : "bg-neutral-500"} `}
+                        className={`h-3 w-3 rounded-full transition-colors ${idx === activeImgIndex ? "bg-neutral-50" : "bg-neutral-500"} `}
                     >
                     
                     </button>
@@ -114,7 +117,7 @@ const Carousel = () => {
     );
 }
 
-const Images = (imgIndex) => {
+const Images = ({ images }) => {
     
     return (
         <>
@@ -126,9 +129,7 @@ const Images = (imgIndex) => {
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                     }}
-                    animate={{
-                        scale: imgIndex === idx ? 0.95 : 0.85
-                    }}
+                    animate={{ scale: 0.85 }}
                     transition={SPRING_OPTS}
                     className='aspect-video w-full shrink-0 rounded-xl bg-neutral-800 object-cover'
                 />
