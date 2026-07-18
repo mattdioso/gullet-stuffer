@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const DEFAULT_AVATAR =
     'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"%3E%3Crect width="512" height="512" fill="%23171717"/%3E%3Ccircle cx="256" cy="190" r="92" fill="%2395509c"/%3E%3Cpath d="M88 448c22-84 86-132 168-132s146 48 168 132" fill="%2395509c"/%3E%3Ccircle cx="256" cy="256" r="238" fill="none" stroke="%23ff3b6e" stroke-width="18"/%3E%3C/svg%3E';
@@ -120,18 +119,6 @@ const AthleteCard = ({ contestant }) => {
                         <p className="mt-2 font-OpenSansReg text-[11px] text-neutral-100 sm:text-xs">Gullet Stuffer debut</p>
                     )}
                 </div>
-
-                {contestant.campaignUrl && (
-                    <a
-                        className="mt-3 inline-flex min-h-[36px] items-center justify-center rounded-md bg-gs_red px-2 py-2 font-OpenSansBold text-[11px] text-white transition hover:bg-white hover:text-black sm:mt-4 sm:min-h-[40px] sm:px-3 sm:text-xs"
-                        href={contestant.campaignUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Support {firstName}
-                        <FaExternalLinkAlt className="ml-2 h-3 w-3" aria-hidden="true" />
-                    </a>
-                )}
             </div>
         </article>
     );
